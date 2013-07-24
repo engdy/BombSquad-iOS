@@ -41,6 +41,14 @@
     }
     [self.timer enableSoundtrack:willPlaySoundtrack withResourceName:selectedSoundtrack];
     [self.timer enableBombSounds:willPlayBombSound];
+    num = [defaults objectForKey:@"visualAlert"];
+    if (num == nil) {
+        num = [NSNumber numberWithBool:YES];
+        [defaults setObject:num forKey:@"visualAlert"];
+        [defaults synchronize];
+    }
+    self.willAlertVisually = [num boolValue];
+
     NSMutableArray *tmpStates = [[NSMutableArray alloc] init];
     NSMutableArray *tmpButtons = [[NSMutableArray alloc] init];
     NSMutableArray *tmpTimes = [[NSMutableArray alloc] init];
@@ -96,11 +104,13 @@
             [btnBomb setEnabled:YES];
         } else if (b.state == DISABLED) {
             [btnTime setTitle:[Bomb stringFromTime:b.disarmedMillisRemain] forState:UIControlStateNormal];
+            [btnTime setBackgroundColor:[UIColor whiteColor]];
             [btnTime setEnabled:NO];
             [btnBomb setEnabled:NO];
             [iv setImage:[UIImage imageNamed:@"greencheck"]];
         } else {
             [btnTime setTitle:@"00:00" forState:UIControlStateNormal];
+            [btnTime setBackgroundColor:[UIColor whiteColor]];
             [btnTime setEnabled:NO];
             [btnBomb setEnabled:NO];
             [iv setImage:[UIImage imageNamed:@"redex"]];
@@ -144,15 +154,21 @@
         [iv setImage:[UIImage imageNamed:@"redex"]];
         UIButton *btnTime = [self.bombTimes objectAtIndex:idx];
         [btnTime setTitle:@"00:00" forState:UIControlStateNormal];
+        [btnTime setBackgroundColor:[UIColor whiteColor]];
         [self checkButtons];
     } else {
         UIButton *btnTime = [self.bombTimes objectAtIndex:idx];
         [btnTime setTitle:[bomb timeLeftFromElapsed:duration] forState:UIControlStateNormal];
-//        NSInteger diff = bomb.durationMillis - duration;
-//        if (self.willAlertVisually && diff < 30000) {
-//            CGFloat nonRedVal = (CGFloat)diff / 30000.0;
-//            [btnTime setBackgroundColor:[UIColor colorWithRed:1.0 green:nonRedVal blue:nonRedVal alpha:1.0]];
-//        }
+        if (self.willAlertVisually) {
+            CGFloat diff = bomb.durationMillis - duration;
+            if (diff < 30000.0) {
+                CGFloat nrv = diff / 30000.0;
+                CGFloat mag = floor((30000.0 - diff) / 1000.0);
+                NSInteger sdiff = (NSInteger)diff % 1000;
+                CGFloat nonRedVal = nrv + (mag * (CGFloat)sdiff / 30000.0);
+                [btnTime setBackgroundColor:[UIColor colorWithRed:1.0 green:nonRedVal blue:nonRedVal alpha:1.0]];
+            }
+        }
     }
 }
 

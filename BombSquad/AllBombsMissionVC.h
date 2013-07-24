@@ -15,6 +15,7 @@
 @property (nonatomic, retain) NSArray *bombButtons;
 @property (nonatomic, retain) NSArray *bombTimes;
 @property (nonatomic) BOOL isTimerRunningDuringAlert;
+@property (nonatomic) BOOL willAlertVisually;
 @property (nonatomic, retain) Bomb *focusBomb;
 
 - (IBAction)playPause:(id)sender;
