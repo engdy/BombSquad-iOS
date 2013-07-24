@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  BSNavigationController.h
 //  BombSquad
 //
 //  Created by Andrew Foulke on 7/17/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface BSNavigationController : UINavigationController
 
 @end
