@@ -32,7 +32,6 @@
 		BD0F61521798770300953661 /* bigmissiond.png in Resources */ = {isa = PBXBuildFile; fileRef = BD0F614A1798770300953661 /* bigmissiond.png */; };
 		BD0F61531798770300953661 /* bigmissione.png in Resources */ = {isa = PBXBuildFile; fileRef = BD0F614B1798770300953661 /* bigmissione.png */; };
 		BD0F61541798770300953661 /* bigmissionf.png in Resources */ = {isa = PBXBuildFile; fileRef = BD0F614C1798770300953661 /* bigmissionf.png */; };
-		BD0F6157179878D200953661 /* ViewMissionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BD0F6156179878D200953661 /* ViewMissionVC.m */; };
 		BD0F616C1798976D00953661 /* bomb1A.png in Resources */ = {isa = PBXBuildFile; fileRef = BD0F61581798976D00953661 /* bomb1A.png */; };
 		BD0F616D1798976D00953661 /* bomb1A@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BD0F61591798976D00953661 /* bomb1A@2x.png */; };
 		BD0F616E1798976D00953661 /* bomb1B.png in Resources */ = {isa = PBXBuildFile; fileRef = BD0F615A1798976D00953661 /* bomb1B.png */; };
@@ -73,6 +72,8 @@
 		BD0F61AD179CD7F000953661 /* notselected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BD0F61A9179CD7F000953661 /* notselected@2x.png */; };
 		BD0F61AE179CD7F000953661 /* selected.png in Resources */ = {isa = PBXBuildFile; fileRef = BD0F61AA179CD7F000953661 /* selected.png */; };
 		BD0F61AF179CD7F000953661 /* selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BD0F61AB179CD7F000953661 /* selected@2x.png */; };
+		BD36328917A0800E00A2BB71 /* ScrollMissionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BD36328817A0800D00A2BB71 /* ScrollMissionVC.m */; };
+		BD62FF1A17A1B68A005EBEAA /* Default~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = BD62FF1917A1B68A005EBEAA /* Default~ipad.png */; };
 		BD7E416117972D7300FBB8D1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD7E416017972D7300FBB8D1 /* UIKit.framework */; };
 		BD7E416317972D7300FBB8D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD7E416217972D7300FBB8D1 /* Foundation.framework */; };
 		BD7E416517972D7300FBB8D1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD7E416417972D7300FBB8D1 /* CoreGraphics.framework */; };
@@ -151,8 +152,6 @@
 		BD0F614A1798770300953661 /* bigmissiond.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bigmissiond.png; sourceTree = "<group>"; };
 		BD0F614B1798770300953661 /* bigmissione.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bigmissione.png; sourceTree = "<group>"; };
 		BD0F614C1798770300953661 /* bigmissionf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bigmissionf.png; sourceTree = "<group>"; };
-		BD0F6155179878D200953661 /* ViewMissionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewMissionVC.h; sourceTree = "<group>"; };
-		BD0F6156179878D200953661 /* ViewMissionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewMissionVC.m; sourceTree = "<group>"; };
 		BD0F61581798976D00953661 /* bomb1A.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bomb1A.png; sourceTree = "<group>"; };
 		BD0F61591798976D00953661 /* bomb1A@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bomb1A@2x.png"; sourceTree = "<group>"; };
 		BD0F615A1798976D00953661 /* bomb1B.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bomb1B.png; sourceTree = "<group>"; };
@@ -197,6 +196,9 @@
 		BD0F61A9179CD7F000953661 /* notselected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "notselected@2x.png"; sourceTree = "<group>"; };
 		BD0F61AA179CD7F000953661 /* selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selected.png; sourceTree = "<group>"; };
 		BD0F61AB179CD7F000953661 /* selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "selected@2x.png"; sourceTree = "<group>"; };
+		BD36328717A0800C00A2BB71 /* ScrollMissionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollMissionVC.h; sourceTree = "<group>"; };
+		BD36328817A0800D00A2BB71 /* ScrollMissionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollMissionVC.m; sourceTree = "<group>"; };
+		BD62FF1917A1B68A005EBEAA /* Default~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default~ipad.png"; path = "../Default~ipad.png"; sourceTree = "<group>"; };
 		BD7E415D17972D7300FBB8D1 /* BombSquad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BombSquad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD7E416017972D7300FBB8D1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BD7E416217972D7300FBB8D1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -344,13 +346,13 @@
 				BD7E41D11797977700FBB8D1 /* QuickSetupVC.m */,
 				BD0F61831799BA4100953661 /* RunningMissionVC.h */,
 				BD0F61841799BA4100953661 /* RunningMissionVC.m */,
+				BD36328717A0800C00A2BB71 /* ScrollMissionVC.h */,
+				BD36328817A0800D00A2BB71 /* ScrollMissionVC.m */,
 				BD7E41D31797989A00FBB8D1 /* SettingsVC.h */,
 				BD7E41D41797989A00FBB8D1 /* SettingsVC.m */,
 				BD0F61891799BE2D00953661 /* SingleBombMissionVC.h */,
 				BD0F618A1799BE2D00953661 /* SingleBombMissionVC.m */,
 				BD7E416717972D7300FBB8D1 /* Supporting Files */,
-				BD0F6155179878D200953661 /* ViewMissionVC.h */,
-				BD0F6156179878D200953661 /* ViewMissionVC.m */,
 			);
 			path = BombSquad;
 			sourceTree = "<group>";
@@ -358,12 +360,19 @@
 		BD7E416717972D7300FBB8D1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				BD0F61A8179CD7F000953661 /* notselected.png */,
-				BD0F61A9179CD7F000953661 /* notselected@2x.png */,
-				BD0F61AA179CD7F000953661 /* selected.png */,
-				BD0F61AB179CD7F000953661 /* selected@2x.png */,
+				BD7E416C17972D7300FBB8D1 /* main.m */,
 				BD7E41B41797906F00FBB8D1 /* amission.m4a */,
 				BD7E41B51797906F00FBB8D1 /* bigbomb.m4a */,
+				BD7E41B61797906F00FBB8D1 /* heartbeat.m4a */,
+				BD7E41B71797906F00FBB8D1 /* hiddenagenda.m4a */,
+				BD7E41B81797906F00FBB8D1 /* hitman.m4a */,
+				BD7E41B91797906F00FBB8D1 /* impendingboom.m4a */,
+				BD7E41BA1797906F00FBB8D1 /* mechanical.m4a */,
+				BD7E41BB1797906F00FBB8D1 /* smallbomb.m4a */,
+				BD7E41BC1797906F00FBB8D1 /* spygroove.m4a */,
+				BD7E41BD1797906F00FBB8D1 /* tickingclock.m4a */,
+				BD7E416E17972D7300FBB8D1 /* BombSquad-Prefix.pch */,
+				BD7E416817972D7300FBB8D1 /* BombSquad-Info.plist */,
 				BD0F61451798770300953661 /* bigmission1.png */,
 				BD0F61461798770300953661 /* bigmission2.png */,
 				BD0F61471798770300953661 /* bigmissiona.png */,
@@ -392,24 +401,16 @@
 				BD0F61691798976D00953661 /* bomb3C@2x.png */,
 				BD0F616A1798976D00953661 /* bombF.png */,
 				BD0F616B1798976D00953661 /* bombF@2x.png */,
-				BD7E416817972D7300FBB8D1 /* BombSquad-Info.plist */,
-				BD7E416E17972D7300FBB8D1 /* BombSquad-Prefix.pch */,
 				BD7E41A71797319600FBB8D1 /* BombSquadLogo.png */,
 				BD7E41A81797319600FBB8D1 /* BombSquadLogo@2x.png */,
 				BD7E417617972D7300FBB8D1 /* Default-568h@2x.png */,
 				BD7E417217972D7300FBB8D1 /* Default.png */,
 				BD7E417417972D7300FBB8D1 /* Default@2x.png */,
+				BD62FF1917A1B68A005EBEAA /* Default~ipad.png */,
 				BD0F6198179A517D00953661 /* greencheck.png */,
 				BD0F6199179A517D00953661 /* greencheck@2x.png */,
-				BD7E41B61797906F00FBB8D1 /* heartbeat.m4a */,
-				BD7E41B71797906F00FBB8D1 /* hiddenagenda.m4a */,
-				BD7E41B81797906F00FBB8D1 /* hitman.m4a */,
 				BD0F618C1799D7E700953661 /* home.png */,
 				BD0F618D1799D7E700953661 /* home@2x.png */,
-				BD7E41B91797906F00FBB8D1 /* impendingboom.m4a */,
-				BD7E416917972D7300FBB8D1 /* InfoPlist.strings */,
-				BD7E416C17972D7300FBB8D1 /* main.m */,
-				BD7E41BA1797906F00FBB8D1 /* mechanical.m4a */,
 				BD0F6125179876CA00953661 /* mission1.png */,
 				BD0F6126179876CA00953661 /* mission1@2x.png */,
 				BD0F6127179876CA00953661 /* mission2.png */,
@@ -426,15 +427,17 @@
 				BD0F6132179876CA00953661 /* missione@2x.png */,
 				BD0F6133179876CA00953661 /* missionf.png */,
 				BD0F6134179876CA00953661 /* missionf@2x.png */,
+				BD0F61A8179CD7F000953661 /* notselected.png */,
+				BD0F61A9179CD7F000953661 /* notselected@2x.png */,
 				BD0F618E1799D7E700953661 /* pause.png */,
 				BD0F618F1799D7E700953661 /* pause@2x.png */,
 				BD0F619A179A517D00953661 /* redex.png */,
 				BD0F619B179A517D00953661 /* redex@2x.png */,
-				BD7E41BB1797906F00FBB8D1 /* smallbomb.m4a */,
-				BD7E41BC1797906F00FBB8D1 /* spygroove.m4a */,
+				BD0F61AA179CD7F000953661 /* selected.png */,
+				BD0F61AB179CD7F000953661 /* selected@2x.png */,
 				BD0F61901799D7E700953661 /* start.png */,
 				BD0F61911799D7E700953661 /* start@2x.png */,
-				BD7E41BD1797906F00FBB8D1 /* tickingclock.m4a */,
+				BD7E416917972D7300FBB8D1 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -607,6 +610,7 @@
 				BD0F61AD179CD7F000953661 /* notselected@2x.png in Resources */,
 				BD0F61AE179CD7F000953661 /* selected.png in Resources */,
 				BD0F61AF179CD7F000953661 /* selected@2x.png in Resources */,
+				BD62FF1A17A1B68A005EBEAA /* Default~ipad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -654,11 +658,11 @@
 				BD7E41D51797989A00FBB8D1 /* SettingsVC.m in Sources */,
 				BD7E41D81797994100FBB8D1 /* AboutVC.m in Sources */,
 				BD0F6114179870E600953661 /* Campaign.m in Sources */,
-				BD0F6157179878D200953661 /* ViewMissionVC.m in Sources */,
 				BD0F6182179898D400953661 /* AddBombVC.m in Sources */,
 				BD0F61851799BA4100953661 /* RunningMissionVC.m in Sources */,
 				BD0F61881799BE1500953661 /* AllBombsMissionVC.m in Sources */,
 				BD0F618B1799BE2D00953661 /* SingleBombMissionVC.m in Sources */,
+				BD36328917A0800E00A2BB71 /* ScrollMissionVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

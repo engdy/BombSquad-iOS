@@ -221,9 +221,9 @@
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BHb-G7-WGt">
                                         <rect key="frame" x="20" y="49" width="280" height="296"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <mutableString key="text">BombSquad is a cooperative board game where 2-6 players are a members of a team, operating a disposal robot with the mission to disarm bombs and save hostages. The players work together, racing against the clock to provide the appropriate instructions for the robot to achieve their mission objectives. 
+                                        <string key="text">BombSquad is a cooperative board game where 2-6 players are a members of a team, operating a disposal robot with the mission to disarm bombs and save hostages. The players work together, racing against the clock to provide the appropriate instructions for the robot to achieve their mission objectives. 
 
-This app is used along with the physical board game to manage the bomb timers counting down during a mission, to help the players with the setup for each building and mission in the game's Campaign mode, and also is used to stop the timers for individual bombs when those bombs are successfully disarmed in time. In addition, we've found that the app significantly enhances the game experience and makes that tension of bombs counting down feel more real as you play the game. We hope you enjoy it as much as we do!</mutableString>
+This app is used along with the physical board game to manage the bomb timers counting down during a mission, to help the players with the setup for each building and mission in the game's Campaign mode, and also is used to stop the timers for individual bombs when those bombs are successfully disarmed in time. In addition, we've found that the app significantly enhances the game experience and makes that tension of bombs counting down feel more real as you play the game. We hope you enjoy it as much as we do!</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
@@ -611,6 +611,34 @@ Music: Kevin MacLeod</string>
             </objects>
             <point key="canvasLocation" x="480" y="1"/>
         </scene>
+        <!--Scroll MissionVC-->
+        <scene sceneID="4LX-5v-lJM">
+            <objects>
+                <viewController id="3bW-pZ-o9N" customClass="ScrollMissionVC" sceneMemberID="viewController">
+                    <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="RZL-MY-YSc">
+                        <rect key="frame" x="0.0" y="20" width="480" height="300"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" id="lcK-Km-AcV">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="300"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                        <connections>
+                            <outlet property="delegate" destination="3bW-pZ-o9N" id="hSS-CA-PN1"/>
+                        </connections>
+                    </scrollView>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="imgMission" destination="lcK-Km-AcV" id="ZT2-bR-fni"/>
+                        <outlet property="scrollView" destination="RZL-MY-YSc" id="kAf-q2-8aS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PB4-8k-EQA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-162" y="-1286"/>
+        </scene>
         <!--Campaign SetupVC - Campaign Setup-->
         <scene sceneID="eN8-hv-5Bm">
             <objects>
@@ -646,7 +674,7 @@ Music: Kevin MacLeod</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="r6w-oQ-UWT" kind="modal" identifier="ViewMissionSegue" id="F27-rk-oHB"/>
+                                    <segue destination="3bW-pZ-o9N" kind="modal" identifier="ViewMissionSegue" id="P6W-UF-Ldi"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -667,55 +695,6 @@ Music: Kevin MacLeod</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tiX-M7-RSI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-32" y="-837"/>
-        </scene>
-        <!--View MissionVC-->
-        <scene sceneID="3Qz-1P-8LW">
-            <objects>
-                <viewController id="r6w-oQ-UWT" customClass="ViewMissionVC" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="dqA-TW-UlQ">
-                        <rect key="frame" x="0.0" y="20" width="480" height="300"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="fkb-6f-QNC">
-                                <rect key="frame" x="0.0" y="0.0" width="480" height="300"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="cZS-uY-chq" appends="YES" id="mOe-QW-MsJ"/>
-                                    <outletCollection property="gestureRecognizers" destination="zpN-lV-CBF" appends="YES" id="vR1-tX-nZY"/>
-                                    <outletCollection property="gestureRecognizers" destination="eH3-lr-FQz" appends="YES" id="Mm9-7d-OlY"/>
-                                </connections>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                    </view>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                    <connections>
-                        <outlet property="imgMission" destination="fkb-6f-QNC" id="XYm-hT-iR9"/>
-                        <outlet property="panRecognizer" destination="eH3-lr-FQz" id="58S-AZ-3gA"/>
-                        <outlet property="pinchRecognizer" destination="cZS-uY-chq" id="kUw-lr-dP9"/>
-                        <outlet property="tapRecognizer" destination="zpN-lV-CBF" id="wNz-qw-Way"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yk9-17-4Y3" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <pinchGestureRecognizer id="cZS-uY-chq">
-                    <connections>
-                        <action selector="handlePinch:" destination="r6w-oQ-UWT" id="Atu-g6-9ae"/>
-                    </connections>
-                </pinchGestureRecognizer>
-                <tapGestureRecognizer id="zpN-lV-CBF">
-                    <connections>
-                        <action selector="handleTap:" destination="r6w-oQ-UWT" id="aPJ-9r-U3Q"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="eH3-lr-FQz">
-                    <connections>
-                        <action selector="handlePan:" destination="r6w-oQ-UWT" id="8bT-AT-3g5"/>
-                    </connections>
-                </panGestureRecognizer>
-            </objects>
-            <point key="canvasLocation" x="400" y="-1047"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="iah-sy-i6L">
@@ -800,6 +779,13 @@ Music: Kevin MacLeod</string>
         <class className="RunningMissionVC" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/RunningMissionVC.h"/>
         </class>
+        <class className="ScrollMissionVC" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ScrollMissionVC.h"/>
+            <relationships>
+                <relationship kind="outlet" name="imgMission" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+            </relationships>
+        </class>
         <class className="SettingsVC" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SettingsVC.h"/>
             <relationships>
@@ -826,18 +812,6 @@ Music: Kevin MacLeod</string>
                 <relationship kind="outlet" name="btnPlayPause" candidateClass="UIButton"/>
             </relationships>
         </class>
-        <class className="ViewMissionVC" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewMissionVC.h"/>
-            <relationships>
-                <relationship kind="action" name="handlePan:" candidateClass="UIPanGestureRecognizer"/>
-                <relationship kind="action" name="handlePinch:" candidateClass="UIPinchGestureRecognizer"/>
-                <relationship kind="action" name="handleTap:" candidateClass="UITapGestureRecognizer"/>
-                <relationship kind="outlet" name="imgMission" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="panRecognizer" candidateClass="UIPanGestureRecognizer"/>
-                <relationship kind="outlet" name="pinchRecognizer" candidateClass="UIPinchGestureRecognizer"/>
-                <relationship kind="outlet" name="tapRecognizer" candidateClass="UITapGestureRecognizer"/>
-            </relationships>
-        </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
@@ -845,7 +819,7 @@ Music: Kevin MacLeod</string>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="45y-zr-1Jd"/>
         <segue reference="GwT-Xk-Vsh"/>
+        <segue reference="K7K-QJ-jZr"/>
     </inferredMetricsTieBreakers>
 </document>

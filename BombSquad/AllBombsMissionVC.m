@@ -54,7 +54,8 @@
     NSMutableArray *tmpTimes = [[NSMutableArray alloc] init];
     for (NSInteger i = 0; i < [self.timer.bombs.bombs count]; ++i) {
         Bomb *b = [self.timer.bombs.bombs objectAtIndex:i];
-        UIImageView *iv = [[UIImageView alloc] initWithFrame:CGRectMake(20.0, 190.0 + (i * 52.0), 44.0, 44.0)];
+        BOOL isIpad = UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad;
+        UIImageView *iv = [[UIImageView alloc] initWithFrame:isIpad ? CGRectMake(340.0, 20.0 + (i * 52.0), 44.0, 44.0) : CGRectMake(20.0, 190.0 + (i * 52.0), 44.0, 44.0)];
         if (b.state == DISABLED) {
             [iv setImage:[UIImage imageNamed:@"greencheck"]];
         } else if (b.state == DETONATED) {
@@ -63,7 +64,7 @@
         [self.view addSubview:iv];
         [tmpStates addObject:iv];
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-        btn.frame = CGRectMake(72.0, 190.0 + (i * 52.0), 44.0, 44.0);
+        btn.frame = isIpad ? CGRectMake(392.0, 20.0 + (i * 52.0), 44.0, 44.0) : CGRectMake(72.0, 190.0 + (i * 52.0), 44.0, 44.0);
         btn.tag = i;
         btn.backgroundColor = [UIColor clearColor];
         NSString *imageName = b.level == 4 ? @"bombF" : [NSString stringWithFormat:@"bomb%d%@", b.level, b.letter];
@@ -73,7 +74,11 @@
         [btn addTarget:self action:@selector(bombPressed:) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:btn];
         [tmpButtons addObject:btn];
-        btn = [[UIButton alloc] initWithFrame:CGRectMake(124.0, 190.0 + (i * 52.0), 100.0, 44.0)];
+        btn = [UIButton buttonWithType:UIButtonTypeCustom];
+        btn.frame = isIpad ? CGRectMake(444.0, 20.0 + (i * 52.0), 100.0, 44.0) : CGRectMake(124.0, 190.0 + (i * 52.0), 100.0, 44.0);
+        btn.layer.cornerRadius = 5.0f;
+        btn.layer.borderWidth = 0.5f;
+        btn.layer.borderColor = [UIColor blackColor].CGColor;
         [btn setTitle:[b timeLeftFromElapsed:0] forState:UIControlStateNormal];
         [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [btn.titleLabel setFont:[UIFont systemFontOfSize:26.0]];
@@ -116,6 +121,7 @@
             [iv setImage:[UIImage imageNamed:@"redex"]];
         }
     }
+    [self checkButtons];
 }
 
 - (void)viewDidUnload {
@@ -230,6 +236,9 @@
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        return (toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft || toInterfaceOrientation == UIInterfaceOrientationLandscapeRight);
+    }
     return (toInterfaceOrientation == UIInterfaceOrientationPortrait || toInterfaceOrientation == UIInterfaceOrientationPortraitUpsideDown);
 }
 
@@ -238,6 +247,9 @@
 }
 
 - (NSUInteger)supportedInterfaceOrientations {
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        return UIInterfaceOrientationMaskLandscape;
+    }
     return UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskPortraitUpsideDown;
 }
 

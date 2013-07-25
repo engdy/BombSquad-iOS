@@ -7,7 +7,7 @@
 //
 
 #import "CampaignSetupVC.h"
-#import "ViewMissionVC.h"
+#import "ScrollMissionVC.h"
 
 @interface CampaignSetupVC ()
 
@@ -20,6 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self buildCampaigns];
+    [[_btnMissionImage imageView] setContentMode:UIViewContentModeScaleAspectFit];
     [self selectionResults:0];
 }
 
@@ -61,7 +62,7 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"ViewMissionSegue"]) {
-        ViewMissionVC *vc = [segue destinationViewController];
+        ScrollMissionVC *vc = [segue destinationViewController];
         vc.image = [UIImage imageNamed:[NSString stringWithFormat:@"big%@", _selectedCampaign.picture]];
     } else {
         [super prepareForSegue:segue sender:sender];
@@ -86,7 +87,11 @@
 - (void)selectionResults:(NSInteger)row {
     _selectedCampaign = [self.campaignList objectAtIndex:row];
     self.timer.bombs.bombs = _selectedCampaign.bombs.bombs;
-    self.selectedImage = [UIImage imageNamed:_selectedCampaign.picture];
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        self.selectedImage = [UIImage imageNamed:[NSString stringWithFormat:@"big%@", _selectedCampaign.picture]];
+    } else {
+        self.selectedImage = [UIImage imageNamed:_selectedCampaign.picture];
+    }
     [_btnMissionImage setImage:self.selectedImage forState:UIControlStateNormal];
 }
 
