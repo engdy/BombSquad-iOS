@@ -28,7 +28,7 @@
     return self;
 }
 
-- (void)enableSoundtrack:(BOOL)willPlaySoundtrack withResourceName:(NSString *)name {
+- (void)enableSoundtrack:(BOOL)willPlaySoundtrack withResourceName:(NSString *)name volume:(CGFloat)volume {
     _willPlaySoundtrack = willPlaySoundtrack;
     if (_willPlaySoundtrack && [name length] > 0) {
         NSString *soundPath = [[NSBundle mainBundle] pathForResource:name ofType:@"m4a"];
@@ -36,27 +36,32 @@
         NSError *err = nil;
         _backgroundPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&err];
         [_backgroundPlayer setNumberOfLoops:-1];
+        [_backgroundPlayer setVolume:volume];
         [_backgroundPlayer prepareToPlay];
     }
+    self.musicVolume = volume;
 }
 
-- (void)enableBombSounds:(BOOL)willPlayBombSounds {
+- (void)enableBombSounds:(BOOL)willPlayBombSounds volume:(CGFloat)volume {
     _willPlayBombSounds = willPlayBombSounds;
     if (_willPlayBombSounds) {
         NSString *soundPath = [[NSBundle mainBundle] pathForResource:@"smallbomb" ofType:@"m4a"];
         NSURL *url = [NSURL fileURLWithPath:soundPath];
         NSError *err = nil;
         _smallBombPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&err];
+        [_smallBombPlayer setVolume:volume];
         [_smallBombPlayer prepareToPlay];
         soundPath = [[NSBundle mainBundle] pathForResource:@"bigbomb" ofType:@"m4a"];
         url = [NSURL fileURLWithPath:soundPath];
         err = nil;
         _bigBombPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&err];
+        [_bigBombPlayer setVolume:volume];
         [_bigBombPlayer prepareToPlay];
     } else {
         _smallBombPlayer = nil;
         _bigBombPlayer = nil;
     }
+    self.bombVolume = volume;
 }
 
 - (NSInteger)getNow {
@@ -148,6 +153,19 @@
     if (_backgroundPlayer != nil) {
         [_backgroundPlayer stop];
     }
+}
+
+- (void)adjustMusicVolume:(CGFloat)volume {
+    self.musicVolume = volume;
+    if ([_backgroundPlayer isPlaying]) {
+        [_backgroundPlayer setVolume:volume];
+    }
+}
+
+- (void)adjustBombVolume:(CGFloat)volume {
+    self.bombVolume = volume;
+    [_smallBombPlayer setVolume:volume];
+    [_bigBombPlayer setVolume:volume];
 }
 
 - (BOOL)isPlayingSoundtrack {

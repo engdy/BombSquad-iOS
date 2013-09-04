@@ -32,8 +32,9 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     NSInteger timeLeft = [_timer.bombs findMaxTime] - _timer.elapsedMillis;
-    [_btnResume setEnabled:[_timer.bombs.bombs count] > 0 && timeLeft > 0];
-    [_btnResume setHidden:[_timer.bombs.bombs count] == 0 || timeLeft <= 0];
+    BOOL shouldShowResume = _timer.bombs.showResumeButton && [_timer.bombs.bombs count] > 0 && timeLeft > 0;
+    [_btnResume setEnabled:shouldShowResume];
+    [_btnResume setHidden:!shouldShowResume];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {

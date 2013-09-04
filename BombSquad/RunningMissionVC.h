@@ -16,6 +16,7 @@
 @property (nonatomic, retain) id <RunningMissionVCDelegate> delegate;
 @property (nonatomic, retain) BSTimer *timer;
 @property (nonatomic, retain) UIButton *btnPlay;
+@property (nonatomic) BOOL willAlertVisually;
 
 - (void)pause;
 - (void)checkbuttons;

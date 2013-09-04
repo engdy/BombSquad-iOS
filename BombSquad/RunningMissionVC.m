@@ -17,6 +17,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.btnPlay = nil;
+    self.timer.bombs.showResumeButton = YES;
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSNumber *num = [defaults objectForKey:@"visualAlert"];
+    if (num == nil) {
+        num = [NSNumber numberWithBool:YES];
+        [defaults setObject:num forKey:@"visualAlert"];
+        [defaults synchronize];
+    }
+    self.willAlertVisually = [num boolValue];
 }
 
 - (void)viewWillAppear:(BOOL)animated {

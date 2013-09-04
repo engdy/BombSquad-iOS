@@ -180,18 +180,6 @@
                         <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="BombSquadLogo.png" id="v12-cN-g93">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="183"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="30:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HTQ-lJ-F34">
-                                <rect key="frame" x="0.0" y="280" width="1024" height="488"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="300"/>
-                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="55j-Qh-ECJ">
                                 <rect key="frame" x="20" y="191" width="73" height="73"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -222,14 +210,46 @@
                                     <action selector="playPause:" destination="1GB-qW-Yfw" eventType="touchUpInside" id="NT1-pc-m3j"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wAx-a1-hzh">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="183"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="BombSquadLogo.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="home:" destination="1GB-qW-Yfw" eventType="touchUpInside" id="bgG-iD-bZW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fwN-ly-jCA">
+                                <rect key="frame" x="0.0" y="280" width="1024" height="488"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="300"/>
+                                <state key="normal" title="30:00">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="mainTimePressed:" destination="1GB-qW-Yfw" eventType="touchUpInside" id="zXr-j8-bUz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
+                        <outlet property="btnHome" destination="wAx-a1-hzh" id="ukE-gi-E9k"/>
+                        <outlet property="btnMainTime" destination="fwN-ly-jCA" id="raf-L0-p5c"/>
                         <outlet property="btnPlayPause" destination="Adb-Sl-0ro" id="2RF-lF-fkM"/>
-                        <outlet property="txtMainTime" destination="HTQ-lJ-F34" id="ep7-O3-wIe"/>
                         <segue destination="nJd-cg-z2p" kind="modal" identifier="SingleBombSegue" id="q0c-UB-SlZ"/>
                     </connections>
                 </viewController>
@@ -260,47 +280,31 @@
                                     <action selector="playPause:" destination="nJd-cg-z2p" eventType="touchUpInside" id="E4K-wp-Mhl"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="cRv-Oq-ng1">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="30T-Qe-8TA">
                                 <rect key="frame" x="0.0" y="81" width="1024" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="300"/>
-                                <state key="normal" title="30:00">
-                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <connections>
-                                    <action selector="done:" destination="nJd-cg-z2p" eventType="touchUpInside" id="tUL-Z4-Cia"/>
+                                    <outlet property="delegate" destination="nJd-cg-z2p" id="h7U-Jc-nfk"/>
+                                    <outletCollection property="gestureRecognizers" destination="40J-aJ-YUi" appends="YES" id="pU0-QA-kr7"/>
                                 </connections>
-                            </button>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="Dy8-q2-Heu" appends="YES" id="zM5-Eh-Mnd"/>
-                            <outletCollection property="gestureRecognizers" destination="zZ5-y0-TlM" appends="YES" id="pSg-8a-S9l"/>
-                        </connections>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
-                        <outlet property="btnMainTime" destination="cRv-Oq-ng1" id="OZF-Z6-u6W"/>
                         <outlet property="btnPlayPause" destination="K2r-qy-oa1" id="tXO-qm-0Ab"/>
+                        <outlet property="scrollTimers" destination="30T-Qe-8TA" id="wSK-xw-p5k"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yxG-y0-CVl" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="Dy8-q2-Heu">
+                <tapGestureRecognizer id="40J-aJ-YUi">
                     <connections>
-                        <action selector="handleSwipeLeft:" destination="nJd-cg-z2p" id="gUW-mi-v1b"/>
+                        <action selector="handleDoubleTap:" destination="nJd-cg-z2p" id="gbr-JS-Hh4"/>
                     </connections>
-                </swipeGestureRecognizer>
-                <swipeGestureRecognizer direction="right" id="zZ5-y0-TlM">
-                    <connections>
-                        <action selector="handleSwipeRight:" destination="nJd-cg-z2p" id="3mS-d3-wUq"/>
-                    </connections>
-                </swipeGestureRecognizer>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="3901" y="-948"/>
         </scene>
@@ -438,7 +442,7 @@
                                 </connections>
                             </switch>
                             <view contentMode="scaleToFill" id="Cf0-jw-Ay2">
-                                <rect key="frame" x="0.0" y="273" width="405" height="114"/>
+                                <rect key="frame" x="0.0" y="273" width="768" height="114"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Visual alert in last 30 seconds" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="swK-Cx-awH">
@@ -483,15 +487,45 @@
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Volume:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8rh-py-pNE">
+                                        <rect key="frame" x="430" y="76" width="71" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" id="nIS-0b-bKb">
+                                        <rect key="frame" x="517" y="76" width="233" height="23"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="updateBombVolume:" destination="bND-yV-xcK" eventType="valueChanged" id="FOv-6w-vB5"/>
+                                        </connections>
+                                    </slider>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Volume:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="N1k-kb-Hr2">
+                                <rect key="frame" x="430" y="20" width="71" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="pZW-YF-RIZ">
+                                <rect key="frame" x="517" y="20" width="233" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="updateMusicVolume:" destination="bND-yV-xcK" eventType="valueChanged" id="LTw-wl-WQl"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="fCI-37-HXh"/>
                     <connections>
                         <outlet property="pickerSoundtrack" destination="tAF-Ps-blo" id="SXt-R4-Uea"/>
+                        <outlet property="sliderBombSound" destination="nIS-0b-bKb" id="vIR-pF-oUx"/>
+                        <outlet property="sliderSoundtrack" destination="pZW-YF-RIZ" id="jFY-eJ-g37"/>
                         <outlet property="switchAudioAlert" destination="srR-jB-JcL" id="HsV-61-CKv"/>
                         <outlet property="switchBombSounds" destination="cZk-pH-ZvD" id="sEg-5e-3sZ"/>
                         <outlet property="switchSoundtrack" destination="ZoK-xE-Kw3" id="Ljj-dQ-rvd"/>
@@ -582,7 +616,7 @@
             </objects>
             <point key="canvasLocation" x="2748" y="475"/>
         </scene>
-        <!--AboutVC - About BombSquad-->
+        <!--AboutVC - About Bomb Squad-->
         <scene sceneID="ziV-Gy-gbN">
             <objects>
                 <viewController id="KT5-Jq-geL" customClass="AboutVC" sceneMemberID="viewController">
@@ -672,7 +706,7 @@ Music: Kevin MacLeod</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="About BombSquad" id="TY1-Wv-yg8"/>
+                    <navigationItem key="navigationItem" title="About Bomb Squad" id="TY1-Wv-yg8"/>
                     <connections>
                         <outlet property="labelVersion" destination="qtL-Li-dBQ" id="6LB-Bf-a73"/>
                     </connections>
@@ -711,9 +745,11 @@ Music: Kevin MacLeod</string>
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AllBombsMissionVC.h"/>
             <relationships>
                 <relationship kind="action" name="home:"/>
+                <relationship kind="action" name="mainTimePressed:"/>
                 <relationship kind="action" name="playPause:"/>
+                <relationship kind="outlet" name="btnHome" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="btnMainTime" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="btnPlayPause" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="txtMainTime" candidateClass="UILabel"/>
             </relationships>
         </class>
         <class className="CampaignSetupVC" superclassName="MissionSetupVC">
@@ -753,7 +789,11 @@ Music: Kevin MacLeod</string>
                 <relationship kind="action" name="toggleBombs:"/>
                 <relationship kind="action" name="toggleSoundtrack:"/>
                 <relationship kind="action" name="toggleVisual:"/>
+                <relationship kind="action" name="updateBombVolume:" candidateClass="UISlider"/>
+                <relationship kind="action" name="updateMusicVolume:" candidateClass="UISlider"/>
                 <relationship kind="outlet" name="pickerSoundtrack" candidateClass="UIPickerView"/>
+                <relationship kind="outlet" name="sliderBombSound" candidateClass="UISlider"/>
+                <relationship kind="outlet" name="sliderSoundtrack" candidateClass="UISlider"/>
                 <relationship kind="outlet" name="switchAudioAlert" candidateClass="UISwitch"/>
                 <relationship kind="outlet" name="switchBombSounds" candidateClass="UISwitch"/>
                 <relationship kind="outlet" name="switchSoundtrack" candidateClass="UISwitch"/>
@@ -765,11 +805,10 @@ Music: Kevin MacLeod</string>
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SingleBombMissionVC.h"/>
             <relationships>
                 <relationship kind="action" name="done:"/>
-                <relationship kind="action" name="handleSwipeLeft:" candidateClass="UISwipeGestureRecognizer"/>
-                <relationship kind="action" name="handleSwipeRight:" candidateClass="UISwipeGestureRecognizer"/>
+                <relationship kind="action" name="handleDoubleTap:" candidateClass="UITapGestureRecognizer"/>
                 <relationship kind="action" name="playPause:"/>
-                <relationship kind="outlet" name="btnMainTime" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="btnPlayPause" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="scrollTimers" candidateClass="UIScrollView"/>
             </relationships>
         </class>
     </classes>

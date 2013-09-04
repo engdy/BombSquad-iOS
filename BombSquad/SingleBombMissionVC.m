@@ -16,11 +16,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    BOOL isIpad = UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad;
+    NSInteger numBombs = [self.timer.bombs.bombs count];
     self.btnPlay = self.btnPlayPause;
     self.view.userInteractionEnabled = YES;
     NSMutableArray *tmpButtons = [[NSMutableArray alloc] init];
     NSMutableArray *tmpViews = [[NSMutableArray alloc] init];
-    for (NSInteger i = 0; i < [self.timer.bombs.bombs count]; ++i) {
+    NSMutableArray *tmpTimeText = [[NSMutableArray alloc] init];
+    for (NSInteger i = 0; i < numBombs; ++i) {
         Bomb *b = [self.timer.bombs.bombs objectAtIndex:i];
         if (b == self.focusBomb) {
             self.focusBombNum = i;
@@ -46,36 +49,86 @@
         [btn addTarget:self action:@selector(bombPressed:) forControlEvents:UIControlEventTouchUpInside];
         [biv addSubview:btn];
         [tmpButtons addObject:btn];
+        UILabel *txt = [[UILabel alloc] initWithFrame:CGRectMake(self.scrollTimers.frame.size.width * i, 0.0, self.scrollTimers.frame.size.width, self.scrollTimers.frame.size.height)];
+        txt.text = @"30:00";
+        [txt setTextColor:[UIColor redColor]];
+        [txt setBackgroundColor:[UIColor clearColor]];
+        [txt setFont:[UIFont systemFontOfSize:isIpad ? 300.0 : 160.0]];
+        [txt setTextAlignment:NSTextAlignmentCenter];
+        [self.scrollTimers addSubview:txt];
+        [tmpTimeText addObject:txt];
     }
     self.bombButtons = tmpButtons;
     self.backgroundViews = tmpViews;
+    self.txtTimes = tmpTimeText;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    [self.btnMainTime setTitle:[self.focusBomb timeLeftFromElapsed:self.timer.elapsedMillis] forState:UIControlStateNormal];
+    NSInteger numBombs = [self.timer.bombs.bombs count];
+    CGFloat width = self.scrollTimers.frame.size.width;
+    CGFloat height = self.scrollTimers.frame.size.height;
+    self.scrollTimers.contentSize = CGSizeMake(width * numBombs, height);
+    [self makeFocusBombNum:self.focusBombNum];
+    [self zipToBombNum:self.focusBombNum];
+    for (NSInteger i = 0; i < numBombs; ++i) {
+        Bomb *b = [self.timer.bombs.bombs objectAtIndex:i];
+        UILabel *txt = [self.txtTimes objectAtIndex:i];
+        txt.frame = CGRectMake(width * i, 0.0, width, height);
+        if (b.state == LIVE) {
+            txt.text = [b timeLeftFromElapsed:self.timer.elapsedMillis];
+        } else if (b.state == DISABLED) {
+            txt.text = [Bomb stringFromTime:b.disarmedMillisRemain];
+        } else {
+            txt.text = @"00:00";
+        }
+    }
 }
 
 - (void)checkbuttons {
-    [self.btnPlayPause setImage:(self.timer.isTimerRunning) ? [UIImage imageNamed:@"pause"] : [UIImage imageNamed:@"start"] forState:UIControlStateNormal];
+    BOOL isAlive = NO;
+    for (NSInteger i = 0; i < [self.timer.bombs.bombs count]; ++i) {
+        Bomb *b = self.timer.bombs.bombs[i];
+        isAlive |= (b.state == LIVE);
+    }
+    [self.btnPlayPause setImage:(isAlive && self.timer.isTimerRunning) ? [UIImage imageNamed:@"pause"] : [UIImage imageNamed:@"start"] forState:UIControlStateNormal];
 }
 
 - (void)updateMainTime:(NSString *)time {
 }
 
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    CGFloat width = scrollView.frame.size.width;
+    CGFloat offset = scrollView.contentOffset.x;
+    NSInteger bombNum = (NSInteger)((offset + width / 2.0) / width);
+    [self makeFocusBombNum:bombNum];
+}
+
 - (void)updateBomb:(Bomb *)bomb idx:(NSInteger)idx duration:(NSInteger)duration {
+    UILabel *txt = self.txtTimes[idx];
     if (duration < 0) {
         UIButton *btn = self.bombButtons[idx];
         [btn setBackgroundImage:[UIImage imageNamed:@"redex"] forState:UIControlStateNormal];
-    }
-    if (bomb == self.focusBomb) {
-        [self.btnMainTime setTitle:[bomb timeLeftFromElapsed:duration] forState:UIControlStateNormal];
+        [txt setBackgroundColor:[UIColor blackColor]];
+        txt.text = @"00:00";
+        [self checkbuttons];
+    } else {
+        txt.text = [bomb timeLeftFromElapsed:duration];
+        if (self.willAlertVisually) {
+            CGFloat diff = bomb.durationMillis - duration;
+            if (diff < 30000.0) {
+                CGFloat mag = floor((30000.0 - diff) / 1000.0);
+                NSInteger sdiff = (NSInteger)diff % 1000;
+                CGFloat redVal = (mag * (CGFloat)sdiff / 30000.0);
+                [txt setBackgroundColor:[UIColor colorWithRed:redVal green:0.0 blue:0.0 alpha:1.0]];
+            }
+        }
     }
 }
 
 - (void)viewDidUnload {
-    [self setBtnMainTime:nil];
     [self setBtnPlayPause:nil];
+    [self setScrollTimers:nil];
     [super viewDidUnload];
 }
 
@@ -88,20 +141,8 @@
     [self checkbuttons];
 }
 
-- (IBAction)handleSwipeLeft:(UISwipeGestureRecognizer *)sender {
-    NSInteger idx = self.focusBombNum + 1;
-    if (idx >= [self.timer.bombs.bombs count]) {
-        idx = 0;
-    }
-    [self makeFocusBombNum:idx];
-}
-
-- (IBAction)handleSwipeRight:(UISwipeGestureRecognizer *)sender {
-    NSInteger idx = self.focusBombNum - 1;
-    if (idx < 0) {
-        idx = [self.timer.bombs.bombs count] - 1;
-    }
-    [self makeFocusBombNum:idx];
+- (IBAction)handleDoubleTap:(UITapGestureRecognizer *)sender {
+    [self.delegate runningMissionDone:self];
 }
 
 - (void)makeFocusBombNum:(NSInteger)idx {
@@ -111,7 +152,6 @@
     self.focusBombNum = idx;
     biv = self.backgroundViews[self.focusBombNum];
     [biv setImage:[UIImage imageNamed:@"selected"]];
-    [self.btnMainTime setTitle:[self.focusBomb timeLeftFromElapsed:self.timer.elapsedMillis] forState:UIControlStateNormal];
 }
 
 - (void)bombPressed:(id)sender {
@@ -133,7 +173,12 @@
         }
     } else {
         [self makeFocusBombNum:btn.tag];
+        [self zipToBombNum:self.focusBombNum];
     }
+}
+
+- (void)zipToBombNum:(NSInteger)bombNum {
+    [self.scrollTimers setContentOffset:CGPointMake(bombNum * self.scrollTimers.frame.size.width, 0.0)];
 }
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
@@ -145,6 +190,8 @@
         b.state = DISABLED;
         UIButton *btn = self.bombButtons[bombNum];
         [btn setBackgroundImage:[UIImage imageNamed:@"greencheck"] forState:UIControlStateNormal];
+        UILabel *txt = self.txtTimes[bombNum];
+        [txt setBackgroundColor:[UIColor blackColor]];
     }
     if (self.isTimerRunningDuringAlert) {
         [self.timer startTimer];

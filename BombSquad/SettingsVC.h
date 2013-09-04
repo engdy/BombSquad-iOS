@@ -17,6 +17,8 @@
 @property (weak, nonatomic) IBOutlet UISwitch *switchAudioAlert;
 @property (weak, nonatomic) IBOutlet UISwitch *switchBombSounds;
 @property (weak, nonatomic) IBOutlet UIView *viewGroup;
+@property (weak, nonatomic) IBOutlet UISlider *sliderSoundtrack;
+@property (weak, nonatomic) IBOutlet UISlider *sliderBombSound;
 @property (nonatomic, retain) NSArray *soundNames;
 @property (nonatomic, retain) NSArray *soundResources;
 @property (nonatomic) CGRect frameUp;
@@ -27,5 +29,7 @@
 - (IBAction)toggleVisual:(id)sender;
 - (IBAction)toggleAudio:(id)sender;
 - (IBAction)toggleBombs:(id)sender;
+- (IBAction)updateMusicVolume:(UISlider *)sender;
+- (IBAction)updateBombVolume:(UISlider *)sender;
 
 @end

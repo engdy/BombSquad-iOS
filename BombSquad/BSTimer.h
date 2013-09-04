@@ -25,14 +25,18 @@
 @property (nonatomic, retain) AVAudioPlayer *smallBombPlayer;
 @property (nonatomic, retain) AVAudioPlayer *bigBombPlayer;
 @property (nonatomic, retain) RunningMissionVC *currentVC;
+@property (nonatomic) CGFloat musicVolume;
+@property (nonatomic) CGFloat bombVolume;
 
 - (BSTimer *)init;
-- (void)enableSoundtrack:(BOOL)willPlaySoundtrack withResourceName:(NSString *)name;
-- (void)enableBombSounds:(BOOL)willPlayBombSounds;
+- (void)enableSoundtrack:(BOOL)willPlaySoundtrack withResourceName:(NSString *)name volume:(CGFloat)volume;
+- (void)enableBombSounds:(BOOL)willPlayBombSounds volume:(CGFloat)volume;
 - (void)startTimer;
 - (void)stopTimer;
 - (void)startMusic;
 - (void)stopMusic;
+- (void)adjustMusicVolume:(CGFloat)volume;
+- (void)adjustBombVolume:(CGFloat)volume;
 - (BOOL)isPlayingSoundtrack;
 
 @end

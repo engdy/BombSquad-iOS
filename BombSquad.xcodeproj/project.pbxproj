@@ -198,6 +198,7 @@
 		BD0F61AB179CD7F000953661 /* selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "selected@2x.png"; sourceTree = "<group>"; };
 		BD36328717A0800C00A2BB71 /* ScrollMissionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollMissionVC.h; sourceTree = "<group>"; };
 		BD36328817A0800D00A2BB71 /* ScrollMissionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollMissionVC.m; sourceTree = "<group>"; };
+		BD55CA3617A426820044A84F /* BombSquad.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = BombSquad.entitlements; sourceTree = "<group>"; };
 		BD62FF1917A1B68A005EBEAA /* Default~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default~ipad.png"; path = "../Default~ipad.png"; sourceTree = "<group>"; };
 		BD7E415D17972D7300FBB8D1 /* BombSquad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BombSquad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD7E416017972D7300FBB8D1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -316,6 +317,7 @@
 		BD7E416617972D7300FBB8D1 /* BombSquad */ = {
 			isa = PBXGroup;
 			children = (
+				BD55CA3617A426820044A84F /* BombSquad.entitlements */,
 				BD7E41D61797994000FBB8D1 /* AboutVC.h */,
 				BD7E41D71797994100FBB8D1 /* AboutVC.m */,
 				BD0F6180179898D400953661 /* AddBombVC.h */,
@@ -781,6 +783,7 @@
 		BD7E419917972D7300FBB8D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BombSquad/BombSquad.entitlements;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BombSquad/BombSquad-Prefix.pch";
 				INFOPLIST_FILE = "BombSquad/BombSquad-Info.plist";
@@ -793,6 +796,7 @@
 		BD7E419A17972D7300FBB8D1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BombSquad/BombSquad.entitlements;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BombSquad/BombSquad-Prefix.pch";
 				INFOPLIST_FILE = "BombSquad/BombSquad-Info.plist";

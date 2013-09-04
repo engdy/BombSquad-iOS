@@ -11,10 +11,11 @@
 
 @implementation BombList
 
-@synthesize bombs = _bombs;
+@synthesize bombs = _bombs, showResumeButton = _showResumeButton;
 
 - (BombList *)init {
     self.bombs = [[NSMutableArray alloc] init];
+    self.showResumeButton = NO;
     return self;
 }
 
@@ -26,7 +27,17 @@
         [self addBomb:b];
     }
     va_end(args);
+    self.showResumeButton = NO;
     return self;
+}
+
+- (NSInteger) findIndexOfBomb:(Bomb *)bomb {
+    for (NSInteger i = 0; i < [self.bombs count]; ++i) {
+        if (bomb == self.bombs[i]) {
+            return i;
+        }
+    }
+    return -1;
 }
 
 - (NSInteger)findMaxTime {
@@ -36,7 +47,7 @@
 
 - (Bomb *)findMaxTimeBomb {
     NSInteger maxTime = 0;
-    Bomb *max;
+    Bomb *max = nil;
     for (Bomb *b in _bombs) {
         if (b.state == LIVE && b.durationMillis > maxTime) {
             max = b;
@@ -44,6 +55,18 @@
         }
     }
     return max;
+}
+
+- (Bomb *)findMinTimeBomb {
+    NSInteger minTime = NSIntegerMax;
+    Bomb *min = nil;
+    for (Bomb *b in _bombs) {
+        if (b.state == LIVE && b.durationMillis < minTime) {
+            min = b;
+            minTime = b.durationMillis;
+        }
+    }
+    return min;
 }
 
 - (NSString *)maxTimeAsString {

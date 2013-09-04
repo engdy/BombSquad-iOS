@@ -8,19 +8,19 @@
 
 #import "RunningMissionVC.h"
 
-@interface SingleBombMissionVC : RunningMissionVC
+@interface SingleBombMissionVC : RunningMissionVC <UIScrollViewDelegate>
 
-@property (weak, nonatomic) IBOutlet UIButton *btnMainTime;
 @property (weak, nonatomic) IBOutlet UIButton *btnPlayPause;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollTimers;
 @property (nonatomic, retain) NSArray *bombButtons;
 @property (nonatomic, retain) NSArray *backgroundViews;
+@property (nonatomic, retain) NSArray *txtTimes;
 @property (nonatomic, retain) Bomb *focusBomb;
 @property (nonatomic) NSInteger focusBombNum;
 @property (nonatomic) BOOL isTimerRunningDuringAlert;
 
 - (IBAction)done:(id)sender;
 - (IBAction)playPause:(id)sender;
-- (IBAction)handleSwipeLeft:(UISwipeGestureRecognizer *)sender;
-- (IBAction)handleSwipeRight:(UISwipeGestureRecognizer *)sender;
+- (IBAction)handleDoubleTap:(UITapGestureRecognizer *)sender;
 
 @end

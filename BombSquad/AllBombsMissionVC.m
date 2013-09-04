@@ -17,6 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.btnHome.imageView setContentMode:UIViewContentModeScaleAspectFit];
     self.btnPlay = self.btnPlayPause;
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSNumber *num = [defaults objectForKey:@"soundtrack"];
@@ -39,15 +40,22 @@
         [defaults setObject:selectedSoundtrack forKey:@"selectedSoundtrack"];
         [defaults synchronize];
     }
-    [self.timer enableSoundtrack:willPlaySoundtrack withResourceName:selectedSoundtrack];
-    [self.timer enableBombSounds:willPlayBombSound];
-    num = [defaults objectForKey:@"visualAlert"];
+    num = [defaults objectForKey:@"volumeMusic"];
     if (num == nil) {
-        num = [NSNumber numberWithBool:YES];
-        [defaults setObject:num forKey:@"visualAlert"];
+        num = [NSNumber numberWithDouble:0.5];
+        [defaults setObject:num forKey:@"volumeMusic"];
         [defaults synchronize];
     }
-    self.willAlertVisually = [num boolValue];
+    CGFloat volumeMusic = [num doubleValue];
+    num = [defaults objectForKey:@"volumeBomb"];
+    if (num == nil) {
+        num = [NSNumber numberWithDouble:1.0];
+        [defaults setObject:num forKey:@"volumeBomb"];
+        [defaults synchronize];
+    }
+    CGFloat volumeBomb = [num doubleValue];
+    [self.timer enableSoundtrack:willPlaySoundtrack withResourceName:selectedSoundtrack volume:volumeMusic];
+    [self.timer enableBombSounds:willPlayBombSound volume:volumeBomb];
 
     NSMutableArray *tmpStates = [[NSMutableArray alloc] init];
     NSMutableArray *tmpButtons = [[NSMutableArray alloc] init];
@@ -125,8 +133,9 @@
 }
 
 - (void)viewDidUnload {
-    [self setTxtMainTime:nil];
     [self setBtnPlayPause:nil];
+    [self setBtnHome:nil];
+    [self setBtnMainTime:nil];
     [super viewDidUnload];
 }
 
@@ -136,22 +145,25 @@
         vc.timer = self.timer;
         vc.delegate = self;
         vc.focusBomb = self.focusBomb;
+        vc.focusBombNum = self.focusBombNum;
         self.timer.currentVC = vc;
     }
 }
 
 - (void)checkButtons {
-    [self.btnPlayPause setImage:(self.timer.isTimerRunning) ? [UIImage imageNamed:@"pause"] : [UIImage imageNamed:@"start"] forState:UIControlStateNormal];
+    BOOL isAlive = NO;
     for (NSInteger i = 0; i < [self.timer.bombs.bombs count]; ++i) {
         Bomb *b = self.timer.bombs.bombs[i];
         BOOL enableButton = self.timer.isTimerRunning && (b.state == LIVE);
+        isAlive |= enableButton;
         UIButton *btn = self.bombButtons[i];
         [btn setEnabled:enableButton && b.level < 4];
     }
+    [self.btnPlayPause setImage:isAlive ? [UIImage imageNamed:@"pause"] : [UIImage imageNamed:@"start"] forState:UIControlStateNormal];
 }
 
 - (void)updateMainTime:(NSString *)time {
-    [self.txtMainTime setText:time];
+    [self.btnMainTime setTitle:time forState:UIControlStateNormal];
 }
 
 - (void)updateBomb:(Bomb *)bomb idx:(NSInteger)idx duration:(NSInteger)duration {
@@ -223,10 +235,19 @@
     [self.delegate runningMissionDone:self];
 }
 
+- (IBAction)mainTimePressed:(id)sender {
+    Bomb *minBomb = [self.timer.bombs findMinTimeBomb];
+    if (minBomb != nil) {
+        self.focusBomb = minBomb;
+        self.focusBombNum = [self.timer.bombs findIndexOfBomb:minBomb];
+        [self performSegueWithIdentifier:@"SingleBombSegue" sender:self];
+    }
+}
+
 - (void)timePressed:(id)sender {
     UIButton *btn = (UIButton *)sender;
-    NSLog(@"Time %d pressed", btn.tag);
     self.focusBomb = [self.timer.bombs.bombs objectAtIndex:btn.tag];
+    self.focusBombNum = btn.tag;
     [self performSegueWithIdentifier:@"SingleBombSegue" sender:self];
 }
 
