@@ -248,6 +248,7 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <outlet property="btnHome" destination="wAx-a1-hzh" id="ukE-gi-E9k"/>
+                        <outlet property="btnHomeHome" destination="55j-Qh-ECJ" id="KnX-Vr-cLM"/>
                         <outlet property="btnMainTime" destination="fwN-ly-jCA" id="raf-L0-p5c"/>
                         <outlet property="btnPlayPause" destination="Adb-Sl-0ro" id="2RF-lF-fkM"/>
                         <segue destination="nJd-cg-z2p" kind="modal" identifier="SingleBombSegue" id="q0c-UB-SlZ"/>
@@ -300,7 +301,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yxG-y0-CVl" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="40J-aJ-YUi">
+                <tapGestureRecognizer numberOfTapsRequired="2" id="40J-aJ-YUi">
                     <connections>
                         <action selector="handleDoubleTap:" destination="nJd-cg-z2p" id="gbr-JS-Hh4"/>
                     </connections>
@@ -748,6 +749,7 @@ Music: Kevin MacLeod</string>
                 <relationship kind="action" name="mainTimePressed:"/>
                 <relationship kind="action" name="playPause:"/>
                 <relationship kind="outlet" name="btnHome" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="btnHomeHome" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="btnMainTime" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="btnPlayPause" candidateClass="UIButton"/>
             </relationships>

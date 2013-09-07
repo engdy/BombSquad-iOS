@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "BSTimer.h"
+#import "CMPopTipView.h"
 
 @protocol RunningMissionVCDelegate;
 
@@ -17,6 +18,9 @@
 @property (nonatomic, retain) BSTimer *timer;
 @property (nonatomic, retain) UIButton *btnPlay;
 @property (nonatomic) BOOL willAlertVisually;
+@property (nonatomic) BOOL willDisplayInstructions;
+@property (nonatomic, retain) CMPopTipView *tipView;
+@property (nonatomic) NSInteger iCurrentTip;
 
 - (void)pause;
 - (void)checkbuttons;

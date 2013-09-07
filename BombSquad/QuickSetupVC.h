@@ -8,7 +8,7 @@
 
 #import "MissionSetupVC.h"
 
-@interface QuickSetupVC : MissionSetupVC
+@interface QuickSetupVC : MissionSetupVC <CMPopTipViewDelegate>
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *btnStart;
 @property (weak, nonatomic) IBOutlet UIButton *btnAdd;
 @property (weak, nonatomic) IBOutlet UIButton *btnRemove;

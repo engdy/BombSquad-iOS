@@ -475,6 +475,7 @@
                     </view>
                     <connections>
                         <outlet property="btnHome" destination="mTW-h5-Zd2" id="6Ju-Yu-cur"/>
+                        <outlet property="btnHomeHome" destination="X2I-Gd-LXH" id="nEW-CA-BO2"/>
                         <outlet property="btnMainTime" destination="px7-dL-Yf6" id="M1F-ev-Zoq"/>
                         <outlet property="btnPlayPause" destination="4sY-if-kKb" id="iVf-Cn-jZb"/>
                         <segue destination="YGG-HA-169" kind="modal" identifier="SingleBombSegue" id="nTr-HQ-ke8"/>
@@ -710,6 +711,107 @@
         <image name="pause.png" width="38" height="50"/>
         <image name="start.png" width="28" height="41"/>
     </resources>
+    <classes>
+        <class className="AboutVC" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AboutVC.h"/>
+            <relationships>
+                <relationship kind="action" name="bgg:" candidateClass="UIButton"/>
+                <relationship kind="action" name="rules:" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="labelVersion" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+            </relationships>
+        </class>
+        <class className="AddBombVC" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AddBombVC.h"/>
+            <relationships>
+                <relationship kind="action" name="cancel:"/>
+                <relationship kind="action" name="done:"/>
+                <relationship kind="outlet" name="navItem" candidateClass="UINavigationItem"/>
+                <relationship kind="outlet" name="pickerBomb" candidateClass="UIPickerView"/>
+            </relationships>
+        </class>
+        <class className="AllBombsMissionVC" superclassName="RunningMissionVC">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AllBombsMissionVC.h"/>
+            <relationships>
+                <relationship kind="action" name="home:"/>
+                <relationship kind="action" name="mainTimePressed:"/>
+                <relationship kind="action" name="playPause:"/>
+                <relationship kind="outlet" name="btnHome" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="btnHomeHome" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="btnMainTime" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="btnPlayPause" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="BSNavigationController" superclassName="UINavigationController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BSNavigationController.h"/>
+        </class>
+        <class className="CampaignSetupVC" superclassName="MissionSetupVC">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CampaignSetupVC.h"/>
+            <relationships>
+                <relationship kind="outlet" name="btnMissionImage" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="pickerMission" candidateClass="UIPickerView"/>
+            </relationships>
+        </class>
+        <class className="MainVC" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MainVC.h"/>
+            <relationships>
+                <relationship kind="outlet" name="btnResume" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="MissionSetupVC" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MissionSetupVC.h"/>
+        </class>
+        <class className="QuickSetupVC" superclassName="MissionSetupVC">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/QuickSetupVC.h"/>
+            <relationships>
+                <relationship kind="action" name="removeClicked:"/>
+                <relationship kind="outlet" name="btnAdd" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="btnRemove" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="btnStart" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="tableBombs" candidateClass="UITableView"/>
+                <relationship kind="outlet" name="txtTimeLeft" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="RunningMissionVC" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RunningMissionVC.h"/>
+        </class>
+        <class className="ScrollMissionVC" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ScrollMissionVC.h"/>
+            <relationships>
+                <relationship kind="outlet" name="imgMission" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+            </relationships>
+        </class>
+        <class className="SettingsVC" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SettingsVC.h"/>
+            <relationships>
+                <relationship kind="action" name="toggleAudio:"/>
+                <relationship kind="action" name="toggleBombs:"/>
+                <relationship kind="action" name="toggleSoundtrack:"/>
+                <relationship kind="action" name="toggleVisual:"/>
+                <relationship kind="action" name="updateBombVolume:" candidateClass="UISlider"/>
+                <relationship kind="action" name="updateMusicVolume:" candidateClass="UISlider"/>
+                <relationship kind="outlet" name="pickerSoundtrack" candidateClass="UIPickerView"/>
+                <relationship kind="outlet" name="sliderBombSound" candidateClass="UISlider"/>
+                <relationship kind="outlet" name="sliderSoundtrack" candidateClass="UISlider"/>
+                <relationship kind="outlet" name="switchAudioAlert" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="switchBombSounds" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="switchSoundtrack" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="switchVisualAlert" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="viewGroup" candidateClass="UIView"/>
+            </relationships>
+        </class>
+        <class className="SingleBombMissionVC" superclassName="RunningMissionVC">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SingleBombMissionVC.h"/>
+            <relationships>
+                <relationship kind="action" name="done:"/>
+                <relationship kind="action" name="handleDoubleTap:" candidateClass="UITapGestureRecognizer"/>
+                <relationship kind="action" name="playPause:"/>
+                <relationship kind="outlet" name="btnPlayPause" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="scrollTimers" candidateClass="UIScrollView"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

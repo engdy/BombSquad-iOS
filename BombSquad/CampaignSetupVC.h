@@ -9,7 +9,7 @@
 #import "MissionSetupVC.h"
 #import "Campaign.h"
 
-@interface CampaignSetupVC : MissionSetupVC <UIPickerViewDataSource,UIPickerViewDelegate>
+@interface CampaignSetupVC : MissionSetupVC <UIPickerViewDataSource,UIPickerViewDelegate,CMPopTipViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIPickerView *pickerMission;
 @property (weak, nonatomic) IBOutlet UIButton *btnMissionImage;

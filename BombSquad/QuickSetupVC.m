@@ -29,6 +29,23 @@
     [super viewDidUnload];
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSNumber *num = [defaults objectForKey:@"quickInstructions"];
+    if (num == nil) {
+        num = [NSNumber numberWithBool:YES];
+        [defaults setObject:num forKey:@"quickInstructions"];
+        [defaults synchronize];
+    }
+    self.willDisplayInstructions = [num boolValue];
+    if (self.willDisplayInstructions && self.tipView == nil) {
+        self.tipView = [[CMPopTipView alloc] initWithMessage:@"You will need to add at least one bomb to your mission (tap this tip when done)"];
+        self.tipView.delegate = self;
+        [self.tipView presentPointingAtView:self.btnAdd inView:self.view animated:YES];
+        self.iCurrentTip = 0;
+    }
+}
+
 - (void)checkButtons {
     if ([self.timer.bombs.bombs count] > 0) {
         [self.btnRemove setEnabled:YES];
@@ -54,6 +71,11 @@
         vc.editBomb = bomb;
         vc.delegate = self;
     } else {
+        if (self.tipView != nil) {
+            [self.tipView dismissAnimated:NO];
+            self.tipView = nil;
+        }
+        [self saveInstructionDisplay:NO];
         [super prepareForSegue:segue sender:sender];
     }
 }
@@ -127,6 +149,42 @@
 
 - (void)addBombVCDidCancel:(AddBombVC *)vc {
     [self dismissViewControllerAnimated:YES completion:NULL];
+}
+
+#pragma mark - CMPopTipView
+
+- (void)saveInstructionDisplay:(BOOL)flag {
+    if (self.willDisplayInstructions) {
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        NSNumber *num = [NSNumber numberWithBool:flag];
+        [defaults setObject:num forKey:@"quickInstructions"];
+        [defaults synchronize];
+        self.willDisplayInstructions = flag;
+    }
+}
+
+- (void)popTipViewWasDismissedByUser:(CMPopTipView *)popTipView {
+    [self.tipView dismissAnimated:YES];
+    switch (self.iCurrentTip) {
+        case 0:
+            self.tipView = [[CMPopTipView alloc] initWithMessage:@"This shows the duration of your longest bomb. (tap this tip when done)"];
+            self.tipView.delegate = self;
+            [self.tipView presentPointingAtView:self.txtTimeLeft inView:self.view animated:YES];
+            self.iCurrentTip = 1;
+            break;
+            
+        case 1:
+            self.tipView = [[CMPopTipView alloc] initWithMessage:@"When you're done adding bombs, tap Start to begin your mission! (tap this tip when done)"];
+            self.tipView.delegate = self;
+            [self.tipView presentPointingAtBarButtonItem:self.navigationItem.rightBarButtonItem animated:YES];
+            self.iCurrentTip = 2;
+            break;
+            
+        default:
+            self.tipView = nil;
+            [self saveInstructionDisplay:NO];
+            break;
+    }
 }
 
 @end

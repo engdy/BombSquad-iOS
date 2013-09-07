@@ -132,10 +132,28 @@
     [self checkButtons];
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSNumber *num = [defaults objectForKey:@"allBombsInstructions"];
+    if (num == nil) {
+        num = [NSNumber numberWithBool:YES];
+        [defaults setObject:num forKey:@"allBombsInstructions"];
+        [defaults synchronize];
+    }
+    self.willDisplayInstructions = [num boolValue];
+    if (self.willDisplayInstructions && self.tipView == nil) {
+        self.tipView = [[CMPopTipView alloc] initWithMessage:@"The Home button (or the Bomb Squad logo) takes you back to the main menu, pausing your progress."];
+        self.tipView.delegate = self;
+        [self.tipView presentPointingAtView:self.btnHomeHome inView:self.view animated:YES];
+        self.iCurrentTip = 0;
+    }
+}
+
 - (void)viewDidUnload {
     [self setBtnPlayPause:nil];
     [self setBtnHome:nil];
     [self setBtnMainTime:nil];
+    [self setBtnHomeHome:nil];
     [super viewDidUnload];
 }
 
@@ -147,6 +165,11 @@
         vc.focusBomb = self.focusBomb;
         vc.focusBombNum = self.focusBombNum;
         self.timer.currentVC = vc;
+        if (self.tipView != nil) {
+            [self.tipView dismissAnimated:NO];
+            self.tipView = nil;
+        }
+        [self saveInstructionDisplay:NO];
     }
 }
 
@@ -272,6 +295,59 @@
         return UIInterfaceOrientationMaskLandscape;
     }
     return UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskPortraitUpsideDown;
+}
+
+#pragma mark - CMPopTipView
+
+- (void)saveInstructionDisplay:(BOOL)flag {
+    if (self.willDisplayInstructions) {
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        NSNumber *num = [NSNumber numberWithBool:flag];
+        [defaults setObject:num forKey:@"allBombsInstructions"];
+        [defaults synchronize];
+        self.willDisplayInstructions = flag;
+    }
+}
+
+- (void)popTipViewWasDismissedByUser:(CMPopTipView *)popTipView {
+    UIButton *btn = nil;
+    [self.tipView dismissAnimated:YES];
+    switch (self.iCurrentTip) {
+        case 0:
+            self.tipView = [[CMPopTipView alloc] initWithMessage:@"This shows the total mission time - the duration of the longest bomb.  If you tap this, you will go to the Single Bomb view, highlighting the most immediate bomb threat."];
+            self.tipView.delegate = self;
+            [self.tipView presentPointingAtView:self.btnMainTime inView:self.view animated:YES];
+            self.iCurrentTip = 1;
+            break;
+
+        case 1:
+            self.tipView = [[CMPopTipView alloc] initWithMessage:@"Tap on a bomb button after you've disarmed it.  Note that final (gray) bombs cannot be disarmed."];
+            btn = [self.bombButtons objectAtIndex:0];
+            self.tipView.delegate = self;
+            [self.tipView presentPointingAtView:btn inView:self.view animated:YES];
+            self.iCurrentTip = 2;
+            break;
+
+        case 2:
+            self.tipView = [[CMPopTipView alloc] initWithMessage:@"Tap on a bomb time button to \"zoom in\" on that bomb in the Single Bomb view."];
+            btn = [self.bombTimes objectAtIndex:0];
+            self.tipView.delegate = self;
+            [self.tipView presentPointingAtView:btn inView:self.view animated:YES];
+            self.iCurrentTip = 3;
+            break;
+
+        case 3:
+            self.tipView = [[CMPopTipView alloc] initWithMessage:@"The play/pause button starts and stops the clock."];
+            self.tipView.delegate = self;
+            [self.tipView presentPointingAtView:self.btnPlayPause inView:self.view animated:YES];
+            self.iCurrentTip = 4;
+            break;
+            
+        default:
+            self.tipView = nil;
+            [self saveInstructionDisplay:NO];
+            break;
+    }
 }
 
 @end
