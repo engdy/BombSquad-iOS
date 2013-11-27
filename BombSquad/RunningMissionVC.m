@@ -26,6 +26,13 @@
         [defaults synchronize];
     }
     self.willAlertVisually = [num boolValue];
+    num = [defaults objectForKey:@"audioAlert"];
+    if (num == nil) {
+        num = [NSNumber numberWithBool:YES];
+        [defaults setObject:num forKey:@"audioAlert"];
+        [defaults synchronize];
+    }
+    self.willAlertAudibly = [num boolValue];
 }
 
 - (void)viewWillAppear:(BOOL)animated {

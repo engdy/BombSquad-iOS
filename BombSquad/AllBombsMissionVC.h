@@ -8,7 +8,7 @@
 
 #import "RunningMissionVC.h"
 
-@interface AllBombsMissionVC : RunningMissionVC <CMPopTipViewDelegate>
+@interface AllBombsMissionVC : RunningMissionVC
 @property (weak, nonatomic) IBOutlet UIButton *btnMainTime;
 @property (weak, nonatomic) IBOutlet UIButton *btnPlayPause;
 @property (weak, nonatomic) IBOutlet UIButton *btnHome;

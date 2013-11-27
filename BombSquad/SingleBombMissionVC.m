@@ -86,24 +86,6 @@
     [self checkbuttons];
 }
 
-- (void)viewDidAppear:(BOOL)animated {
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    NSNumber *num = [defaults objectForKey:@"singleBombInstructions"];
-    if (num == nil) {
-        num = [NSNumber numberWithBool:YES];
-        [defaults setObject:num forKey:@"singleBombInstructions"];
-        [defaults synchronize];
-    }
-    self.willDisplayInstructions = [num boolValue];
-    if (self.willDisplayInstructions && self.tipView == nil) {
-        self.tipView = [[CMPopTipView alloc] initWithMessage:@"If a bomb is highlighted in red, it is the bomb being focused on. Tapping this bomb brings up the Disarm Dialog, and the bomb's remaining time is shown below."];
-        self.tipView.delegate = self;
-        UIButton *btn = [self.bombButtons objectAtIndex:self.focusBombNum];
-        [self.tipView presentPointingAtView:btn inView:self.view animated:YES];
-        self.iCurrentTip = 0;
-    }
-}
-
 - (void)checkbuttons {
     BOOL isAlive = NO;
     for (NSInteger i = 0; i < [self.timer.bombs.bombs count]; ++i) {
@@ -227,41 +209,6 @@
 
 - (NSUInteger)supportedInterfaceOrientations {
     return UIInterfaceOrientationMaskLandscape;
-}
-
-#pragma mark - CMPopTipView
-
-- (void)saveInstructionDisplay:(BOOL)flag {
-    if (self.willDisplayInstructions) {
-        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-        NSNumber *num = [NSNumber numberWithBool:flag];
-        [defaults setObject:num forKey:@"singleBombInstructions"];
-        [defaults synchronize];
-        self.willDisplayInstructions = flag;
-    }
-}
-
-- (void)popTipViewWasDismissedByUser:(CMPopTipView *)popTipView {
-    UIView *view = nil;
-    NSInteger idx = self.focusBombNum;
-    if ([self.bombButtons count] > 1) {
-        idx = (++idx) % [self.bombButtons count];
-    }
-    [self.tipView dismissAnimated:YES];
-    switch (self.iCurrentTip) {
-        case 0:
-            self.tipView = [[CMPopTipView alloc] initWithMessage:@"Tap any non-highlighted bomb buttons to change the bomb under focus. You may also swipe the time display below to focus on a different bomb. Double-tap the time to zoom back out, viewing all bombs."];
-            self.tipView.delegate = self;
-            view = [self.bombButtons objectAtIndex:idx];
-            [self.tipView presentPointingAtView:view inView:self.view animated:YES];
-            self.iCurrentTip = 1;
-            break;
-
-        default:
-            self.tipView = nil;
-            [self saveInstructionDisplay:NO];
-            break;
-    }
 }
 
 @end

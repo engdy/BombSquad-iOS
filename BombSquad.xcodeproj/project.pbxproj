@@ -106,7 +106,24 @@
 		BD7E41D21797977700FBB8D1 /* QuickSetupVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BD7E41D11797977700FBB8D1 /* QuickSetupVC.m */; };
 		BD7E41D51797989A00FBB8D1 /* SettingsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BD7E41D41797989A00FBB8D1 /* SettingsVC.m */; };
 		BD7E41D81797994100FBB8D1 /* AboutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BD7E41D71797994100FBB8D1 /* AboutVC.m */; };
-		BDB64ACD17D9B46000BFDB83 /* CMPopTipView.m in Sources */ = {isa = PBXBuildFile; fileRef = BDB64ACC17D9B46000BFDB83 /* CMPopTipView.m */; };
+		BDF8E55F18163AC300AD654B /* countdown.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDF8E55E18163AC300AD654B /* countdown.m4a */; };
+		BDFAE8E0183FDEA100F0C2B8 /* HelpVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFAE8DF183FDEA100F0C2B8 /* HelpVC.m */; };
+		BDFAE8EF1846879700F0C2B8 /* help1.png in Resources */ = {isa = PBXBuildFile; fileRef = BDFAE8E11846879700F0C2B8 /* help1.png */; };
+		BDFAE8F01846879700F0C2B8 /* help2.png in Resources */ = {isa = PBXBuildFile; fileRef = BDFAE8E21846879700F0C2B8 /* help2.png */; };
+		BDFAE8F11846879700F0C2B8 /* help3.png in Resources */ = {isa = PBXBuildFile; fileRef = BDFAE8E31846879700F0C2B8 /* help3.png */; };
+		BDFAE8F21846879700F0C2B8 /* help4.png in Resources */ = {isa = PBXBuildFile; fileRef = BDFAE8E41846879700F0C2B8 /* help4.png */; };
+		BDFAE8F31846879700F0C2B8 /* help5.png in Resources */ = {isa = PBXBuildFile; fileRef = BDFAE8E51846879700F0C2B8 /* help5.png */; };
+		BDFAE8F41846879700F0C2B8 /* help6.png in Resources */ = {isa = PBXBuildFile; fileRef = BDFAE8E61846879700F0C2B8 /* help6.png */; };
+		BDFAE8F51846879700F0C2B8 /* help7.png in Resources */ = {isa = PBXBuildFile; fileRef = BDFAE8E71846879700F0C2B8 /* help7.png */; };
+		BDFAE8F61846879700F0C2B8 /* help8.png in Resources */ = {isa = PBXBuildFile; fileRef = BDFAE8E81846879700F0C2B8 /* help8.png */; };
+		BDFAE8F71846879700F0C2B8 /* help9.png in Resources */ = {isa = PBXBuildFile; fileRef = BDFAE8E91846879700F0C2B8 /* help9.png */; };
+		BDFAE8F81846879700F0C2B8 /* help10.png in Resources */ = {isa = PBXBuildFile; fileRef = BDFAE8EA1846879700F0C2B8 /* help10.png */; };
+		BDFAE8F91846879700F0C2B8 /* help11.png in Resources */ = {isa = PBXBuildFile; fileRef = BDFAE8EB1846879700F0C2B8 /* help11.png */; };
+		BDFAE8FA1846879700F0C2B8 /* help12.png in Resources */ = {isa = PBXBuildFile; fileRef = BDFAE8EC1846879700F0C2B8 /* help12.png */; };
+		BDFAE8FB1846879700F0C2B8 /* help13.png in Resources */ = {isa = PBXBuildFile; fileRef = BDFAE8ED1846879700F0C2B8 /* help13.png */; };
+		BDFAE8FC1846879700F0C2B8 /* help14.png in Resources */ = {isa = PBXBuildFile; fileRef = BDFAE8EE1846879700F0C2B8 /* help14.png */; };
+		BDFAE8FF1846947400F0C2B8 /* left.png in Resources */ = {isa = PBXBuildFile; fileRef = BDFAE8FD1846947300F0C2B8 /* left.png */; };
+		BDFAE9001846947400F0C2B8 /* right.png in Resources */ = {isa = PBXBuildFile; fileRef = BDFAE8FE1846947400F0C2B8 /* right.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -243,8 +260,25 @@
 		BD7E41D41797989A00FBB8D1 /* SettingsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsVC.m; sourceTree = "<group>"; };
 		BD7E41D61797994000FBB8D1 /* AboutVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutVC.h; sourceTree = "<group>"; };
 		BD7E41D71797994100FBB8D1 /* AboutVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutVC.m; sourceTree = "<group>"; };
-		BDB64ACB17D9B46000BFDB83 /* CMPopTipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMPopTipView.h; sourceTree = "<group>"; };
-		BDB64ACC17D9B46000BFDB83 /* CMPopTipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMPopTipView.m; sourceTree = "<group>"; };
+		BDF8E55E18163AC300AD654B /* countdown.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = countdown.m4a; sourceTree = "<group>"; };
+		BDFAE8DE183FDEA000F0C2B8 /* HelpVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpVC.h; sourceTree = "<group>"; };
+		BDFAE8DF183FDEA100F0C2B8 /* HelpVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpVC.m; sourceTree = "<group>"; };
+		BDFAE8E11846879700F0C2B8 /* help1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help1.png; sourceTree = "<group>"; };
+		BDFAE8E21846879700F0C2B8 /* help2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help2.png; sourceTree = "<group>"; };
+		BDFAE8E31846879700F0C2B8 /* help3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help3.png; sourceTree = "<group>"; };
+		BDFAE8E41846879700F0C2B8 /* help4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help4.png; sourceTree = "<group>"; };
+		BDFAE8E51846879700F0C2B8 /* help5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help5.png; sourceTree = "<group>"; };
+		BDFAE8E61846879700F0C2B8 /* help6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help6.png; sourceTree = "<group>"; };
+		BDFAE8E71846879700F0C2B8 /* help7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help7.png; sourceTree = "<group>"; };
+		BDFAE8E81846879700F0C2B8 /* help8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help8.png; sourceTree = "<group>"; };
+		BDFAE8E91846879700F0C2B8 /* help9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help9.png; sourceTree = "<group>"; };
+		BDFAE8EA1846879700F0C2B8 /* help10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help10.png; sourceTree = "<group>"; };
+		BDFAE8EB1846879700F0C2B8 /* help11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help11.png; sourceTree = "<group>"; };
+		BDFAE8EC1846879700F0C2B8 /* help12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help12.png; sourceTree = "<group>"; };
+		BDFAE8ED1846879700F0C2B8 /* help13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help13.png; sourceTree = "<group>"; };
+		BDFAE8EE1846879700F0C2B8 /* help14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help14.png; sourceTree = "<group>"; };
+		BDFAE8FD1846947300F0C2B8 /* left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left.png; sourceTree = "<group>"; };
+		BDFAE8FE1846947400F0C2B8 /* right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -312,9 +346,6 @@
 		BD7E416617972D7300FBB8D1 /* BombSquad */ = {
 			isa = PBXGroup;
 			children = (
-				BDB64ACB17D9B46000BFDB83 /* CMPopTipView.h */,
-				BDB64ACC17D9B46000BFDB83 /* CMPopTipView.m */,
-				BD55CA3617A426820044A84F /* BombSquad.entitlements */,
 				BD7E41D61797994000FBB8D1 /* AboutVC.h */,
 				BD7E41D71797994100FBB8D1 /* AboutVC.m */,
 				BD0F6180179898D400953661 /* AddBombVC.h */,
@@ -327,6 +358,7 @@
 				BD7E41AF179735F000FBB8D1 /* Bomb.m */,
 				BD7E41B117973ABC00FBB8D1 /* BombList.h */,
 				BD7E41B217973ABC00FBB8D1 /* BombList.m */,
+				BD55CA3617A426820044A84F /* BombSquad.entitlements */,
 				BD7E419E1797308400FBB8D1 /* BSNavigationController.h */,
 				BD7E419F1797308400FBB8D1 /* BSNavigationController.m */,
 				BD7E41AB1797346000FBB8D1 /* BSTimer.h */,
@@ -335,6 +367,8 @@
 				BD0F6113179870E600953661 /* Campaign.m */,
 				BD7E41CD1797970B00FBB8D1 /* CampaignSetupVC.h */,
 				BD7E41CE1797970B00FBB8D1 /* CampaignSetupVC.m */,
+				BDFAE8DE183FDEA000F0C2B8 /* HelpVC.h */,
+				BDFAE8DF183FDEA100F0C2B8 /* HelpVC.m */,
 				BD7E417B17972D7300FBB8D1 /* MainStoryboard_iPad.storyboard */,
 				BD7E417817972D7300FBB8D1 /* MainStoryboard_iPhone.storyboard */,
 				BD7E41A41797313800FBB8D1 /* MainVC.h */,
@@ -359,9 +393,12 @@
 		BD7E416717972D7300FBB8D1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BDFAE8FD1846947300F0C2B8 /* left.png */,
+				BDFAE8FE1846947400F0C2B8 /* right.png */,
 				BD7E416C17972D7300FBB8D1 /* main.m */,
 				BD7E41B41797906F00FBB8D1 /* amission.m4a */,
 				BD7E41B51797906F00FBB8D1 /* bigbomb.m4a */,
+				BDF8E55E18163AC300AD654B /* countdown.m4a */,
 				BD7E41B61797906F00FBB8D1 /* heartbeat.m4a */,
 				BD7E41B71797906F00FBB8D1 /* hiddenagenda.m4a */,
 				BD7E41B81797906F00FBB8D1 /* hitman.m4a */,
@@ -405,6 +442,20 @@
 				BD62FF1917A1B68A005EBEAA /* Default~ipad.png */,
 				BD0F6198179A517D00953661 /* greencheck.png */,
 				BD0F6199179A517D00953661 /* greencheck@2x.png */,
+				BDFAE8E11846879700F0C2B8 /* help1.png */,
+				BDFAE8EA1846879700F0C2B8 /* help10.png */,
+				BDFAE8EB1846879700F0C2B8 /* help11.png */,
+				BDFAE8EC1846879700F0C2B8 /* help12.png */,
+				BDFAE8ED1846879700F0C2B8 /* help13.png */,
+				BDFAE8EE1846879700F0C2B8 /* help14.png */,
+				BDFAE8E21846879700F0C2B8 /* help2.png */,
+				BDFAE8E31846879700F0C2B8 /* help3.png */,
+				BDFAE8E41846879700F0C2B8 /* help4.png */,
+				BDFAE8E51846879700F0C2B8 /* help5.png */,
+				BDFAE8E61846879700F0C2B8 /* help6.png */,
+				BDFAE8E71846879700F0C2B8 /* help7.png */,
+				BDFAE8E81846879700F0C2B8 /* help8.png */,
+				BDFAE8E91846879700F0C2B8 /* help9.png */,
 				BD0F618C1799D7E700953661 /* home.png */,
 				BD0F618D1799D7E700953661 /* home@2x.png */,
 				BD0F6125179876CA00953661 /* mission1.png */,
@@ -530,17 +581,22 @@
 				BD7E41AA1797319600FBB8D1 /* BombSquadLogo@2x.png in Resources */,
 				BD7E41BE1797906F00FBB8D1 /* amission.m4a in Resources */,
 				BD7E41BF1797906F00FBB8D1 /* bigbomb.m4a in Resources */,
+				BDFAE9001846947400F0C2B8 /* right.png in Resources */,
 				BD7E41C01797906F00FBB8D1 /* heartbeat.m4a in Resources */,
 				BD7E41C11797906F00FBB8D1 /* hiddenagenda.m4a in Resources */,
 				BD7E41C21797906F00FBB8D1 /* hitman.m4a in Resources */,
+				BDFAE8F81846879700F0C2B8 /* help10.png in Resources */,
+				BDFAE8F21846879700F0C2B8 /* help4.png in Resources */,
 				BD7E41C31797906F00FBB8D1 /* impendingboom.m4a in Resources */,
 				BD7E41C41797906F00FBB8D1 /* mechanical.m4a in Resources */,
 				BD7E41C51797906F00FBB8D1 /* smallbomb.m4a in Resources */,
 				BD7E41C61797906F00FBB8D1 /* spygroove.m4a in Resources */,
 				BD7E41C71797906F00FBB8D1 /* tickingclock.m4a in Resources */,
+				BDFAE8F11846879700F0C2B8 /* help3.png in Resources */,
 				BD0F6135179876CA00953661 /* mission1.png in Resources */,
 				BD0F6136179876CA00953661 /* mission1@2x.png in Resources */,
 				BD0F6137179876CA00953661 /* mission2.png in Resources */,
+				BDFAE8FF1846947400F0C2B8 /* left.png in Resources */,
 				BD0F6138179876CA00953661 /* mission2@2x.png in Resources */,
 				BD0F6139179876CA00953661 /* missiona.png in Resources */,
 				BD0F613A179876CA00953661 /* missiona@2x.png in Resources */,
@@ -548,6 +604,8 @@
 				BD0F613C179876CA00953661 /* missionb@2x.png in Resources */,
 				BD0F613D179876CA00953661 /* missionc.png in Resources */,
 				BD0F613E179876CA00953661 /* missionc@2x.png in Resources */,
+				BDFAE8F61846879700F0C2B8 /* help8.png in Resources */,
+				BDFAE8EF1846879700F0C2B8 /* help1.png in Resources */,
 				BD0F614D1798770300953661 /* bigmission1.png in Resources */,
 				BD0F614E1798770300953661 /* bigmission2.png in Resources */,
 				BD0F614F1798770300953661 /* bigmissiona.png in Resources */,
@@ -555,23 +613,32 @@
 				BD0F61511798770300953661 /* bigmissionc.png in Resources */,
 				BD0F616C1798976D00953661 /* bomb1A.png in Resources */,
 				BD0F616D1798976D00953661 /* bomb1A@2x.png in Resources */,
+				BDFAE8F01846879700F0C2B8 /* help2.png in Resources */,
+				BDFAE8FC1846879700F0C2B8 /* help14.png in Resources */,
 				BD0F616E1798976D00953661 /* bomb1B.png in Resources */,
 				BD0F616F1798976D00953661 /* bomb1B@2x.png in Resources */,
 				BD0F61701798976D00953661 /* bomb1C.png in Resources */,
+				BDFAE8FA1846879700F0C2B8 /* help12.png in Resources */,
 				BD0F61711798976D00953661 /* bomb1C@2x.png in Resources */,
 				BD0F61721798976D00953661 /* bomb2A.png in Resources */,
 				BD0F61731798976D00953661 /* bomb2A@2x.png in Resources */,
 				BD0F61741798976D00953661 /* bomb2B.png in Resources */,
+				BDFAE8F51846879700F0C2B8 /* help7.png in Resources */,
 				BD0F61751798976D00953661 /* bomb2B@2x.png in Resources */,
+				BDFAE8F91846879700F0C2B8 /* help11.png in Resources */,
 				BD0F61761798976D00953661 /* bomb2C.png in Resources */,
+				BDFAE8F31846879700F0C2B8 /* help5.png in Resources */,
 				BD0F61771798976D00953661 /* bomb2C@2x.png in Resources */,
 				BD0F61781798976D00953661 /* bomb3A.png in Resources */,
 				BD0F61791798976D00953661 /* bomb3A@2x.png in Resources */,
 				BD0F617A1798976D00953661 /* bomb3B.png in Resources */,
+				BDF8E55F18163AC300AD654B /* countdown.m4a in Resources */,
 				BD0F617B1798976D00953661 /* bomb3B@2x.png in Resources */,
+				BDFAE8FB1846879700F0C2B8 /* help13.png in Resources */,
 				BD0F617C1798976D00953661 /* bomb3C.png in Resources */,
 				BD0F617D1798976D00953661 /* bomb3C@2x.png in Resources */,
 				BD0F617E1798976D00953661 /* bombF.png in Resources */,
+				BDFAE8F71846879700F0C2B8 /* help9.png in Resources */,
 				BD0F617F1798976D00953661 /* bombF@2x.png in Resources */,
 				BD0F61921799D7E700953661 /* home.png in Resources */,
 				BD0F61931799D7E700953661 /* home@2x.png in Resources */,
@@ -591,6 +658,7 @@
 				BD0F61AF179CD7F000953661 /* selected@2x.png in Resources */,
 				BD62FF1A17A1B68A005EBEAA /* Default~ipad.png in Resources */,
 				BD5418C617D7CF1D00AF6239 /* IconIpad.png in Resources */,
+				BDFAE8F41846879700F0C2B8 /* help6.png in Resources */,
 				BD5418C817D7CF7E00AF6239 /* IconIpad@2x.png in Resources */,
 				BD5418CA17D7D03900AF6239 /* Default-Portrait~ipad.png in Resources */,
 				BD5418CC17D7D23B00AF6239 /* Default-Portrait@2x~ipad.png in Resources */,
@@ -629,6 +697,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD7E416D17972D7300FBB8D1 /* main.m in Sources */,
+				BDFAE8E0183FDEA100F0C2B8 /* HelpVC.m in Sources */,
 				BD7E417117972D7300FBB8D1 /* AppDelegate.m in Sources */,
 				BD7E41A01797308400FBB8D1 /* BSNavigationController.m in Sources */,
 				BD7E41A61797313800FBB8D1 /* MainVC.m in Sources */,
@@ -646,7 +715,6 @@
 				BD0F61881799BE1500953661 /* AllBombsMissionVC.m in Sources */,
 				BD0F618B1799BE2D00953661 /* SingleBombMissionVC.m in Sources */,
 				BD36328917A0800E00A2BB71 /* ScrollMissionVC.m in Sources */,
-				BDB64ACD17D9B46000BFDB83 /* CMPopTipView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -780,6 +848,7 @@
 		BD7E419A17972D7300FBB8D1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"ADDITIONAL_SDKS[arch=*]" = "";
 				CODE_SIGN_ENTITLEMENTS = BombSquad/BombSquad.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Andy Foulke (7459TL4JZU)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

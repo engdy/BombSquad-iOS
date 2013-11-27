@@ -28,7 +28,7 @@
         label.font = [UIFont systemFontOfSize:12.0];
         label.text = @"Bomb Squad is a cooperative game where 2-6 players are members of a team, operating a disposal robot with the mission to disarm bombs and save hostages. The players work together, racing against the clock to provide the appropriate instructions for the robot to achieve their mission objectives.";
         CGSize allowedSize = CGSizeMake(280.0, MAXFLOAT);
-        CGSize labelSize = [label.text sizeWithFont:label.font constrainedToSize:allowedSize lineBreakMode:UILineBreakModeWordWrap];
+        CGSize labelSize = [label.text sizeWithFont:label.font constrainedToSize:allowedSize lineBreakMode:NSLineBreakByWordWrapping];
         label.frame = CGRectMake(20.0, yPos, labelSize.width, labelSize.height);
         [self.scrollView addSubview:label];
         yPos += labelSize.height + 10.0;
@@ -49,7 +49,7 @@
         label.textAlignment = UITextAlignmentLeft;
         label.font = [UIFont systemFontOfSize:12.0];
         label.text = @"This app is a companion to the physical board game. In Campaign Mode, it provides preloaded setups for each mission, managing all of the bomb timers as well as providing screenshots to aid in setting up the physical game. In QuickPlay Mode, it allows the user to create custom setups, which provides infinite possible missions. Additionally, the app comes with several soundtracks and options for various alerts.";
-        labelSize = [label.text sizeWithFont:label.font constrainedToSize:allowedSize lineBreakMode:UILineBreakModeWordWrap];
+        labelSize = [label.text sizeWithFont:label.font constrainedToSize:allowedSize lineBreakMode:NSLineBreakByWordWrapping];
         label.frame = CGRectMake(20.0, yPos, labelSize.width, labelSize.height);
         [self.scrollView addSubview:label];
         yPos += labelSize.height + 10.0;
@@ -60,7 +60,7 @@
         label.textAlignment = UITextAlignmentLeft;
         label.font = [UIFont systemFontOfSize:12.0];
         label.text = @"It is not required to play, but we have found that it significantly enhances the game experience and makes the tension of the bombs counting down feel more real as you play. We hope you enjoy it as much as we do.";
-        labelSize = [label.text sizeWithFont:label.font constrainedToSize:allowedSize lineBreakMode:UILineBreakModeWordWrap];
+        labelSize = [label.text sizeWithFont:label.font constrainedToSize:allowedSize lineBreakMode:NSLineBreakByWordWrapping];
         label.frame = CGRectMake(20.0, yPos, labelSize.width, labelSize.height);
         [self.scrollView addSubview:label];
         yPos += labelSize.height + 10.0;
@@ -81,7 +81,7 @@
         label.textAlignment = UITextAlignmentLeft;
         label.font = [UIFont systemFontOfSize:12.0];
         label.text = @"Game Design and Development: Dan Keltner and David Short\nGraphic Design and Artwork: Dan Keltner and David Short\nApp Development: Andy Foulke\nMusic: Kevin MacLeod";
-        labelSize = [label.text sizeWithFont:label.font constrainedToSize:allowedSize lineBreakMode:UILineBreakModeWordWrap];
+        labelSize = [label.text sizeWithFont:label.font constrainedToSize:allowedSize lineBreakMode:NSLineBreakByWordWrapping];
         label.frame = CGRectMake(20.0, yPos, labelSize.width, labelSize.height);
         [self.scrollView addSubview:label];
         yPos += labelSize.height + 10.0;

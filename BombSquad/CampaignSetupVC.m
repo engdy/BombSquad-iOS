@@ -24,23 +24,6 @@
     [self selectionResults:0];
 }
 
-- (void)viewDidAppear:(BOOL)animated {
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    NSNumber *num = [defaults objectForKey:@"campaignInstructions"];
-    if (num == nil) {
-        num = [NSNumber numberWithBool:YES];
-        [defaults setObject:num forKey:@"campaignInstructions"];
-        [defaults synchronize];
-    }
-    self.willDisplayInstructions = [num boolValue];
-    if (self.willDisplayInstructions && self.tipView == nil) {
-        self.tipView = [[CMPopTipView alloc] initWithMessage:@"Start by selecting a mission (tap this tip when done)"];
-        self.tipView.delegate = self;
-        [self.tipView presentPointingAtView:self.pickerMission inView:self.view animated:YES];
-        self.iCurrentTip = 0;
-    }
-}
-
 - (void)viewDidUnload {
     [self setPickerMission:nil];
     [self setBtnMissionImage:nil];
@@ -73,11 +56,6 @@
         ScrollMissionVC *vc = [segue destinationViewController];
         vc.image = [UIImage imageNamed:[NSString stringWithFormat:@"big%@", _selectedCampaign.picture]];
     } else {
-        if (self.tipView != nil) {
-            [self.tipView dismissAnimated:NO];
-            self.tipView = nil;
-        }
-        [self saveInstructionDisplay:NO];
         [super prepareForSegue:segue sender:sender];
     }
 }
@@ -110,41 +88,6 @@
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
     [self selectionResults:row];
-}
-
-#pragma mark - CMPopTipView
-
-- (void)saveInstructionDisplay:(BOOL)flag {
-    if (self.willDisplayInstructions) {
-        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-        NSNumber *num = [NSNumber numberWithBool:flag];
-        [defaults setObject:num forKey:@"campaignInstructions"];
-        [defaults synchronize];
-        self.willDisplayInstructions = flag;
-    }
-}
-
-- (void)popTipViewWasDismissedByUser:(CMPopTipView *)popTipView {
-    [self.tipView dismissAnimated:YES];
-    switch (self.iCurrentTip) {
-        case 0:
-            self.tipView = [[CMPopTipView alloc] initWithMessage:@"View mission setup details in the image below (tap this tip when done)"];
-            self.tipView.delegate = self;
-            [self.tipView presentPointingAtView:self.btnMissionImage inView:self.view animated:YES];
-            self.iCurrentTip = 1;
-            break;
-        case 1:
-            self.tipView = [[CMPopTipView alloc] initWithMessage:@"Then tap Start to begin your mission! (tap this tip when done)"];
-            self.tipView.delegate = self;
-            [self.tipView presentPointingAtBarButtonItem:self.navigationItem.rightBarButtonItem animated:YES];
-            self.iCurrentTip = 2;
-            break;
-            
-        default:
-            self.tipView = nil;
-            [self saveInstructionDisplay:NO];
-            break;
-    }
 }
 
 @end

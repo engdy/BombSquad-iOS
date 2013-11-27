@@ -10,21 +10,28 @@
 #import "BSTimer.h"
 #import "RunningMissionVC.h"
 
+@interface BSTimer () <AVAudioPlayerDelegate>
+
+@end
+
 @implementation BSTimer
 
-@synthesize timer = _timer, isTimerRunning = _isTimerRunning, startMillis = _startMillis, elapsedMillis = _elapsedMillis, bombs = _bombs, willPlaySoundtrack = _willPlaySoundtrack, willPlayBombSounds = _willPlayBombSounds, backgroundPlayer = _backgroundPlayer, smallBombPlayer = _smallBombPlayer, bigBombPlayer = _bigBombPlayer;
+@synthesize timer = _timer, isTimerRunning = _isTimerRunning, isPlayingCountdown = _isPlayingCountdown, startMillis = _startMillis, elapsedMillis = _elapsedMillis, bombs = _bombs, willPlaySoundtrack = _willPlaySoundtrack, willPlayBombSounds = _willPlayBombSounds, willPlayCountdown = _willPlayCountdown, backgroundPlayer = _backgroundPlayer, smallBombPlayer = _smallBombPlayer, bigBombPlayer = _bigBombPlayer, countdownPlayer = _countdownPlayer;
 
 - (BSTimer *)init {
     _timer = nil;
     _isTimerRunning = NO;
+    _isPlayingCountdown = NO;
     _startMillis = 0;
     _elapsedMillis = 0;
     _bombs = [[BombList alloc] init];
     _willPlaySoundtrack = NO;
     _willPlayBombSounds = NO;
+    _willPlayCountdown = NO;
     _backgroundPlayer = nil;
     _smallBombPlayer = nil;
     _bigBombPlayer = nil;
+    _countdownPlayer = nil;
     return self;
 }
 
@@ -62,6 +69,21 @@
         _bigBombPlayer = nil;
     }
     self.bombVolume = volume;
+}
+
+- (void)enableCountdown:(BOOL)willPlayCountdown {
+    _willPlayCountdown = willPlayCountdown;
+    if (_willPlayCountdown) {
+        NSString *soundPath = [[NSBundle mainBundle] pathForResource:@"countdown" ofType:@"m4a"];
+        NSURL *url = [NSURL fileURLWithPath:soundPath];
+        NSError *err = nil;
+        _countdownPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&err];
+        [_countdownPlayer setVolume:1.0];
+        [_countdownPlayer prepareToPlay];
+        _countdownPlayer.delegate = self;
+    } else {
+        _countdownPlayer = nil;
+    }
 }
 
 - (NSInteger)getNow {
@@ -126,6 +148,19 @@
                 }
             }
         }
+        if (!_isPlayingCountdown && _willPlayCountdown) {
+            Bomb *b = [self.bombs findMinTimeBomb];
+            if (b != nil) {
+                NSInteger timeToBomb = b.durationMillis - duration;
+                if (timeToBomb < 10000) {
+                    _isPlayingCountdown = YES;
+                    NSTimeInterval ctime = (10000 - timeToBomb) / 1000;
+                    _countdownPlayer.currentTime = ctime;
+                    [_countdownPlayer play];
+                    NSLog(@"Bomb %@ playing countdown from %f", b, ctime);
+                }
+            }
+        }
     } else {
         NSLog(@"Tick!");
     }
@@ -141,6 +176,10 @@
     }
     _isTimerRunning = NO;
     _elapsedMillis += [self getNow] - _startMillis;
+    if (_isPlayingCountdown) {
+        _isPlayingCountdown = NO;
+        [_countdownPlayer stop];
+    }
 }
 
 - (void)startMusic {
@@ -170,6 +209,10 @@
 
 - (BOOL)isPlayingSoundtrack {
     return [_backgroundPlayer isPlaying];
+}
+
+- (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag {
+    _isPlayingCountdown = NO;
 }
 
 @end

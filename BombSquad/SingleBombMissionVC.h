@@ -8,7 +8,7 @@
 
 #import "RunningMissionVC.h"
 
-@interface SingleBombMissionVC : RunningMissionVC <UIScrollViewDelegate,CMPopTipViewDelegate>
+@interface SingleBombMissionVC : RunningMissionVC <UIScrollViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIButton *btnPlayPause;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollTimers;

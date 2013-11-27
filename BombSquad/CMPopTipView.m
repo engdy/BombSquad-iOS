@@ -257,7 +257,7 @@
         CGRect titleFrame = [self contentFrame];
         [self.title drawInRect:titleFrame
                       withFont:self.titleFont
-                 lineBreakMode:UILineBreakModeClip
+                 lineBreakMode:NSLineBreakByClipping
                      alignment:self.titleAlignment];
     }
 	
