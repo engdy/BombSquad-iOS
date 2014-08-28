@@ -74,9 +74,6 @@
 }
 
 - (BOOL)checkForLetter:(NSString *)letter level:(NSInteger)level {
-    if (level == 4) {
-        letter = @"F";  // There is only 1 level 4 (final) bomb allowed.
-    }
     for (Bomb *b in _bombs) {
         if ([b.letter isEqualToString:letter] && b.level == level) {
             return YES;

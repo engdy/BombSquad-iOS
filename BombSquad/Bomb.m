@@ -15,9 +15,6 @@
 - (Bomb *)initWithLevel:(NSInteger)level letter:(NSString *)letter duration:(NSInteger)duration {
     _level = level;
     _letter = letter;
-    if (_level == 4) {
-        _letter = @"F";
-    }
     _durationMillis = duration;
     _disarmedMillisRemain = 0;
     _state = LIVE;
@@ -25,10 +22,7 @@
 }
 
 - (NSString *)asString {
-    if (_level == 4) {
-        return [NSString stringWithFormat:@"F %@", [Bomb stringFromTime:_durationMillis]];
-    }
-    return [NSString stringWithFormat:@"%d%@ %@", _level, _letter, [Bomb stringFromTime:_durationMillis]];
+    return [NSString stringWithFormat:@"%ld%@ %@", (long)_level, _letter, [Bomb stringFromTime:_durationMillis]];
 }
 
 - (NSComparisonResult)compare:(Bomb *)b2 {
@@ -44,7 +38,7 @@
 + (NSString *)stringFromTime:(NSInteger)millis {
     NSInteger displaySeconds = (millis / 1000) % 60;
     NSInteger displayMinutes = millis / 60000;
-    return [NSString stringWithFormat:@"%02d:%02d", displayMinutes, displaySeconds];
+    return [NSString stringWithFormat:@"%02ld:%02ld", (long)displayMinutes, (long)displaySeconds];
 }
 
 - (NSString *)timeLeftFromElapsed:(NSInteger)elapsedMillis {

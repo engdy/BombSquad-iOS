@@ -132,7 +132,6 @@
                                 break;
                                 
                             case 3:
-                            case 4:
                                 if (self.bigBombPlayer.playing) {
                                     self.bigBombPlayer.currentTime = 0;
                                 }

@@ -33,27 +33,43 @@
 - (void)buildCampaigns {
     NSMutableArray *list = [[NSMutableArray alloc] init];
     
-    BombList *bl = [[BombList alloc] initWithBombs:[[Bomb alloc] initWithLevel:1 letter:@"A" duration:12 * 60 * 1000], nil];
-    [list addObject:[[Campaign alloc] initWithName:@"Training Mission Alpha" picture:@"missiona" bombList:bl]];
+    BombList *bl = [[BombList alloc] initWithBombs:[[Bomb alloc] initWithLevel:1 letter:@"A" duration:8 * 60 * 1000], [[Bomb alloc] initWithLevel:2 letter:@"B" duration:16 * 60 * 1000], nil];
+    [list addObject:[[Campaign alloc] initWithName:@"Training Mission Alpha" picture:@"scena" bombList:bl]];
     
-    bl = [[BombList alloc] initWithBombs:[[Bomb alloc] initWithLevel:1 letter:@"A" duration:12 * 60 * 1000], nil];
-    [list addObject:[[Campaign alloc] initWithName:@"Training Mission Bravo" picture:@"missionb" bombList:bl]];
-    
-    bl = [[BombList alloc] initWithBombs:[[Bomb alloc] initWithLevel:2 letter:@"A" duration:12 * 60 * 1000], nil];
-    [list addObject:[[Campaign alloc] initWithName:@"Training Mission Charlie" picture:@"missionc" bombList:bl]];
+    bl = [[BombList alloc] initWithBombs:[[Bomb alloc] initWithLevel:1 letter:@"A" duration:8 * 60 * 1000], [[Bomb alloc] initWithLevel:2 letter:@"B" duration:16 * 60 * 1000], nil];
+    [list addObject:[[Campaign alloc] initWithName:@"Training Mission Bravo" picture:@"scenb" bombList:bl]];
 
-    bl = [[BombList alloc] initWithBombs:[[Bomb alloc] initWithLevel:1 letter:@"A" duration:10 * 60 * 1000], [[Bomb alloc] initWithLevel:4 letter:@"F" duration:20 * 60 * 1000], nil];
-    [list addObject:[[Campaign alloc] initWithName:@"Mission #1" picture:@"mission1" bombList:bl]];
+    bl = [[BombList alloc] initWithBombs:[[Bomb alloc] initWithLevel:1 letter:@"A" duration:10 * 60 * 1000], [[Bomb alloc] initWithLevel:2 letter:@"B" duration:20 * 60 * 1000], nil];
+    [list addObject:[[Campaign alloc] initWithName:@"Mission #1" picture:@"scen1" bombList:bl]];
     
-    bl = [[BombList alloc] initWithBombs:[[Bomb alloc] initWithLevel:1 letter:@"A" duration:10 * 60 * 1000], [[Bomb alloc] initWithLevel:2 letter:@"B" duration:20 * 60 * 1000], [[Bomb alloc] initWithLevel:4 letter:@"F" duration:30 * 60 * 1000], nil];
-    [list addObject:[[Campaign alloc] initWithName:@"Mission #2" picture:@"mission2" bombList:bl]];
+    bl = [[BombList alloc] initWithBombs:[[Bomb alloc] initWithLevel:1 letter:@"A" duration:10 * 60 * 1000], [[Bomb alloc] initWithLevel:2 letter:@"B" duration:20 * 60 * 1000], nil];
+    [list addObject:[[Campaign alloc] initWithName:@"Mission #2" picture:@"scen2" bombList:bl]];
+
+    bl = [[BombList alloc] initWithBombs:[[Bomb alloc] initWithLevel:1 letter:@"A" duration:10 * 60 * 1000],  [[Bomb alloc] initWithLevel:2 letter:@"B" duration:20 * 60 * 1000], nil];
+    [list addObject:[[Campaign alloc] initWithName:@"Mission #3" picture:@"scen3" bombList:bl]];
     
+    bl = [[BombList alloc] initWithBombs:[[Bomb alloc] initWithLevel:1 letter:@"A" duration:10 * 60 * 1000],  [[Bomb alloc] initWithLevel:2 letter:@"B" duration:20 * 60 * 1000], nil];
+    [list addObject:[[Campaign alloc] initWithName:@"Mission #4" picture:@"scen4" bombList:bl]];
+    
+    bl = [[BombList alloc] initWithBombs:[[Bomb alloc] initWithLevel:2 letter:@"A" duration:20 * 60 * 1000],  [[Bomb alloc] initWithLevel:3 letter:@"B" duration:30 * 60 * 1000], [[Bomb alloc] initWithLevel:3 letter:@"C" duration:30 * 60 * 1000], nil];
+    [list addObject:[[Campaign alloc] initWithName:@"Mission #5" picture:@"scen5" bombList:bl]];
+
+    bl = [[BombList alloc] initWithBombs:[[Bomb alloc] initWithLevel:1 letter:@"A" duration:10 * 60 * 1000], [[Bomb alloc] initWithLevel:2 letter:@"B" duration:20 * 60 * 1000], [[Bomb alloc] initWithLevel:3 letter:@"C" duration:30 * 60 * 1000], nil];
+    [list addObject:[[Campaign alloc] initWithName:@"Mission #6" picture:@"scen6" bombList:bl]];
+
+    bl = [[BombList alloc] initWithBombs:[[Bomb alloc] initWithLevel:1 letter:@"A" duration:10 * 60 * 1000], [[Bomb alloc] initWithLevel:2 letter:@"B" duration:20 * 60 * 1000], [[Bomb alloc] initWithLevel:3 letter:@"C" duration:30 * 60 * 1000], nil];
+    [list addObject:[[Campaign alloc] initWithName:@"Mission #7" picture:@"scen7" bombList:bl]];
+
+    bl = [[BombList alloc] initWithBombs:[[Bomb alloc] initWithLevel:1 letter:@"A" duration:10 * 60 * 1000], [[Bomb alloc] initWithLevel:2 letter:@"B" duration:20 * 60 * 1000], [[Bomb alloc] initWithLevel:3 letter:@"C" duration:30 * 60 * 1000], nil];
+    [list addObject:[[Campaign alloc] initWithName:@"Mission #8" picture:@"scen8" bombList:bl]];
+
     _campaignList = list;
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"ViewMissionSegue"]) {
         ScrollMissionVC *vc = [segue destinationViewController];
+        vc.image = [UIImage imageNamed:_selectedCampaign.picture];
         vc.image = [UIImage imageNamed:[NSString stringWithFormat:@"big%@", _selectedCampaign.picture]];
     } else {
         [super prepareForSegue:segue sender:sender];

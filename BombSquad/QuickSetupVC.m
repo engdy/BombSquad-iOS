@@ -88,11 +88,7 @@
         lab = (UILabel *)[cell.contentView viewWithTag:2];
     }
     Bomb *b = [self.timer.bombs.bombs objectAtIndex:indexPath.row];
-    if (b.level == 4) {
-        [iv setImage:[UIImage imageNamed:@"bombF"]];
-    } else {
-        [iv setImage:[UIImage imageNamed:[NSString stringWithFormat:@"bomb%d%@", b.level, b.letter]]];
-    }
+    [iv setImage:[UIImage imageNamed:[NSString stringWithFormat:@"bomb%ld%@", (long)b.level, b.letter]]];
     [lab setText:[b timeLeftFromElapsed:0]];
     return cell;
 }

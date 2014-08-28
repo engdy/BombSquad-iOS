@@ -18,11 +18,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _levels = [[NSArray alloc] initWithObjects:@"1", @"2", @"3", @"Final", nil];
+    _levels = [[NSArray alloc] initWithObjects:@"1", @"2", @"3", nil];
     _letters = [[NSArray alloc] initWithObjects:@"A", @"B", @"C", nil];
     NSMutableArray *nums = [[NSMutableArray alloc] init];
     for (NSInteger i = 0; i < 60; ++i) {
-        [nums addObject:[NSString stringWithFormat:@"%02d", i]];
+        [nums addObject:[NSString stringWithFormat:@"%02ld", (long)i]];
     }
     _minutes = [[NSArray alloc] initWithArray:nums];
     _seconds = [[NSArray alloc] initWithArray:nums];
@@ -104,33 +104,15 @@
     }
     if ([_bombs checkForLetter:letter level:level]) {
         if (!_isEditMode || ![letter isEqualToString:_editBomb.letter] || level != _editBomb.level) {
-            NSString *msg = (level == 4) ? @"You already have a final bomb!" : [NSString stringWithFormat:@"You already have bomb '%d%@'!", level, letter];
+            NSString *msg = [NSString stringWithFormat:@"You already have bomb '%ld%@'!", (long)level, letter];
             UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"Duplicate Bomb" message:msg delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
             [message show];
             return;
         }
     }
-    if ([_bombs.bombs count] == 4 && ![_bombs checkForLetter:@"F" level:4] && level != 4) {
-        UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"Too Many Bombs" message:@"Your 5th bomb must be a Final Bomb!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-        [message show];
-        return;
-    }
-    Bomb *finalBomb = nil;
-    for (NSInteger i = 0; i < [_bombs.bombs count]; ++i) {
-        Bomb *b = [_bombs.bombs objectAtIndex:i];
-        if (b.level == 4) {
-            finalBomb = b;
-            break;
-        }
-    }
-    if ((finalBomb && finalBomb.durationMillis < millis) || (level == 4 && millis < [_bombs findMaxTime])) {
-        UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"Bad Time" message:@"Your Final Bomb must have the longest duration!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-        [message show];
-        return;
-    }
     if (_isEditMode) {
         _editBomb.level = level;
-        _editBomb.letter = (level == 4) ? @"F" : letter;
+        _editBomb.letter = letter;
         _editBomb.durationMillis = millis;
     }
     else {

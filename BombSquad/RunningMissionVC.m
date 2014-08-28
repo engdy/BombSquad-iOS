@@ -60,7 +60,7 @@
 }
 
 - (void)updateBomb:(Bomb *)bomb idx:(NSInteger)idx duration:(NSInteger)duration {
-    NSLog(@"updateBomb %d (%@): %d", idx, bomb, duration);
+    NSLog(@"updateBomb %ld (%@): %ld", (long)idx, bomb, (long)duration);
 }
 
 - (void)pause {

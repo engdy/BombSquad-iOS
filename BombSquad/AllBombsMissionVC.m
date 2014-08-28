@@ -83,7 +83,7 @@
         btn.frame = isIpad ? CGRectMake(392.0, 20.0 + (i * 52.0), 44.0, 44.0) : CGRectMake(72.0, 190.0 + (i * 52.0), 44.0, 44.0);
         btn.tag = i;
         btn.backgroundColor = [UIColor clearColor];
-        NSString *imageName = b.level == 4 ? @"bombF" : [NSString stringWithFormat:@"bomb%d%@", b.level, b.letter];
+        NSString *imageName = b.level == 4 ? @"bombF" : [NSString stringWithFormat:@"bomb%ld%@", (long)b.level, b.letter];
         [btn setBackgroundImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
         [btn setEnabled:b.level < 4];
         [btn setUserInteractionEnabled:b.level < 4];
@@ -201,12 +201,12 @@
 
 - (void)bombPressed:(id)sender {
     UIButton *btn = (UIButton *)sender;
-    NSLog(@"Bomb %d pressed", btn.tag);
+    NSLog(@"Bomb %ld pressed", (long)btn.tag);
     Bomb *b = self.timer.bombs.bombs[btn.tag];
     UIAlertView *alert = [[UIAlertView alloc] init];
     alert.tag = btn.tag;
     [alert setTitle:@"Confirm"];
-    [alert setMessage:[NSString stringWithFormat:@"Are you sure you've deactivated bomb %d%@?", b.level, b.letter]];
+    [alert setMessage:[NSString stringWithFormat:@"Are you sure you've deactivated bomb %ld%@?", (long)b.level, b.letter]];
     [alert setDelegate:self];
     [alert addButtonWithTitle:@"Yes"];
     [alert addButtonWithTitle:@"No"];

@@ -34,7 +34,7 @@
         [self.view addSubview:iv];
         [tmpViews addObject:iv];
         UIImageView *biv = [[UIImageView alloc] initWithFrame:CGRectMake(5.0, 5.0, 44.0, 44.0)];
-        [biv setImage:[UIImage imageNamed:b.level == 4 ? @"bombF" : [NSString stringWithFormat:@"bomb%d%@", b.level, b.letter]]];
+        [biv setImage:[UIImage imageNamed:[NSString stringWithFormat:@"bomb%ld%@", (long)b.level, b.letter]]];
         [iv addSubview:biv];
         UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(0.0, 0.0, 44.0, 44.0)];
         if (b.state == LIVE) {
@@ -157,14 +157,14 @@
 
 - (void)bombPressed:(id)sender {
     UIButton *btn = (UIButton *)sender;
-    NSLog(@"Bomb %d pressed", btn.tag);
+    NSLog(@"Bomb %ld pressed", (long)btn.tag);
     Bomb *b = self.timer.bombs.bombs[btn.tag];
-    if (b == self.focusBomb && self.timer.isTimerRunning && b.level < 4) {
+    if (b == self.focusBomb && self.timer.isTimerRunning) {
         if (b.state == LIVE) {
             UIAlertView *alert = [[UIAlertView alloc] init];
             alert.tag = btn.tag;
             [alert setTitle:@"Confirm"];
-            [alert setMessage:[NSString stringWithFormat:@"Are you sure you've deactivated bomb %d%@?", b.level, b.letter]];
+            [alert setMessage:[NSString stringWithFormat:@"Are you sure you've deactivated bomb %ld%@?", (long)b.level, b.letter]];
             [alert setDelegate:self];
             [alert addButtonWithTitle:@"Yes"];
             [alert addButtonWithTitle:@"No"];
