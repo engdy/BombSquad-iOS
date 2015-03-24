@@ -95,6 +95,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Main" id="dMT-he-yFn"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
                         <outlet property="btnResume" destination="J21-Vh-i8A" id="S4v-pC-FNn"/>
                     </connections>
@@ -148,6 +149,7 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
                         <outlet property="btnMissionImage" destination="JcJ-03-i2D" id="XEf-Ex-Qlj"/>
                         <outlet property="pickerMission" destination="Exx-RG-dmh" id="SgE-Bc-5EV"/>
@@ -362,6 +364,7 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
                         <outlet property="btnStart" destination="8cx-q9-dGT" id="MKs-RZ-cYc"/>
                         <outlet property="tableBombs" destination="984-QR-Zof" id="QWE-iU-1ow"/>
@@ -419,6 +422,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.30980392159999998" green="0.50588235290000005" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
                         <outlet property="btnLeft" destination="CJC-0l-XOn" id="MiW-dI-a8m"/>
                         <outlet property="btnRight" destination="T16-eV-Gjs" id="e45-Ni-C9b"/>
@@ -540,6 +544,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="fCI-37-HXh"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
                         <outlet property="pickerSoundtrack" destination="tAF-Ps-blo" id="SXt-R4-Uea"/>
                         <outlet property="sliderBombSound" destination="nIS-0b-bKb" id="vIR-pF-oUx"/>
@@ -625,6 +630,7 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
                         <outlet property="navItem" destination="0cN-0D-ecN" id="jpx-PX-AZ2"/>
                         <outlet property="pickerBomb" destination="0p7-qp-KPc" id="4IW-v2-8H1"/>
@@ -715,6 +721,7 @@ Music: Kevin MacLeod</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="About Bomb Squad" id="TY1-Wv-yg8"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
                         <outlet property="labelVersion" destination="qtL-Li-dBQ" id="6LB-Bf-a73"/>
                     </connections>
@@ -738,7 +745,7 @@ Music: Kevin MacLeod</string>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="GKH-Ei-MKK"/>
+        <segue reference="jXZ-ie-w9W"/>
         <segue reference="bqp-j2-pL6"/>
     </inferredMetricsTieBreakers>
 </document>

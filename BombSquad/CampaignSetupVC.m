@@ -3,7 +3,7 @@
 //  BombSquad
 //
 //  Created by Andrew Foulke on 7/17/13.
-//  Copyright (c) 2013 Keltner. All rights reserved.
+//  Copyright (c) 2015 Tasty Minstrel Games. All rights reserved.
 //
 
 #import "CampaignSetupVC.h"
@@ -54,7 +54,7 @@
     bl = [[BombList alloc] initWithBombs:[[Bomb alloc] initWithLevel:2 letter:@"A" duration:20 * 60 * 1000],  [[Bomb alloc] initWithLevel:3 letter:@"B" duration:30 * 60 * 1000], [[Bomb alloc] initWithLevel:3 letter:@"C" duration:30 * 60 * 1000], nil];
     [list addObject:[[Campaign alloc] initWithName:@"Mission #5" picture:@"scen5" bombList:bl]];
 
-    bl = [[BombList alloc] initWithBombs:[[Bomb alloc] initWithLevel:1 letter:@"A" duration:10 * 60 * 1000], [[Bomb alloc] initWithLevel:2 letter:@"B" duration:20 * 60 * 1000], [[Bomb alloc] initWithLevel:3 letter:@"C" duration:30 * 60 * 1000], nil];
+    bl = [[BombList alloc] initWithBombs:[[Bomb alloc] initWithLevel:1 letter:@"H" duration:10 * 60 * 1000], [[Bomb alloc] initWithLevel:2 letter:@"H" duration:20 * 60 * 1000], [[Bomb alloc] initWithLevel:3 letter:@"H" duration:30 * 60 * 1000], [[Bomb alloc] initWithLevel:3 letter:@"C" duration:30 * 60 * 1000], nil];
     [list addObject:[[Campaign alloc] initWithName:@"Mission #6" picture:@"scen6" bombList:bl]];
 
     bl = [[BombList alloc] initWithBombs:[[Bomb alloc] initWithLevel:1 letter:@"A" duration:10 * 60 * 1000], [[Bomb alloc] initWithLevel:2 letter:@"B" duration:20 * 60 * 1000], [[Bomb alloc] initWithLevel:3 letter:@"C" duration:30 * 60 * 1000], nil];
@@ -62,6 +62,18 @@
 
     bl = [[BombList alloc] initWithBombs:[[Bomb alloc] initWithLevel:1 letter:@"A" duration:10 * 60 * 1000], [[Bomb alloc] initWithLevel:2 letter:@"B" duration:20 * 60 * 1000], [[Bomb alloc] initWithLevel:3 letter:@"C" duration:30 * 60 * 1000], nil];
     [list addObject:[[Campaign alloc] initWithName:@"Mission #8" picture:@"scen8" bombList:bl]];
+
+    bl = [[BombList alloc] initWithBombs:[[Bomb alloc] initWithLevel:1 letter:@"A" duration:10 * 60 * 1000], [[Bomb alloc] initWithLevel:2 letter:@"B" duration:20 * 60 * 1000], [[Bomb alloc] initWithLevel:3 letter:@"C" duration:30 * 60 * 1000], nil];
+    [list addObject:[[Campaign alloc] initWithName:@"Mission #D1" picture:@"scenD1" bombList:bl]];
+    
+    bl = [[BombList alloc] initWithBombs:[[Bomb alloc] initWithLevel:1 letter:@"A" duration:10 * 60 * 1000], [[Bomb alloc] initWithLevel:2 letter:@"B" duration:20 * 60 * 1000], [[Bomb alloc] initWithLevel:3 letter:@"C" duration:30 * 60 * 1000], nil];
+    [list addObject:[[Campaign alloc] initWithName:@"Mission #D2" picture:@"scenD2" bombList:bl]];
+
+    bl = [[BombList alloc] initWithBombs:[[Bomb alloc] initWithLevel:1 letter:@"A" duration:10 * 60 * 1000], [[Bomb alloc] initWithLevel:2 letter:@"B" duration:20 * 60 * 1000], [[Bomb alloc] initWithLevel:3 letter:@"C" duration:30 * 60 * 1000], nil];
+    [list addObject:[[Campaign alloc] initWithName:@"Mission #D3" picture:@"scenD3" bombList:bl]];
+
+    bl = [[BombList alloc] initWithBombs:[[Bomb alloc] initWithLevel:1 letter:@"A" duration:10 * 60 * 1000], [[Bomb alloc] initWithLevel:2 letter:@"B" duration:20 * 60 * 1000], [[Bomb alloc] initWithLevel:3 letter:@"C" duration:30 * 60 * 1000], nil];
+    [list addObject:[[Campaign alloc] initWithName:@"Mission #D4" picture:@"scenD4" bombList:bl]];
 
     _campaignList = list;
 }

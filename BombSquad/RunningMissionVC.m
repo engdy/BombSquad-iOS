@@ -3,7 +3,7 @@
 //  BombSquad
 //
 //  Created by Andrew Foulke on 7/19/13.
-//  Copyright (c) 2013 Keltner. All rights reserved.
+//  Copyright (c) 2015 Tasty Minstrel Games. All rights reserved.
 //
 
 #import "RunningMissionVC.h"
@@ -65,9 +65,15 @@
 
 - (void)pause {
     if (self.timer.isTimerRunning) {
+        [self.timer stopBurn];
+        [self.timer startWaiting];
+        [self.timer playPause];
         [self.timer stopTimer];
         [self.timer stopMusic];
     } else {
+        [self.timer stopWaiting];
+        [self.timer startBurn];
+        [self.timer playStart];
         [self.timer startTimer];
         [self.timer startMusic];
     }

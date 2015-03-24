@@ -3,7 +3,7 @@
 //  BombSquad
 //
 //  Created by Andrew Foulke on 7/19/13.
-//  Copyright (c) 2013 Keltner. All rights reserved.
+//  Copyright (c) 2015 Tasty Minstrel Games. All rights reserved.
 //
 
 #import "AllBombsMissionVC.h"
@@ -206,7 +206,11 @@
     UIAlertView *alert = [[UIAlertView alloc] init];
     alert.tag = btn.tag;
     [alert setTitle:@"Confirm"];
-    [alert setMessage:[NSString stringWithFormat:@"Are you sure you've deactivated bomb %ld%@?", (long)b.level, b.letter]];
+    if ([b.letter isEqualToString:@"H"]) {
+        [alert setMessage:[NSString stringWithFormat:@"Are you sure you've freed all level %ld hostages?", (long)b.level]];
+    } else {
+        [alert setMessage:[NSString stringWithFormat:@"Are you sure you've deactivated bomb %ld%@?", (long)b.level, b.letter]];
+    }
     [alert setDelegate:self];
     [alert addButtonWithTitle:@"Yes"];
     [alert addButtonWithTitle:@"No"];
@@ -226,6 +230,10 @@
         [iv setImage:[UIImage imageNamed:@"greencheck"]];
         UIButton *btnTime = [self.bombTimes objectAtIndex:bombNum];
         [btnTime setBackgroundColor:[UIColor whiteColor]];
+        b = [self.timer.bombs findMaxTimeBomb];
+        if (b != nil) {
+            [self.timer playDefuse];
+        }
     }
     if (self.isTimerRunningDuringAlert) {
         [self.timer startTimer];
@@ -239,6 +247,7 @@
 }
 
 - (IBAction)home:(id)sender {
+    [self.timer stopBurn];
     [self.timer stopTimer];
     [self.timer stopMusic];
     [self.delegate runningMissionDone:self];

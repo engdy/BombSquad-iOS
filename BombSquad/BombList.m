@@ -3,7 +3,7 @@
 //  Bomb Squad
 //
 //  Created by Andrew Foulke on 5/24/13.
-//  Copyright (c) 2013 Keltner. All rights reserved.
+//  Copyright (c) 2015 Tasty Minstrel Games. All rights reserved.
 //
 
 #import "BombList.h"

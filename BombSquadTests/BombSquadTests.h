@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 Keltner. All rights reserved.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
+#import <XCTest/XCTest.h>
 
-@interface BombSquadTests : SenTestCase
+@interface BombSquadTests : XCTestCase
 
 @end

@@ -3,7 +3,7 @@
 //  BombSquad
 //
 //  Created by Andrew Foulke on 7/18/13.
-//  Copyright (c) 2013 Keltner. All rights reserved.
+//  Copyright (c) 2015 Tasty Minstrel Games. All rights reserved.
 //
 
 #import "AddBombVC.h"
@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     _levels = [[NSArray alloc] initWithObjects:@"1", @"2", @"3", nil];
-    _letters = [[NSArray alloc] initWithObjects:@"A", @"B", @"C", nil];
+    _letters = [[NSArray alloc] initWithObjects:@"A", @"B", @"C", @"H", nil];
     NSMutableArray *nums = [[NSMutableArray alloc] init];
     for (NSInteger i = 0; i < 60; ++i) {
         [nums addObject:[NSString stringWithFormat:@"%02ld", (long)i]];

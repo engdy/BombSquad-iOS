@@ -3,10 +3,12 @@
 //  BombSquad
 //
 //  Created by Andrew Foulke on 7/17/13.
-//  Copyright (c) 2013 Keltner. All rights reserved.
+//  Copyright (c) 2015 Tasty Minstrel Games. All rights reserved.
 //
 
 #import "SettingsVC.h"
+#import "SoundtrackVC.h"
+#import "BURN.h"
 
 @interface SettingsVC ()
 
@@ -20,23 +22,7 @@
     self.soundResources = [[NSArray alloc] initWithObjects:@"impendingboom", @"amission", @"spygroove", @"hitman", @"hiddenagenda", @"mechanical", @"tickingclock", @"heartbeat", nil];
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 
-    NSNumber *num = [defaults objectForKey:@"soundtrack"];
-    if (num == nil) {
-        num = [NSNumber numberWithBool:YES];
-        [defaults setObject:num forKey:@"soundtrack"];
-        [defaults synchronize];
-    }
-    BOOL willPlaySoundtrack = [num boolValue];
-
-    num = [defaults objectForKey:@"volumeMusic"];
-    if (num == nil) {
-        num = [NSNumber numberWithDouble:0.5];
-        [defaults setObject:num forKey:@"volumeMusic"];
-        [defaults synchronize];
-    }
-    CGFloat musicVolume = [num doubleValue];
-
-    num = [defaults objectForKey:@"visualAlert"];
+    NSNumber *num = [defaults objectForKey:@"visualAlert"];
     if (num == nil) {
         num = [NSNumber numberWithBool:YES];
         [defaults setObject:num forKey:@"visualAlert"];
@@ -74,22 +60,58 @@
         [defaults setObject:selectedSoundtrack forKey:@"selectedSoundtrack"];
         [defaults synchronize];
     }
-    self.frameDown = self.viewGroup.frame;
-    self.frameUp = CGRectMake(self.frameDown.origin.x, self.frameDown.origin.y - 216.0, self.frameDown.size.width, self.frameDown.size.height);
-    self.viewGroup.frame = willPlaySoundtrack ? self.frameDown : self.frameUp;
-    [self.sliderSoundtrack setEnabled:willPlaySoundtrack];
+
+    num = [defaults objectForKey:@"burnLevel"];
+    if (num == nil) {
+        num = [NSNumber numberWithInt:0];
+        [defaults setObject:num forKey:@"burnLevel"];
+        [defaults synchronize];
+    }
+    BURNType burnLevel = (BURNType)[num intValue];
+
     [self.sliderBombSound setEnabled:willPlayBombSound];
-    [self.sliderSoundtrack setValue:musicVolume];
     [self.sliderBombSound setValue:bombVolume];
-    [self.timer enableSoundtrack:willPlaySoundtrack withResourceName:selectedSoundtrack volume:musicVolume];
+    [self.sliderBURNLevel setValue:burnLevel];
+    self.sliderBURNLevel.continuous = YES;
+    [self.sliderBURNLevel addTarget:self action:@selector(burnValueChanged:) forControlEvents:UIControlEventValueChanged];
     [self.timer enableBombSounds:willPlayBombSound volume:bombVolume];
-    [self.switchSoundtrack setOn:willPlaySoundtrack];
-    [self.pickerSoundtrack setHidden:!willPlaySoundtrack];
     [self.switchVisualAlert setOn:willShowVisualAlert];
     [self.switchAudioAlert setOn:willPlayAudioAlert];
     [self.switchBombSounds setOn:willPlayBombSound];
-    for (NSInteger i = 0; i < [self.soundResources count]; ++i) {
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSNumber *num = [defaults objectForKey:@"soundtrack"];
+    if (num == nil) {
+        num = [NSNumber numberWithBool:YES];
+        [defaults setObject:num forKey:@"soundtrack"];
+        [defaults synchronize];
+    }
+    BOOL willPlaySoundtrack = [num boolValue];
+    num = [defaults objectForKey:@"volumeMusic"];
+    if (num == nil) {
+        num = [NSNumber numberWithDouble:0.5];
+        [defaults setObject:num forKey:@"volumeMusic"];
+        [defaults synchronize];
+    }
+    CGFloat musicVolume = [num doubleValue];
+    NSString *selectedSoundtrack = [defaults objectForKey:@"selectedSoundtrack"];
+    if (selectedSoundtrack == nil) {
+        selectedSoundtrack = @"tickingclock";
+        [defaults setObject:selectedSoundtrack forKey:@"selectedSoundtrack"];
+        [defaults synchronize];
+    }
+    [self.sliderSoundtrack setEnabled:willPlaySoundtrack];
+    [self.sliderSoundtrack setValue:musicVolume];
+    [self.timer enableSoundtrack:willPlaySoundtrack withResourceName:selectedSoundtrack volume:musicVolume];
+    [self.switchSoundtrack setOn:willPlaySoundtrack];
+    self.selectedSoundtrackIndex = 0;
+    for (NSUInteger i = 0; i < [self.soundResources count]; ++i) {
         if ([selectedSoundtrack isEqualToString:(NSString *)[self.soundResources objectAtIndex:i]]) {
+            self.selectedSoundtrackIndex = i;
+            [self.btnSoundtrack setTitle:[self.soundNames objectAtIndex:i] forState:UIControlStateNormal];
             [self.pickerSoundtrack selectRow:i inComponent:0 animated:NO];
             break;
         }
@@ -99,14 +121,20 @@
     }
 }
 
+- (void)burnValueChanged:(UISlider *)slider {
+    NSUInteger val = (NSUInteger)(slider.value + 0.5);
+    [slider setValue:val animated:NO];
+}
+
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
-    [self.timer stopMusic];
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSNumber *num = [NSNumber numberWithDouble:self.sliderSoundtrack.value];
     [defaults setObject:num forKey:@"volumeMusic"];
     num = [NSNumber numberWithDouble:self.sliderBombSound.value];
     [defaults setObject:num forKey:@"volumeBomb"];
+    num = [NSNumber numberWithInt:(int)self.sliderBURNLevel.value];
+    [defaults setObject:num forKey:@"burnLevel"];
     [defaults synchronize];
 }
 
@@ -116,9 +144,9 @@
     [self setSwitchVisualAlert:nil];
     [self setSwitchAudioAlert:nil];
     [self setSwitchBombSounds:nil];
-    [self setViewGroup:nil];
     [self setSliderSoundtrack:nil];
     [self setSliderBombSound:nil];
+    [self setSliderBURNLevel:nil];
     [super viewDidUnload];
 }
 
@@ -140,6 +168,7 @@
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [defaults setObject:[self.soundResources objectAtIndex:row] forKey:@"selectedSoundtrack"];
     [defaults synchronize];
+    self.selectedSoundtrackIndex = row;
     if ([self.timer isPlayingSoundtrack]) {
         [self.timer stopMusic];
         [self.timer enableSoundtrack:YES withResourceName:[self.soundResources objectAtIndex:row] volume:self.sliderSoundtrack.value];
@@ -155,7 +184,6 @@
     [defaults synchronize];
     [self.sliderSoundtrack setEnabled:isOn];
     [self.pickerSoundtrack setHidden:!isOn];
-    self.viewGroup.frame = isOn ? self.frameDown : self.frameUp;
     if (isOn) {
         NSString *selectedSound = [defaults objectForKey:@"selectedSoundtrack"];
         for (NSInteger i = 0; i < [self.soundResources count]; ++i) {
@@ -200,6 +228,33 @@
 
 - (IBAction)updateBombVolume:(UISlider *)sender {
     [self.timer adjustBombVolume:self.sliderBombSound.value];
+}
+
+- (IBAction)updateBURNLevel:(UISlider *)sender {
+    [self.timer.burn setBURNlevel:self.sliderBURNLevel.value];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([[segue identifier] isEqualToString:@"SoundtrackSegue"]) {
+        SoundtrackVC *vc = [segue destinationViewController];
+        vc.timer = self.timer;
+        vc.soundNames = self.soundNames;
+        vc.soundResources = self.soundResources;
+        vc.soundtrackVolume = self.sliderSoundtrack.value;
+        vc.selection = self.selectedSoundtrackIndex;
+    }
+}
+
+- (BOOL)shouldAutorotate {
+    return YES;
+}
+
+- (NSUInteger)supportedInterfaceOrientations {
+    return UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskPortraitUpsideDown;
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
+    return (toInterfaceOrientation == UIInterfaceOrientationPortrait || toInterfaceOrientation == UIInterfaceOrientationPortraitUpsideDown);
 }
 
 @end

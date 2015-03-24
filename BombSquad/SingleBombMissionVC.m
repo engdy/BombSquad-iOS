@@ -3,7 +3,7 @@
 //  BombSquad
 //
 //  Created by Andrew Foulke on 7/19/13.
-//  Copyright (c) 2013 Keltner. All rights reserved.
+//  Copyright (c) 2015 Tasty Minstrel Games. All rights reserved.
 //
 
 #import "SingleBombMissionVC.h"
@@ -53,7 +53,8 @@
         txt.text = @"30:00";
         [txt setTextColor:[UIColor redColor]];
         [txt setBackgroundColor:[UIColor clearColor]];
-        [txt setFont:[UIFont systemFontOfSize:isIpad ? 300.0 : 160.0]];
+        [txt setFont:[UIFont systemFontOfSize:isIpad ? 150.0 : 80.0]];
+//        [txt setFont:[UIFont systemFontOfSize:isIpad ? 300.0 : 160.0]];
         [txt setTextAlignment:NSTextAlignmentCenter];
         [self.scrollTimers addSubview:txt];
         [tmpTimeText addObject:txt];
@@ -75,13 +76,16 @@
         Bomb *b = [self.timer.bombs.bombs objectAtIndex:i];
         UILabel *txt = [self.txtTimes objectAtIndex:i];
         txt.frame = CGRectMake(width * i, 0.0, width, height);
+        NSString *txtStr;
         if (b.state == LIVE) {
-            txt.text = [b timeLeftFromElapsed:self.timer.elapsedMillis];
+            txtStr = [b timeLeftFromElapsed:self.timer.elapsedMillis];
         } else if (b.state == DISABLED) {
-            txt.text = [Bomb stringFromTime:b.disarmedMillisRemain];
+            txtStr = [Bomb stringFromTime:b.disarmedMillisRemain];
         } else {
-            txt.text = @"00:00";
+            txtStr = @"00:00";
         }
+        NSLog(@"Time = %@", txtStr);
+        txt.text = txtStr;
     }
     [self checkbuttons];
 }
@@ -193,6 +197,10 @@
         [btn setBackgroundImage:[UIImage imageNamed:@"greencheck"] forState:UIControlStateNormal];
         UILabel *txt = self.txtTimes[bombNum];
         [txt setBackgroundColor:[UIColor blackColor]];
+        b = [self.timer.bombs findMaxTimeBomb];
+        if (b != nil) {
+            [self.timer playDefuse];
+        }
     }
     if (self.isTimerRunningDuringAlert) {
         [self.timer startTimer];
