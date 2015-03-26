@@ -53,8 +53,8 @@
         txt.text = @"30:00";
         [txt setTextColor:[UIColor redColor]];
         [txt setBackgroundColor:[UIColor clearColor]];
-        [txt setFont:[UIFont systemFontOfSize:isIpad ? 150.0 : 80.0]];
-//        [txt setFont:[UIFont systemFontOfSize:isIpad ? 300.0 : 160.0]];
+//        [txt setFont:[UIFont systemFontOfSize:isIpad ? 150.0 : 80.0]];
+        [txt setFont:[UIFont systemFontOfSize:isIpad ? 300.0 : 160.0]];
         [txt setTextAlignment:NSTextAlignmentCenter];
         [self.scrollTimers addSubview:txt];
         [tmpTimeText addObject:txt];
@@ -197,7 +197,7 @@
         [btn setBackgroundImage:[UIImage imageNamed:@"greencheck"] forState:UIControlStateNormal];
         UILabel *txt = self.txtTimes[bombNum];
         [txt setBackgroundColor:[UIColor blackColor]];
-        b = [self.timer.bombs findMaxTimeBomb];
+        b = [self.timer.bombs findUrgentBomb];
         if (b != nil) {
             [self.timer playDefuse];
         }

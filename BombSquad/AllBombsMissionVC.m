@@ -230,7 +230,7 @@
         [iv setImage:[UIImage imageNamed:@"greencheck"]];
         UIButton *btnTime = [self.bombTimes objectAtIndex:bombNum];
         [btnTime setBackgroundColor:[UIColor whiteColor]];
-        b = [self.timer.bombs findMaxTimeBomb];
+        b = [self.timer.bombs findUrgentBomb];
         if (b != nil) {
             [self.timer playDefuse];
         }

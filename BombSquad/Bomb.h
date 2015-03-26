@@ -17,8 +17,9 @@ typedef enum {LIVE, DISABLED, DETONATED} BombStateType;
 @property (nonatomic) NSInteger durationMillis;
 @property (nonatomic) NSInteger disarmedMillisRemain;
 @property (nonatomic) BombStateType state;
+@property (nonatomic) BOOL isGameEnding;
 
-- (Bomb *)initWithLevel:(NSInteger)level letter:(NSString *)letter duration:(NSInteger)duration;
+- (Bomb *)initWithLevel:(NSInteger)level letter:(NSString *)letter duration:(NSInteger)duration gameEnding:(BOOL)terminal;
 - (NSString *)asString;
 - (NSComparisonResult)compare:(Bomb *)b2;
 + (NSString *)stringFromTime:(NSInteger)millis;

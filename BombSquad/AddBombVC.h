@@ -16,6 +16,7 @@
 @property (nonatomic, retain) id <AddBombVCDelegate> delegate;
 @property (weak, nonatomic) IBOutlet UIPickerView *pickerBomb;
 @property (weak, nonatomic) IBOutlet UINavigationItem *navItem;
+@property (weak, nonatomic) IBOutlet UISwitch *switchFatalBomb;
 @property (nonatomic, retain) BombList *bombs;
 @property (nonatomic, retain) NSArray *levels;
 @property (nonatomic, retain) NSArray *letters;

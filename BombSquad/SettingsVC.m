@@ -104,6 +104,7 @@
         [defaults synchronize];
     }
     [self.sliderSoundtrack setEnabled:willPlaySoundtrack];
+    [self.pickerSoundtrack setUserInteractionEnabled:willPlaySoundtrack];
     [self.sliderSoundtrack setValue:musicVolume];
     [self.timer enableSoundtrack:willPlaySoundtrack withResourceName:selectedSoundtrack volume:musicVolume];
     [self.switchSoundtrack setOn:willPlaySoundtrack];
@@ -183,7 +184,7 @@
     [defaults setObject:num forKey:@"soundtrack"];
     [defaults synchronize];
     [self.sliderSoundtrack setEnabled:isOn];
-    [self.pickerSoundtrack setHidden:!isOn];
+    [self.pickerSoundtrack setUserInteractionEnabled:isOn];
     if (isOn) {
         NSString *selectedSound = [defaults objectForKey:@"selectedSoundtrack"];
         for (NSInteger i = 0; i < [self.soundResources count]; ++i) {

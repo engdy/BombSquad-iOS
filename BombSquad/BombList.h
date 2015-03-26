@@ -17,10 +17,13 @@
 - (BombList *)init;
 - (BombList *)initWithBombs:(Bomb *)firstBomb, ... NS_REQUIRES_NIL_TERMINATION;
 - (NSInteger)findMaxTime;
+- (NSInteger)findUrgentTime;
 - (Bomb *)findMaxTimeBomb;
 - (Bomb *)findMinTimeBomb;
+- (Bomb *)findUrgentBomb;
 - (NSInteger)findIndexOfBomb:(Bomb *)bomb;
 - (NSString *)maxTimeAsString;
+- (NSString *)urgentTimeAsString;
 - (BOOL)checkForLetter:(NSString *)letter level:(NSInteger)level;
 - (BOOL)addBomb:(Bomb *)bomb;
 - (void)removeBombAtIndex:(NSInteger)index;

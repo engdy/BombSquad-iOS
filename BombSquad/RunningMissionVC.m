@@ -38,9 +38,9 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [UIApplication sharedApplication].idleTimerDisabled = YES;
-    Bomb *longestBomb = [self.timer.bombs findMaxTimeBomb];
-    if (longestBomb != nil) {
-        [self updateMainTime:[longestBomb timeLeftFromElapsed:self.timer.elapsedMillis]];
+    Bomb *urgentBomb = [self.timer.bombs findUrgentBomb];
+    if (urgentBomb != nil) {
+        [self updateMainTime:[urgentBomb timeLeftFromElapsed:self.timer.elapsedMillis]];
     } else {
         [self updateMainTime:@"00:00"];
     }

@@ -16,7 +16,7 @@
 
 @implementation BSTimer
 
-@synthesize timer = _timer, isTimerRunning = _isTimerRunning, isPlayingCountdown = _isPlayingCountdown, startMillis = _startMillis, elapsedMillis = _elapsedMillis, bombs = _bombs, willPlaySoundtrack = _willPlaySoundtrack, willPlayBombSounds = _willPlayBombSounds, willPlayCountdown = _willPlayCountdown, backgroundPlayer = _backgroundPlayer, smallBombPlayer = _smallBombPlayer, bigBombPlayer = _bigBombPlayer, deathPlayer = _deathPlayer, countdownPlayer = _countdownPlayer, burn = _burn;
+@synthesize timer = _timer, isTimerRunning = _isTimerRunning, isPlayingCountdown = _isPlayingCountdown, startMillis = _startMillis, elapsedMillis = _elapsedMillis, bombs = _bombs, willPlaySoundtrack = _willPlaySoundtrack, willPlayBombSounds = _willPlayBombSounds, willPlayCountdown = _willPlayCountdown, backgroundPlayer = _backgroundPlayer, smallBombPlayer = _smallBombPlayer, bigBombPlayer = _bigBombPlayer, countdownPlayer = _countdownPlayer, burn = _burn, bombDetonated = _bombDetonated;
 
 - (BSTimer *)init {
     _timer = nil;
@@ -31,9 +31,9 @@
     _backgroundPlayer = nil;
     _smallBombPlayer = nil;
     _bigBombPlayer = nil;
-    _deathPlayer = nil;
     _countdownPlayer = nil;
     _burn = [[BURN alloc] init];
+    _bombDetonated = NO;
     return self;
 }
 
@@ -44,9 +44,11 @@
         NSURL *url = [NSURL fileURLWithPath:soundPath];
         NSError *err = nil;
         _backgroundPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&err];
-        [_backgroundPlayer setNumberOfLoops:-1];
-        [_backgroundPlayer setVolume:volume];
-        [_backgroundPlayer prepareToPlay];
+        if (_backgroundPlayer != nil) {
+            [_backgroundPlayer setNumberOfLoops:-1];
+            [_backgroundPlayer setVolume:volume];
+            [_backgroundPlayer prepareToPlay];
+        }
     }
     self.musicVolume = volume;
 }
@@ -58,42 +60,43 @@
         NSURL *url = [NSURL fileURLWithPath:soundPath];
         NSError *err = nil;
         _smallBombPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&err];
-        [_smallBombPlayer setVolume:volume];
-        [_smallBombPlayer prepareToPlay];
-        _smallBombPlayer.delegate = self;
+        if (_smallBombPlayer != nil) {
+            [_smallBombPlayer setVolume:volume];
+            [_smallBombPlayer prepareToPlay];
+            _smallBombPlayer.delegate = self;
+        }
         soundPath = [[NSBundle mainBundle] pathForResource:@"bigbomb" ofType:@"m4a"];
         url = [NSURL fileURLWithPath:soundPath];
         err = nil;
         _bigBombPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&err];
-        [_bigBombPlayer setVolume:volume];
-        [_bigBombPlayer prepareToPlay];
-        _bigBombPlayer.delegate = self;
+        if (_bigBombPlayer != nil) {
+            [_bigBombPlayer setVolume:volume];
+            [_bigBombPlayer prepareToPlay];
+            _bigBombPlayer.delegate = self;
+        }
         soundPath = [[NSBundle mainBundle] pathForResource:@"death" ofType:@"m4a"];
         url = [NSURL fileURLWithPath:soundPath];
         err = nil;
-        _deathPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&err];
-        [_deathPlayer setVolume:volume];
-        [_deathPlayer prepareToPlay];
     } else {
         _smallBombPlayer = nil;
         _bigBombPlayer = nil;
-        _deathPlayer = nil;
     }
     self.bombVolume = volume;
 }
 
 - (void)enableCountdown:(BOOL)willPlayCountdown {
     _willPlayCountdown = willPlayCountdown;
+    _countdownPlayer = nil;
     if (_willPlayCountdown) {
         NSString *soundPath = [[NSBundle mainBundle] pathForResource:@"countdown" ofType:@"m4a"];
         NSURL *url = [NSURL fileURLWithPath:soundPath];
         NSError *err = nil;
         _countdownPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&err];
-        [_countdownPlayer setVolume:1.0];
-        [_countdownPlayer prepareToPlay];
-        _countdownPlayer.delegate = self;
-    } else {
-        _countdownPlayer = nil;
+        if (_countdownPlayer != nil) {
+            [_countdownPlayer setVolume:1.0];
+            [_countdownPlayer prepareToPlay];
+            _countdownPlayer.delegate = self;
+        }
     }
 }
 
@@ -118,11 +121,13 @@
     if (self.currentVC != nil) {
         NSInteger now = [self getNow];
         NSInteger duration = self.elapsedMillis + now - self.startMillis;
-        Bomb *longestBomb = [self.bombs findMaxTimeBomb];
-        if (longestBomb != nil) {
-            [(RunningMissionVC *)self.currentVC updateMainTime:[longestBomb timeLeftFromElapsed:duration]];
+        Bomb *urgentBomb = [self.bombs findUrgentBomb];
+        if (urgentBomb != nil) {
+            [(RunningMissionVC *)self.currentVC updateMainTime:[urgentBomb timeLeftFromElapsed:duration]];
         } else {
-            [self playWon];
+            if (!_bombDetonated) {
+                [self playWon];
+            }
             [self stopBurn];
             [self stopTimer];
             [self stopMusic];
@@ -133,14 +138,19 @@
                 if (duration > b.durationMillis) {
                     NSLog(@"Bomb %@ blew up!", [b asString]);
                     b.state = DETONATED;
+                    if (b.isGameEnding) {
+                        _bombDetonated = YES;
+                        [self stopBurn];
+                        [self stopTimer];
+                        [self stopMusic];
+                        if (_countdownPlayer != nil) {
+                            [_countdownPlayer stop];
+                            _countdownPlayer = nil;
+                            _isPlayingCountdown = NO;
+                        }
+                    }
                     [(RunningMissionVC *)self.currentVC updateBomb:b idx:i duration:-1];
                     if (self.willPlayBombSounds) {
-                        if ([b.letter isEqualToString:@"H"]) {
-                            if (self.deathPlayer.playing) {
-                                self.deathPlayer.currentTime = 0;
-                            }
-                            [self.deathPlayer play];
-                        } else {
                             switch (b.level) {
                                 case 1:
                                 case 2:
@@ -159,8 +169,9 @@
                                 
                                 default:
                                     break;
-                            }
                         }
+                    } else if (_bombDetonated) {
+                        [self playLost];
                     }
                 } else {
                     [(RunningMissionVC *)self.currentVC updateBomb:b idx:i duration:duration];
@@ -198,6 +209,7 @@
     if (_isPlayingCountdown) {
         _isPlayingCountdown = NO;
         [_countdownPlayer stop];
+        _countdownPlayer = nil;
     }
 }
 
@@ -234,8 +246,7 @@
     if (player == _countdownPlayer) {
         _isPlayingCountdown = NO;
     } else if (player == _smallBombPlayer || player == _bigBombPlayer) {
-        Bomb *b = [self.bombs findMaxTimeBomb];
-        if (b == nil) {
+        if (_bombDetonated) {
             [_burn playLost];
         }
     }
@@ -247,6 +258,10 @@
 
 - (void)playWon {
     [_burn playWon];
+}
+
+- (void)playLost {
+    [_burn playLost];
 }
 
 - (void)startBurn {

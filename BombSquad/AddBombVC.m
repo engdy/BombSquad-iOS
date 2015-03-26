@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     _levels = [[NSArray alloc] initWithObjects:@"1", @"2", @"3", nil];
-    _letters = [[NSArray alloc] initWithObjects:@"A", @"B", @"C", @"H", nil];
+    _letters = [[NSArray alloc] initWithObjects:@"A", @"B", @"C", nil];
     NSMutableArray *nums = [[NSMutableArray alloc] init];
     for (NSInteger i = 0; i < 60; ++i) {
         [nums addObject:[NSString stringWithFormat:@"%02ld", (long)i]];
@@ -41,6 +41,7 @@
         NSUInteger secs = (_editBomb.durationMillis / 1000) % 60;
         [self.pickerBomb selectRow:mins inComponent:2 animated:NO];
         [self.pickerBomb selectRow:secs inComponent:3 animated:NO];
+        [self.switchFatalBomb setOn:_editBomb.isGameEnding];
     } else {
         _isEditMode = NO;
         self.navItem.title = @"Add Bomb";
@@ -114,9 +115,11 @@
         _editBomb.level = level;
         _editBomb.letter = letter;
         _editBomb.durationMillis = millis;
+        _editBomb.isGameEnding = [self.switchFatalBomb isOn];
     }
     else {
-        Bomb *bomb = [[Bomb alloc] initWithLevel:level letter:letter duration:millis];
+        BOOL isFatal = [self.switchFatalBomb isOn];
+        Bomb *bomb = [[Bomb alloc] initWithLevel:level letter:letter duration:millis gameEnding:isFatal];
         [_bombs addBomb:bomb];
     }
     [self.delegate addBombVCDidFinish:self];
@@ -124,6 +127,10 @@
 
 - (IBAction)cancel:(id)sender {
     [self.delegate addBombVCDidCancel:self];
+}
+
+- (BOOL)prefersStatusBarHidden {
+    return YES;
 }
 
 @end

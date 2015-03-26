@@ -27,12 +27,12 @@
 @property (nonatomic, retain) AVAudioPlayer *backgroundPlayer;
 @property (nonatomic, retain) AVAudioPlayer *smallBombPlayer;
 @property (nonatomic, retain) AVAudioPlayer *bigBombPlayer;
-@property (nonatomic, retain) AVAudioPlayer *deathPlayer;
 @property (nonatomic, retain) AVAudioPlayer *countdownPlayer;
 @property (nonatomic, retain) RunningMissionVC *currentVC;
 @property (nonatomic) CGFloat musicVolume;
 @property (nonatomic) CGFloat bombVolume;
 @property (nonatomic, retain) BURN *burn;
+@property (nonatomic) BOOL bombDetonated;
 
 - (BSTimer *)init;
 - (void)enableSoundtrack:(BOOL)willPlaySoundtrack withResourceName:(NSString *)name volume:(CGFloat)volume;
@@ -47,6 +47,7 @@
 - (BOOL)isPlayingSoundtrack;
 - (void)playDefuse;
 - (void)playWon;
+- (void)playLost;
 - (void)startBurn;
 - (void)stopBurn;
 - (void)startWaiting;

@@ -45,6 +45,11 @@
     return b.durationMillis;
 }
 
+- (NSInteger)findUrgentTime {
+    Bomb *b = [self findUrgentBomb];
+    return b.durationMillis;
+}
+
 - (Bomb *)findMaxTimeBomb {
     NSInteger maxTime = 0;
     Bomb *max = nil;
@@ -69,8 +74,35 @@
     return min;
 }
 
+- (Bomb *)findUrgentBomb {
+    NSInteger minTime = NSIntegerMax;
+    NSInteger maxTime = 0;
+    Bomb *minUrgent = nil;
+    Bomb *maxUrgent = nil;
+    for (Bomb *b in _bombs) {
+        if (b.state == LIVE) {
+            if (b.isGameEnding) {
+                if (b.durationMillis < minTime) {
+                    minTime = b.durationMillis;
+                    minUrgent = b;
+                }
+            } else {
+                if (b.durationMillis > maxTime) {
+                    maxTime = b.durationMillis;
+                    maxUrgent = b;
+                }
+            }
+        }
+    }
+    return minUrgent != nil ? minUrgent : maxUrgent;
+}
+
 - (NSString *)maxTimeAsString {
     return [Bomb stringFromTime:[self findMaxTime]];
+}
+
+- (NSString *)urgentTimeAsString {
+    return [Bomb stringFromTime:[self findUrgentTime]];
 }
 
 - (BOOL)checkForLetter:(NSString *)letter level:(NSInteger)level {

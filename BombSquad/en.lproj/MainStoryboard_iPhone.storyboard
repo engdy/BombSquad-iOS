@@ -635,6 +635,17 @@
                                     <outlet property="delegate" destination="qGh-8s-pYl" id="Z0h-Ju-RUn"/>
                                 </connections>
                             </pickerView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="oAT-Jt-q0y" userLabel="switchFatalBomb">
+                                <rect key="frame" x="255" y="308" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game ending bomb" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bFr-gK-28k">
+                                <rect key="frame" x="25" y="313" width="222" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -642,6 +653,7 @@
                     <connections>
                         <outlet property="navItem" destination="hYQ-5g-1GH" id="Q1i-9g-xrg"/>
                         <outlet property="pickerBomb" destination="1Y0-nl-Pkb" id="irV-MV-J3L"/>
+                        <outlet property="switchFatalBomb" destination="oAT-Jt-q0y" id="v9n-9K-49s"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rhJ-dc-7eS" userLabel="First Responder" sceneMemberID="firstResponder"/>
