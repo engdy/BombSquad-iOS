@@ -53,7 +53,6 @@
         txt.text = @"30:00";
         [txt setTextColor:[UIColor redColor]];
         [txt setBackgroundColor:[UIColor clearColor]];
-//        [txt setFont:[UIFont systemFontOfSize:isIpad ? 150.0 : 80.0]];
         [txt setFont:[UIFont systemFontOfSize:isIpad ? 300.0 : 160.0]];
         [txt setTextAlignment:NSTextAlignmentCenter];
         [self.scrollTimers addSubview:txt];

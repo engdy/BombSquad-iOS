@@ -538,11 +538,19 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BURN Level" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kW3-Yg-Qlm">
+                                <rect key="frame" x="16" y="487" width="736" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="C3v-0t-Ijm"/>
                     <connections>
+                        <outlet property="labelBURNLevel" destination="kW3-Yg-Qlm" id="xWi-gX-Gt3"/>
                         <outlet property="pickerSoundtrack" destination="dA0-XM-EKE" id="QFz-Kj-QZs"/>
                         <outlet property="sliderBURNLevel" destination="wEa-Gl-fYb" id="Yhc-Xr-Kjq"/>
                         <outlet property="sliderBombSound" destination="dc4-mq-FJy" id="OOu-9S-LJl"/>

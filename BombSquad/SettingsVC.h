@@ -20,6 +20,7 @@
 @property (weak, nonatomic) IBOutlet UISlider *sliderSoundtrack;
 @property (weak, nonatomic) IBOutlet UISlider *sliderBombSound;
 @property (weak, nonatomic) IBOutlet UISlider *sliderBURNLevel;
+@property (weak, nonatomic) IBOutlet UILabel *labelBURNLevel;
 @property (nonatomic, retain) NSArray *soundNames;
 @property (nonatomic, retain) NSArray *soundResources;
 @property (nonatomic) CGRect frameUp;

@@ -233,6 +233,23 @@
 
 - (IBAction)updateBURNLevel:(UISlider *)sender {
     [self.timer.burn setBURNlevel:self.sliderBURNLevel.value];
+    switch ((int)self.sliderBURNLevel.value) {
+        case 0:
+            [self.labelBURNLevel setText:@"Silent game"];
+            break;
+        case 1:
+            [self.labelBURNLevel setText:@"Some BURN chatter"];
+            break;
+        case 2:
+            [self.labelBURNLevel setText:@"BURN taunts rising"];
+            break;
+        case 3:
+            [self.labelBURNLevel setText:@"Maximum taunts from BURN"];
+            break;
+            
+        default:
+            break;
+    }
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {

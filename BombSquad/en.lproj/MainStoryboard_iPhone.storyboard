@@ -533,12 +533,20 @@
                                     <segue destination="rNg-8Y-RRR" kind="push" identifier="SoundtrackSegue" id="LZa-Pl-mhc"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BURN level" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hTt-Or-aqM">
+                                <rect key="frame" x="16" y="336" width="288" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="qOI-qv-eb9"/>
                     <connections>
                         <outlet property="btnSoundtrack" destination="dOi-5p-mEv" id="MEo-By-5ab"/>
+                        <outlet property="labelBURNLevel" destination="hTt-Or-aqM" id="T3D-Ga-sUS"/>
                         <outlet property="sliderBURNLevel" destination="b5T-AZ-RiD" id="OQD-nr-cxF"/>
                         <outlet property="sliderBombSound" destination="aJm-0j-wQQ" id="USx-91-7KR"/>
                         <outlet property="sliderSoundtrack" destination="rME-i8-1P8" id="q1W-7U-ego"/>

@@ -56,6 +56,10 @@
 		BD28F36A19BAA9F3009C83DF /* bomb3H@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BD28F36419BAA9F3009C83DF /* bomb3H@2x.png */; };
 		BD32BEC91AC1121700328A83 /* SoundtrackVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BD32BEC81AC1121600328A83 /* SoundtrackVC.m */; };
 		BD36328917A0800E00A2BB71 /* ScrollMissionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BD36328817A0800D00A2BB71 /* ScrollMissionVC.m */; };
+		BD3752021ACE08650083063A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD3752011ACE08650083063A /* Images.xcassets */; };
+		BD3752061ACE0BFD0083063A /* bsicon76.png in Resources */ = {isa = PBXBuildFile; fileRef = BD3752031ACE0BFD0083063A /* bsicon76.png */; };
+		BD3752071ACE0BFD0083063A /* bsicon120.png in Resources */ = {isa = PBXBuildFile; fileRef = BD3752041ACE0BFD0083063A /* bsicon120.png */; };
+		BD3752081ACE0BFD0083063A /* bsicon152.png in Resources */ = {isa = PBXBuildFile; fileRef = BD3752051ACE0BFD0083063A /* bsicon152.png */; };
 		BD5418C617D7CF1D00AF6239 /* IconIpad.png in Resources */ = {isa = PBXBuildFile; fileRef = BD5418C517D7CF1D00AF6239 /* IconIpad.png */; };
 		BD5418C817D7CF7E00AF6239 /* IconIpad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BD5418C717D7CF7E00AF6239 /* IconIpad@2x.png */; };
 		BD5418CA17D7D03900AF6239 /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = BD5418C917D7D03800AF6239 /* Default-Portrait~ipad.png */; };
@@ -302,6 +306,10 @@
 		BD32BEC81AC1121600328A83 /* SoundtrackVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundtrackVC.m; sourceTree = "<group>"; };
 		BD36328717A0800C00A2BB71 /* ScrollMissionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollMissionVC.h; sourceTree = "<group>"; };
 		BD36328817A0800D00A2BB71 /* ScrollMissionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollMissionVC.m; sourceTree = "<group>"; };
+		BD3752011ACE08650083063A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BD3752031ACE0BFD0083063A /* bsicon76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bsicon76.png; sourceTree = "<group>"; };
+		BD3752041ACE0BFD0083063A /* bsicon120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bsicon120.png; sourceTree = "<group>"; };
+		BD3752051ACE0BFD0083063A /* bsicon152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bsicon152.png; sourceTree = "<group>"; };
 		BD5418C517D7CF1D00AF6239 /* IconIpad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IconIpad.png; sourceTree = "<group>"; };
 		BD5418C717D7CF7E00AF6239 /* IconIpad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IconIpad@2x.png"; sourceTree = "<group>"; };
 		BD5418C917D7D03800AF6239 /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
@@ -687,6 +695,7 @@
 				BD0F618A1799BE2D00953661 /* SingleBombMissionVC.m */,
 				BD32BEC71AC1121500328A83 /* SoundtrackVC.h */,
 				BD32BEC81AC1121600328A83 /* SoundtrackVC.m */,
+				BD3752011ACE08650083063A /* Images.xcassets */,
 				BD7E416717972D7300FBB8D1 /* Supporting Files */,
 			);
 			path = BombSquad;
@@ -695,6 +704,9 @@
 		BD7E416717972D7300FBB8D1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BD3752031ACE0BFD0083063A /* bsicon76.png */,
+				BD3752041ACE0BFD0083063A /* bsicon120.png */,
+				BD3752051ACE0BFD0083063A /* bsicon152.png */,
 				BD7E41B41797906F00FBB8D1 /* amission.m4a */,
 				BD7E41B51797906F00FBB8D1 /* bigbomb.m4a */,
 				BD5CFC6019AFD4210048D10D /* bigscen1.png */,
@@ -968,9 +980,11 @@
 				BDE5154F1AA50F76002773F3 /* 21woohoo.m4a in Resources */,
 				BD7E41C71797906F00FBB8D1 /* tickingclock.m4a in Resources */,
 				BDFAE8F11846879700F0C2B8 /* help3.png in Resources */,
+				BD3752081ACE0BFD0083063A /* bsicon152.png in Resources */,
 				BDE5153B1AA50F76002773F3 /* 03cardisred.m4a in Resources */,
 				BDE5153E1AA50F76002773F3 /* 03hostage.m4a in Resources */,
 				BDE515281AA50F76002773F3 /* 01ohitsabomb.m4a in Resources */,
+				BD3752021ACE08650083063A /* Images.xcassets in Resources */,
 				BDFAE8FF1846947400F0C2B8 /* left.png in Resources */,
 				BDE515761AA5778B002773F3 /* bigscenD1.png in Resources */,
 				BDE5155E1AA50F76002773F3 /* 42feeltheburn2.m4a in Resources */,
@@ -990,6 +1004,7 @@
 				BD0F616D1798976D00953661 /* bomb1A@2x.png in Resources */,
 				BDE515771AA5778B002773F3 /* bigscenD2.png in Resources */,
 				BDE515531AA50F76002773F3 /* 31anotherbuildingsaved.m4a in Resources */,
+				BD3752071ACE0BFD0083063A /* bsicon120.png in Resources */,
 				BD5CFC4E19AFD0670048D10D /* scen2.png in Resources */,
 				BDE515511AA50F76002773F3 /* 22thatwaseasy.m4a in Resources */,
 				BDFAE8F01846879700F0C2B8 /* help2.png in Resources */,
@@ -999,6 +1014,7 @@
 				BDE515341AA50F76002773F3 /* 02slam.m4a in Resources */,
 				BDE515571AA50F76002773F3 /* 31cursesfoiledagain.m4a in Resources */,
 				BD0F616F1798976D00953661 /* bomb1B@2x.png in Resources */,
+				BD3752061ACE0BFD0083063A /* bsicon76.png in Resources */,
 				BDE515221AA50F76002773F3 /* 01escape.m4a in Resources */,
 				BD0F61701798976D00953661 /* bomb1C.png in Resources */,
 				BDE515261AA50F76002773F3 /* 01helphelp.m4a in Resources */,
@@ -1235,7 +1251,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Andy Foulke (8PKPL97ED3)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Andy Foulke (8PKPL97ED3)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1250,9 +1266,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "FE460F7C-DAA0-4E97-8FC2-0D8B3357944D";
+				PROVISIONING_PROFILE = "0fc9bf57-9eab-4963-91e2-1f22f5386c22";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -1269,24 +1286,28 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Andy Foulke (7459TL4JZU)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Andy Foulke (7459TL4JZU)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "0131EEA4-D9F9-49A8-BE65-0CEEB242073F";
+				PROVISIONING_PROFILE = "52abd43b-292f-42b8-aa3e-5bd7354b8dcf";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Release;
 		};
 		BD7E419917972D7300FBB8D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = BombSquad/BombSquad.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -1306,6 +1327,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				"ADDITIONAL_SDKS[arch=*]" = "";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = BombSquad/BombSquad.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
