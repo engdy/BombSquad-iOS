@@ -68,6 +68,7 @@
         [defaults synchronize];
     }
     BURNType burnLevel = (BURNType)[num intValue];
+    [self.labelBURNLevel setText:[self burnStringForLevel:burnLevel]];
 
     [self.sliderBombSound setEnabled:willPlayBombSound];
     [self.sliderBombSound setValue:bombVolume];
@@ -122,9 +123,24 @@
     }
 }
 
+- (NSString *)burnStringForLevel:(NSUInteger)val {
+    switch (val) {
+        case 0:
+            return @"Silent game";
+        case 1:
+            return @"Some BURN chatter";
+        case 2:
+            return @"BURN taunts rising";
+        case 3:
+            return @"Maximum taunts from BURN";
+    }
+    return @"";
+}
+
 - (void)burnValueChanged:(UISlider *)slider {
     NSUInteger val = (NSUInteger)(slider.value + 0.5);
     [slider setValue:val animated:NO];
+    [self.labelBURNLevel setText:[self burnStringForLevel:val]];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -233,23 +249,6 @@
 
 - (IBAction)updateBURNLevel:(UISlider *)sender {
     [self.timer.burn setBURNlevel:self.sliderBURNLevel.value];
-    switch ((int)self.sliderBURNLevel.value) {
-        case 0:
-            [self.labelBURNLevel setText:@"Silent game"];
-            break;
-        case 1:
-            [self.labelBURNLevel setText:@"Some BURN chatter"];
-            break;
-        case 2:
-            [self.labelBURNLevel setText:@"BURN taunts rising"];
-            break;
-        case 3:
-            [self.labelBURNLevel setText:@"Maximum taunts from BURN"];
-            break;
-            
-        default:
-            break;
-    }
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
