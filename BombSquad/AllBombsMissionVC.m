@@ -160,15 +160,12 @@
 }
 
 - (void)checkButtons {
-    BOOL isAlive = NO;
     for (NSInteger i = 0; i < [self.timer.bombs.bombs count]; ++i) {
         Bomb *b = self.timer.bombs.bombs[i];
-        BOOL enableButton = self.timer.isTimerRunning && (b.state == LIVE);
-        isAlive |= enableButton;
         UIButton *btn = self.bombButtons[i];
-        [btn setEnabled:enableButton && b.level < 4];
+        [btn setEnabled:(b.state == LIVE)];
     }
-    [self.btnPlayPause setImage:isAlive ? [UIImage imageNamed:@"pause"] : [UIImage imageNamed:@"start"] forState:UIControlStateNormal];
+    [self.btnPlayPause setImage:self.timer.isTimerRunning ? [UIImage imageNamed:@"pause"] : [UIImage imageNamed:@"start"] forState:UIControlStateNormal];
 }
 
 - (void)updateMainTime:(NSString *)time {

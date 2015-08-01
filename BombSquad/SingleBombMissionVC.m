@@ -162,7 +162,7 @@
     UIButton *btn = (UIButton *)sender;
     NSLog(@"Bomb %ld pressed", (long)btn.tag);
     Bomb *b = self.timer.bombs.bombs[btn.tag];
-    if (b == self.focusBomb && self.timer.isTimerRunning) {
+    if (b == self.focusBomb /* && self.timer.isTimerRunning */) {
         if (b.state == LIVE) {
             UIAlertView *alert = [[UIAlertView alloc] init];
             alert.tag = btn.tag;

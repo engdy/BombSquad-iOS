@@ -127,6 +127,9 @@
         } else {
             if (!_bombDetonated) {
                 [self playWon];
+                UIButton *btnPlay = ((RunningMissionVC *)self.currentVC).btnPlay;
+                [btnPlay setEnabled:NO];
+                [btnPlay setImage:[UIImage imageNamed:@"play"] forState:UIControlStateNormal];
             }
             [self stopBurn];
             [self stopTimer];
@@ -148,6 +151,9 @@
                             _countdownPlayer = nil;
                             _isPlayingCountdown = NO;
                         }
+                        UIButton *btnPlay = ((RunningMissionVC *)self.currentVC).btnPlay;
+                        [btnPlay setEnabled:NO];
+                        [btnPlay setImage:[UIImage imageNamed:@"play"] forState:UIControlStateNormal];
                     }
                     [(RunningMissionVC *)self.currentVC updateBomb:b idx:i duration:-1];
                     if (self.willPlayBombSounds) {
@@ -182,9 +188,9 @@
             Bomb *b = [self.bombs findMinTimeBomb];
             if (b != nil) {
                 NSInteger timeToBomb = b.durationMillis - duration;
-                if (timeToBomb < 10000) {
+                if (timeToBomb < 11000) {
                     _isPlayingCountdown = YES;
-                    NSTimeInterval ctime = (10000 - timeToBomb) / 1000;
+                    NSTimeInterval ctime = (11000 - timeToBomb) / 1000;
                     _countdownPlayer.currentTime = ctime;
                     [_countdownPlayer play];
                     NSLog(@"Bomb %@ playing countdown from %f", b, ctime);
