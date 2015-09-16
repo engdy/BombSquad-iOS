@@ -23,6 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.timer = [[BSTimer alloc] init];
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bstile"]];
 }
 
 - (void)viewDidUnload {

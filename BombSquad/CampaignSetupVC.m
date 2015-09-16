@@ -21,6 +21,7 @@
     [super viewDidLoad];
     [self buildCampaigns];
     [[_btnMissionImage imageView] setContentMode:UIViewContentModeScaleAspectFit];
+//    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bstile"]];
     [self selectionResults:0];
 }
 
@@ -64,16 +65,16 @@
     [list addObject:[[Campaign alloc] initWithName:@"Mission #8" picture:@"scen8" bombList:bl]];
 
     bl = [[BombList alloc] initWithBombs:[[Bomb alloc] initWithLevel:1 letter:@"A" duration:10 * 60 * 1000 gameEnding:YES], [[Bomb alloc] initWithLevel:2 letter:@"B" duration:20 * 60 * 1000 gameEnding:YES], [[Bomb alloc] initWithLevel:3 letter:@"C" duration:30 * 60 * 1000 gameEnding:YES], nil];
-    [list addObject:[[Campaign alloc] initWithName:@"Mission #D1" picture:@"scenD1" bombList:bl]];
+    [list addObject:[[Campaign alloc] initWithName:@"Mission #9" picture:@"scen9" bombList:bl]];
     
     bl = [[BombList alloc] initWithBombs:[[Bomb alloc] initWithLevel:1 letter:@"A" duration:10 * 60 * 1000 gameEnding:YES], [[Bomb alloc] initWithLevel:2 letter:@"B" duration:20 * 60 * 1000 gameEnding:YES], [[Bomb alloc] initWithLevel:3 letter:@"C" duration:30 * 60 * 1000 gameEnding:YES], nil];
-    [list addObject:[[Campaign alloc] initWithName:@"Mission #D2" picture:@"scenD2" bombList:bl]];
+    [list addObject:[[Campaign alloc] initWithName:@"Mission #10" picture:@"scen10" bombList:bl]];
 
     bl = [[BombList alloc] initWithBombs:[[Bomb alloc] initWithLevel:1 letter:@"A" duration:10 * 60 * 1000 gameEnding:YES], [[Bomb alloc] initWithLevel:2 letter:@"B" duration:20 * 60 * 1000 gameEnding:YES], [[Bomb alloc] initWithLevel:3 letter:@"C" duration:30 * 60 * 1000 gameEnding:YES], nil];
-    [list addObject:[[Campaign alloc] initWithName:@"Mission #D3" picture:@"scenD3" bombList:bl]];
+    [list addObject:[[Campaign alloc] initWithName:@"Mission #11" picture:@"scen11" bombList:bl]];
 
     bl = [[BombList alloc] initWithBombs:[[Bomb alloc] initWithLevel:1 letter:@"A" duration:10 * 60 * 1000 gameEnding:YES], [[Bomb alloc] initWithLevel:2 letter:@"B" duration:20 * 60 * 1000 gameEnding:YES], [[Bomb alloc] initWithLevel:3 letter:@"C" duration:30 * 60 * 1000 gameEnding:YES], nil];
-    [list addObject:[[Campaign alloc] initWithName:@"Mission #D4" picture:@"scenD4" bombList:bl]];
+    [list addObject:[[Campaign alloc] initWithName:@"Mission #12" picture:@"scen12" bombList:bl]];
 
     _campaignList = list;
 }
