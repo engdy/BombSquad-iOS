@@ -111,7 +111,7 @@
 }
 
 - (IBAction)rules:(UIButton *)sender {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.engdy.net/dl/BombSquad_Rulebook_5.3.pdf"]];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.engdy.net/dl/BS_RULES_0423_V3.pdf"]];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {

@@ -21,7 +21,7 @@
     [super viewDidLoad];
     [self buildCampaigns];
     [[_btnMissionImage imageView] setContentMode:UIViewContentModeScaleAspectFit];
-//    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bstile"]];
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bstile"]];
     [self selectionResults:0];
 }
 

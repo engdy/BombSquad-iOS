@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="E4k-bv-Dfu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="E4k-bv-Dfu">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -205,7 +205,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fwN-ly-jCA">
-                                <rect key="frame" x="0.0" y="160" width="1024" height="608"/>
+                                <rect key="frame" x="0.0" y="229" width="1024" height="539"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="300"/>
@@ -454,6 +454,7 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="b3U-DI-hmx" userLabel="switchSoundtrack">
                                 <rect key="frame" x="703" y="74" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="toggleSoundtrack:" destination="fez-e6-fnZ" eventType="valueChanged" id="jNv-We-xO7"/>
                                 </connections>
@@ -461,6 +462,7 @@
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="rgz-Hn-hZv" userLabel="sliderSoundtrack">
                                 <rect key="frame" x="324" y="75" width="373" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="minimumTrackTintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="updateMusicVolume:" destination="fez-e6-fnZ" eventType="valueChanged" id="Ssc-Ev-1hd"/>
                                 </connections>
@@ -490,6 +492,7 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="ZTH-Tc-MyY" userLabel="switchVisualAlert">
                                 <rect key="frame" x="326" y="337" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="toggleVisual:" destination="fez-e6-fnZ" eventType="valueChanged" id="2v2-ca-9rL"/>
                                 </connections>
@@ -497,6 +500,7 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="dkP-3T-M13" userLabel="switchAudioAlert">
                                 <rect key="frame" x="326" y="376" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="toggleAudio:" destination="fez-e6-fnZ" eventType="valueChanged" id="LFw-81-Eh6"/>
                                 </connections>
@@ -511,6 +515,7 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="yTh-iB-mMv" userLabel="switchBombSounds">
                                 <rect key="frame" x="326" y="415" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="toggleBombs:" destination="fez-e6-fnZ" eventType="valueChanged" id="xKT-42-OFj"/>
                                 </connections>
@@ -525,6 +530,7 @@
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="dc4-mq-FJy" userLabel="sliderBombVolume">
                                 <rect key="frame" x="487" y="416" width="267" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="minimumTrackTintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="updateBombVolume:" destination="fez-e6-fnZ" eventType="valueChanged" id="oLi-VY-j7i"/>
                                 </connections>
@@ -539,6 +545,7 @@
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minValue="0.0" maxValue="3" id="wEa-Gl-fYb">
                                 <rect key="frame" x="218" y="454" width="159" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="minimumTrackTintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="updateBURNLevel:" destination="fez-e6-fnZ" eventType="valueChanged" id="G5x-Na-WQO"/>
                                 </connections>
@@ -642,6 +649,7 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="bnd-Az-vHb" userLabel="switchFatalBomb">
                                 <rect key="frame" x="360" y="346" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -769,11 +777,6 @@ Music: Kevin MacLeod</string>
         <image name="right.png" width="40" height="64"/>
         <image name="start.png" width="28" height="41"/>
     </resources>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination"/>
-    </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="jXZ-ie-w9W"/>
         <segue reference="0vQ-My-IgF"/>

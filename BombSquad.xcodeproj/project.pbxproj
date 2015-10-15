@@ -142,6 +142,114 @@
 		BD7E41D21797977700FBB8D1 /* QuickSetupVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BD7E41D11797977700FBB8D1 /* QuickSetupVC.m */; };
 		BD7E41D51797989A00FBB8D1 /* SettingsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BD7E41D41797989A00FBB8D1 /* SettingsVC.m */; };
 		BD7E41D81797994100FBB8D1 /* AboutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BD7E41D71797994100FBB8D1 /* AboutVC.m */; };
+		BDADA7EF1BB3813800E369F5 /* 01FEMALE_04_YouLikeLoudNoises.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7831BB3813700E369F5 /* 01FEMALE_04_YouLikeLoudNoises.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA7F01BB3813800E369F5 /* 01FEMALE_07_InsuranceUpToDate.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7841BB3813700E369F5 /* 01FEMALE_07_InsuranceUpToDate.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA7F11BB3813800E369F5 /* 01MALE_31_OurPlanIsPerfect.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7851BB3813700E369F5 /* 01MALE_31_OurPlanIsPerfect.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA7F21BB3813800E369F5 /* 01MALE_33_YouveAlreadyLost.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7861BB3813700E369F5 /* 01MALE_33_YouveAlreadyLost.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA7F31BB3813800E369F5 /* 01MALE_34_GetBurned_A.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7871BB3813700E369F5 /* 01MALE_34_GetBurned_A.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA7F41BB3813800E369F5 /* 01MALE_35_GetBurned_B.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7881BB3813700E369F5 /* 01MALE_35_GetBurned_B.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA7F51BB3813800E369F5 /* 01MALE_39_IsThisYourFirstTime_A.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7891BB3813700E369F5 /* 01MALE_39_IsThisYourFirstTime_A.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA7F61BB3813800E369F5 /* 01MALE_40_IsThisYourFirstTime_B.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA78A1BB3813700E369F5 /* 01MALE_40_IsThisYourFirstTime_B.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA7F71BB3813800E369F5 /* 01MALE_41_ArentVeryGood.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA78B1BB3813700E369F5 /* 01MALE_41_ArentVeryGood.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA7F81BB3813800E369F5 /* 01MALE_42_Inevitable.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA78C1BB3813700E369F5 /* 01MALE_42_Inevitable.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA7F91BB3813800E369F5 /* 01SARGE_03_MadeItThroughWorse.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA78D1BB3813700E369F5 /* 01SARGE_03_MadeItThroughWorse.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA7FA1BB3813800E369F5 /* 01SARGE_08_BestSquadEverTrained.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA78E1BB3813700E369F5 /* 01SARGE_08_BestSquadEverTrained.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA7FB1BB3813800E369F5 /* 01SARGE_12_KeepAtItTeam.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA78F1BB3813700E369F5 /* 01SARGE_12_KeepAtItTeam.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA7FC1BB3813800E369F5 /* 01SARGE_13_GettingWarmer.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7901BB3813700E369F5 /* 01SARGE_13_GettingWarmer.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA7FD1BB3813800E369F5 /* 02FEMALE_02_HotInHere.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7911BB3813700E369F5 /* 02FEMALE_02_HotInHere.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA7FE1BB3813800E369F5 /* 02FEMALE_03_FuseIsShort.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7921BB3813700E369F5 /* 02FEMALE_03_FuseIsShort.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA7FF1BB3813800E369F5 /* 02FEMALE_04_YouLikeLoudNoises.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7931BB3813700E369F5 /* 02FEMALE_04_YouLikeLoudNoises.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA8001BB3813800E369F5 /* 02MALE_06_BOOMjustkidding.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7941BB3813700E369F5 /* 02MALE_06_BOOMjustkidding.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA8011BB3813800E369F5 /* 02MALE_19_ItsCute_A.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7951BB3813700E369F5 /* 02MALE_19_ItsCute_A.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA8021BB3813800E369F5 /* 02MALE_20_ItsCute_B.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7961BB3813700E369F5 /* 02MALE_20_ItsCute_B.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA8031BB3813800E369F5 /* 02MALE_21_ItsCute_C.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7971BB3813700E369F5 /* 02MALE_21_ItsCute_C.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA8041BB3813800E369F5 /* 02MALE_22_ItsCute_D.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7981BB3813700E369F5 /* 02MALE_22_ItsCute_D.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA8051BB3813800E369F5 /* 02MALE_23_ItsCute_E.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7991BB3813700E369F5 /* 02MALE_23_ItsCute_E.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA8061BB3813800E369F5 /* 02MALE_38_YoureRunningOutofTime.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA79A1BB3813700E369F5 /* 02MALE_38_YoureRunningOutofTime.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA8071BB3813800E369F5 /* 02SARGE_14_BadFeelingAboutThis.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA79B1BB3813700E369F5 /* 02SARGE_14_BadFeelingAboutThis.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA8081BB3813800E369F5 /* 03FEMALE_01_CuttheWhiteWire.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA79C1BB3813700E369F5 /* 03FEMALE_01_CuttheWhiteWire.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA8091BB3813800E369F5 /* 03FEMALE_05_TurnRightMoveTwo.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA79D1BB3813700E369F5 /* 03FEMALE_05_TurnRightMoveTwo.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA80A1BB3813800E369F5 /* 03FEMALE_06_Numbers.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA79E1BB3813700E369F5 /* 03FEMALE_06_Numbers.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA80B1BB3813800E369F5 /* 03FEMALE_08_TwentyQuestions.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA79F1BB3813700E369F5 /* 03FEMALE_08_TwentyQuestions.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA80C1BB3813800E369F5 /* 03MALE_32_RememberTheRedWires.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7A01BB3813700E369F5 /* 03MALE_32_RememberTheRedWires.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA80D1BB3813800E369F5 /* 03MALE_36_RedWireorBlue.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7A11BB3813700E369F5 /* 03MALE_36_RedWireorBlue.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA80E1BB3813800E369F5 /* 03MALE_37_54321.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7A21BB3813700E369F5 /* 03MALE_37_54321.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA80F1BB3813800E369F5 /* 11SARGE_02_YouCanDoThis.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7A31BB3813700E369F5 /* 11SARGE_02_YouCanDoThis.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA8101BB3813800E369F5 /* 11SARGE_04_YoullDoFine.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7A41BB3813700E369F5 /* 11SARGE_04_YoullDoFine.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA8111BB3813800E369F5 /* 11SARGE_07_WereAllCountingOnYou.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7A51BB3813700E369F5 /* 11SARGE_07_WereAllCountingOnYou.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA8121BB3813800E369F5 /* 11SARGE_15_BestSquadInTheRoom.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7A61BB3813700E369F5 /* 11SARGE_15_BestSquadInTheRoom.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA8131BB3813800E369F5 /* 21FEMALE_09_JokesOnYou.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7A71BB3813700E369F5 /* 21FEMALE_09_JokesOnYou.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA8141BB3813800E369F5 /* 21MALE_01_TooEasy_A.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7A81BB3813700E369F5 /* 21MALE_01_TooEasy_A.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA8151BB3813800E369F5 /* 21MALE_02_TooEasy_B.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7A91BB3813700E369F5 /* 21MALE_02_TooEasy_B.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA8161BB3813800E369F5 /* 21MALE_03_TooEasy_C.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7AA1BB3813700E369F5 /* 21MALE_03_TooEasy_C.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA8171BB3813800E369F5 /* 21MALE_24_BombWasMyFavorite_A.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7AB1BB3813700E369F5 /* 21MALE_24_BombWasMyFavorite_A.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA8181BB3813800E369F5 /* 21MALE_25_BombWasMyFavorite_B.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7AC1BB3813700E369F5 /* 21MALE_25_BombWasMyFavorite_B.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA8191BB3813800E369F5 /* 21MALE_26_BombWasMyFavorite_C.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7AD1BB3813700E369F5 /* 21MALE_26_BombWasMyFavorite_C.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA81A1BB3813800E369F5 /* 21MALE_43_WastedTimeOnDecoy.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7AE1BB3813700E369F5 /* 21MALE_43_WastedTimeOnDecoy.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA81B1BB3813800E369F5 /* 21MALE_44_NextBombInTime_A.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7AF1BB3813700E369F5 /* 21MALE_44_NextBombInTime_A.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA81C1BB3813800E369F5 /* 21MALE_45_NextBombInTime_B.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7B01BB3813700E369F5 /* 21MALE_45_NextBombInTime_B.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA81D1BB3813800E369F5 /* 21MALE_46_NextBombInTime_C.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7B11BB3813700E369F5 /* 21MALE_46_NextBombInTime_C.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA81E1BB3813800E369F5 /* 21MALE_47_IGaveYouThatOne.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7B21BB3813700E369F5 /* 21MALE_47_IGaveYouThatOne.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA81F1BB3813800E369F5 /* 21MALE_48_AlwaysMoreBombs_A.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7B31BB3813700E369F5 /* 21MALE_48_AlwaysMoreBombs_A.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA8201BB3813800E369F5 /* 21MALE_49_AlwaysMoreBombs_B.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7B41BB3813700E369F5 /* 21MALE_49_AlwaysMoreBombs_B.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA8211BB3813800E369F5 /* 21SARGE_01_YouGuysAreBest.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7B51BB3813700E369F5 /* 21SARGE_01_YouGuysAreBest.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA8221BB3813800E369F5 /* 21SARGE_06_StayCalm.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7B61BB3813700E369F5 /* 21SARGE_06_StayCalm.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA8231BB3813800E369F5 /* 21SARGE_11_AlmostThere.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7B71BB3813700E369F5 /* 21SARGE_11_AlmostThere.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA8241BB3813800E369F5 /* 21SARGE_16_BD_GoodWork_MightMakeItOut.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7B81BB3813700E369F5 /* 21SARGE_16_BD_GoodWork_MightMakeItOut.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA8251BB3813800E369F5 /* 21SARGE_17_BD_ThatWasCuttingItClose.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7B91BB3813700E369F5 /* 21SARGE_17_BD_ThatWasCuttingItClose.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA8261BB3813800E369F5 /* 21SARGE_19_BD_CantBelieveYouGotOne.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7BA1BB3813700E369F5 /* 21SARGE_19_BD_CantBelieveYouGotOne.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA8271BB3813800E369F5 /* 21SARGE_20_BD_DontGetCocky.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7BB1BB3813700E369F5 /* 21SARGE_20_BD_DontGetCocky.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA8281BB3813800E369F5 /* 21SARGE_21_BD_HaventCompletelyFailed.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7BC1BB3813700E369F5 /* 21SARGE_21_BD_HaventCompletelyFailed.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA8291BB3813800E369F5 /* 21SARGE_22_BD_PrincessInAnotherCastle.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7BD1BB3813700E369F5 /* 21SARGE_22_BD_PrincessInAnotherCastle.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA82A1BB3813800E369F5 /* 22MALE_04_EarthShattering_A.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7BE1BB3813700E369F5 /* 22MALE_04_EarthShattering_A.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA82B1BB3813800E369F5 /* 22MALE_05_EarthShattering_B.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7BF1BB3813700E369F5 /* 22MALE_05_EarthShattering_B.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA82C1BB3813800E369F5 /* 31FEMALE_10_CursesFoiledAgain.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7C01BB3813700E369F5 /* 31FEMALE_10_CursesFoiledAgain.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA82D1BB3813800E369F5 /* 31FEMALE_11_PlantedMore.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7C11BB3813700E369F5 /* 31FEMALE_11_PlantedMore.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA82E1BB3813800E369F5 /* 31MALE_07_Acme_A.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7C21BB3813700E369F5 /* 31MALE_07_Acme_A.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA82F1BB3813800E369F5 /* 31MALE_08_Acme_B.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7C31BB3813700E369F5 /* 31MALE_08_Acme_B.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA8301BB3813800E369F5 /* 31MALE_27_ThisAintOver_A.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7C41BB3813700E369F5 /* 31MALE_27_ThisAintOver_A.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA8311BB3813800E369F5 /* 31MALE_28_ThisAintOver_B.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7C51BB3813700E369F5 /* 31MALE_28_ThisAintOver_B.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA8321BB3813800E369F5 /* 31MALE_29_ThisAintOver_C.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7C61BB3813700E369F5 /* 31MALE_29_ThisAintOver_C.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA8331BB3813800E369F5 /* 31MALE_30_ThisAintOver_D.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7C71BB3813700E369F5 /* 31MALE_30_ThisAintOver_D.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA8341BB3813800E369F5 /* 31MALE_50_NeverStopBURN_A.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7C81BB3813700E369F5 /* 31MALE_50_NeverStopBURN_A.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA8351BB3813800E369F5 /* 31MALE_51_NeverStopBURN_B.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7C91BB3813700E369F5 /* 31MALE_51_NeverStopBURN_B.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA8361BB3813800E369F5 /* 31MALE_52_DisabledOurBombs.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7CA1BB3813700E369F5 /* 31MALE_52_DisabledOurBombs.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA8371BB3813800E369F5 /* 31MALE_53_ILetYouWin.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7CB1BB3813700E369F5 /* 31MALE_53_ILetYouWin.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA8381BB3813800E369F5 /* 31MALE_54_IWontPlayNice.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7CC1BB3813700E369F5 /* 31MALE_54_IWontPlayNice.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA8391BB3813800E369F5 /* 31MALE_55_IllGetYou.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7CD1BB3813700E369F5 /* 31MALE_55_IllGetYou.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA83A1BB3813800E369F5 /* 31SARGE_05_WouldntHaveSentYou.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7CE1BB3813700E369F5 /* 31SARGE_05_WouldntHaveSentYou.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA83B1BB3813800E369F5 /* 31SARGE_09_DontLetItGoToYourHead.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7CF1BB3813700E369F5 /* 31SARGE_09_DontLetItGoToYourHead.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA83C1BB3813800E369F5 /* 31SARGE_18_BD_INeverDoubtedYou.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7D01BB3813700E369F5 /* 31SARGE_18_BD_INeverDoubtedYou.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA83D1BB3813800E369F5 /* 31SARGE_23_MC_SurprisedYoureAlive.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7D11BB3813700E369F5 /* 31SARGE_23_MC_SurprisedYoureAlive.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA83E1BB3813800E369F5 /* 31SARGE_24_MC_WhenAPlanComesTogether.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7D21BB3813700E369F5 /* 31SARGE_24_MC_WhenAPlanComesTogether.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA83F1BB3813800E369F5 /* 31SARGE_25_MC_IceCreamForEveryone.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7D31BB3813700E369F5 /* 31SARGE_25_MC_IceCreamForEveryone.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA8401BB3813800E369F5 /* 31SARGE_26_MC_ThatsAllOfThem.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7D41BB3813700E369F5 /* 31SARGE_26_MC_ThatsAllOfThem.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA8411BB3813800E369F5 /* 31SARGE_27_MC_YouDidItAndInRecordTime.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7D51BB3813700E369F5 /* 31SARGE_27_MC_YouDidItAndInRecordTime.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA8421BB3813800E369F5 /* 31SARGE_28_MC_LooksLikeTheGoodGuysWin.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7D61BB3813700E369F5 /* 31SARGE_28_MC_LooksLikeTheGoodGuysWin.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA8431BB3813800E369F5 /* 31SARGE_29_MC_OutstandingWork.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7D71BB3813700E369F5 /* 31SARGE_29_MC_OutstandingWork.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA8441BB3813800E369F5 /* 41FEMALE_12_BombVoyage_A.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7D81BB3813700E369F5 /* 41FEMALE_12_BombVoyage_A.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA8451BB3813800E369F5 /* 41FEMALE_13_BombVoyage_B.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7D91BB3813700E369F5 /* 41FEMALE_13_BombVoyage_B.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA8461BB3813800E369F5 /* 41FEMALE_14_Blast.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7DA1BB3813700E369F5 /* 41FEMALE_14_Blast.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA8471BB3813800E369F5 /* 41FEMALE_15_GreatJobofMessingUp.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7DB1BB3813700E369F5 /* 41FEMALE_15_GreatJobofMessingUp.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA8481BB3813800E369F5 /* 41FEMALE_16_DontFeelBad_A.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7DC1BB3813700E369F5 /* 41FEMALE_16_DontFeelBad_A.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA8491BB3813800E369F5 /* 41FEMALE_16_DontFeelBad_B.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7DD1BB3813700E369F5 /* 41FEMALE_16_DontFeelBad_B.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA84A1BB3813800E369F5 /* 41MALE_13_Dy-No-Mite_A.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7DE1BB3813700E369F5 /* 41MALE_13_Dy-No-Mite_A.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA84B1BB3813800E369F5 /* 41MALE_14_Dy-No-Mite_B.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7DF1BB3813700E369F5 /* 41MALE_14_Dy-No-Mite_B.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA84C1BB3813800E369F5 /* 41MALE_15_Dy-No-Mite_C.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7E01BB3813700E369F5 /* 41MALE_15_Dy-No-Mite_C.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA84D1BB3813800E369F5 /* 41MALE_16_KnockKnock_A.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7E11BB3813700E369F5 /* 41MALE_16_KnockKnock_A.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA84E1BB3813800E369F5 /* 41MALE_17_KnockKnock_B.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7E21BB3813700E369F5 /* 41MALE_17_KnockKnock_B.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA84F1BB3813800E369F5 /* 41MALE_18_KnockKnock_C.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7E31BB3813700E369F5 /* 41MALE_18_KnockKnock_C.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA8501BB3813800E369F5 /* 41MALE_56_JustTheBeginning.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7E41BB3813700E369F5 /* 41MALE_56_JustTheBeginning.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA8511BB3813800E369F5 /* 41MALE_57_TooEasy.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7E51BB3813700E369F5 /* 41MALE_57_TooEasy.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA8521BB3813800E369F5 /* 41SARGE_30_FM_WeKnewThisWouldHappen.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7E61BB3813700E369F5 /* 41SARGE_30_FM_WeKnewThisWouldHappen.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA8531BB3813800E369F5 /* 41SARGE_31_FM_YourBestWasntEnough.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7E71BB3813700E369F5 /* 41SARGE_31_FM_YourBestWasntEnough.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA8541BB3813800E369F5 /* 41SARGE_32_FM_YouHaveFailed.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7E81BB3813700E369F5 /* 41SARGE_32_FM_YouHaveFailed.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA8551BB3813800E369F5 /* 42SARGE_33_FM_WhatDoYouWantAParade.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7E91BB3813700E369F5 /* 42SARGE_33_FM_WhatDoYouWantAParade.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA8561BB3813800E369F5 /* 51SARGE_10_StayOnTarget.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7EA1BB3813700E369F5 /* 51SARGE_10_StayOnTarget.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA8571BB3813800E369F5 /* 61MALE_09_TickTickTick_A.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7EB1BB3813700E369F5 /* 61MALE_09_TickTickTick_A.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA8581BB3813800E369F5 /* 61MALE_10_TickTickTick_B.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7EC1BB3813700E369F5 /* 61MALE_10_TickTickTick_B.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA8591BB3813800E369F5 /* 61MALE_11_TickTickTick_C.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7ED1BB3813800E369F5 /* 61MALE_11_TickTickTick_C.m4a */; settings = {ASSET_TAGS = (); }; };
+		BDADA85A1BB3813800E369F5 /* 61MALE_12_TickTickTick_D.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDADA7EE1BB3813800E369F5 /* 61MALE_12_TickTickTick_D.m4a */; settings = {ASSET_TAGS = (); }; };
 		BDC884EC1BA54E0E00689832 /* Icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = BDC884D41BA54E0E00689832 /* Icon-60.png */; };
 		BDC884ED1BA54E0E00689832 /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BDC884D51BA54E0E00689832 /* Icon-60@2x.png */; };
 		BDC884EE1BA54E0E00689832 /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BDC884D61BA54E0E00689832 /* Icon-60@3x.png */; };
@@ -165,81 +273,6 @@
 		BDC885001BA54E0E00689832 /* launch320@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BDC884E81BA54E0E00689832 /* launch320@2x.png */; };
 		BDC885021BA54E0E00689832 /* launch768x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = BDC884EA1BA54E0E00689832 /* launch768x1024.png */; };
 		BDC885031BA54E0E00689832 /* launch1536x2048.png in Resources */ = {isa = PBXBuildFile; fileRef = BDC884EB1BA54E0E00689832 /* launch1536x2048.png */; };
-		BDE515201AA50F76002773F3 /* 01canyourepeatthat.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE514D61AA50F76002773F3 /* 01canyourepeatthat.m4a */; };
-		BDE515211AA50F76002773F3 /* 01doinggreat.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE514D71AA50F76002773F3 /* 01doinggreat.m4a */; };
-		BDE515221AA50F76002773F3 /* 01escape.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE514D81AA50F76002773F3 /* 01escape.m4a */; };
-		BDE515231AA50F76002773F3 /* 01gogetbombs.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE514D91AA50F76002773F3 /* 01gogetbombs.m4a */; };
-		BDE515241AA50F76002773F3 /* 01gogogo.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE514DA1AA50F76002773F3 /* 01gogogo.m4a */; };
-		BDE515251AA50F76002773F3 /* 01help.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE514DB1AA50F76002773F3 /* 01help.m4a */; };
-		BDE515261AA50F76002773F3 /* 01helphelp.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE514DC1AA50F76002773F3 /* 01helphelp.m4a */; };
-		BDE515271AA50F76002773F3 /* 01helpmommy.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE514DD1AA50F76002773F3 /* 01helpmommy.m4a */; };
-		BDE515281AA50F76002773F3 /* 01ohitsabomb.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE514DE1AA50F76002773F3 /* 01ohitsabomb.m4a */; };
-		BDE515291AA50F76002773F3 /* 01waitbackup.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE514DF1AA50F76002773F3 /* 01waitbackup.m4a */; };
-		BDE5152A1AA50F76002773F3 /* 01whereareyoumommy.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE514E01AA50F76002773F3 /* 01whereareyoumommy.m4a */; };
-		BDE5152B1AA50F76002773F3 /* 02bam.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE514E11AA50F76002773F3 /* 02bam.m4a */; };
-		BDE5152C1AA50F76002773F3 /* 02checkbatteries.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE514E21AA50F76002773F3 /* 02checkbatteries.m4a */; };
-		BDE5152D1AA50F76002773F3 /* 02hitthedeck.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE514E31AA50F76002773F3 /* 02hitthedeck.m4a */; };
-		BDE5152E1AA50F76002773F3 /* 02hurry.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE514E41AA50F76002773F3 /* 02hurry.m4a */; };
-		BDE5152F1AA50F76002773F3 /* 02isthatthebest.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE514E51AA50F76002773F3 /* 02isthatthebest.m4a */; };
-		BDE515301AA50F76002773F3 /* 02nevergetthereintime.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE514E61AA50F76002773F3 /* 02nevergetthereintime.m4a */; };
-		BDE515311AA50F76002773F3 /* 02onemoreword.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE514E71AA50F76002773F3 /* 02onemoreword.m4a */; };
-		BDE515321AA50F76002773F3 /* 02scream.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE514E81AA50F76002773F3 /* 02scream.m4a */; };
-		BDE515331AA50F76002773F3 /* 02shouldevenlisten.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE514E91AA50F76002773F3 /* 02shouldevenlisten.m4a */; };
-		BDE515341AA50F76002773F3 /* 02slam.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE514EA1AA50F76002773F3 /* 02slam.m4a */; };
-		BDE515351AA50F76002773F3 /* 02thatsthewrongdoor.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE514EB1AA50F76002773F3 /* 02thatsthewrongdoor.m4a */; };
-		BDE515361AA50F76002773F3 /* 02timerunningout.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE514EC1AA50F76002773F3 /* 02timerunningout.m4a */; };
-		BDE515371AA50F76002773F3 /* 02usedtoworkhere.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE514ED1AA50F76002773F3 /* 02usedtoworkhere.m4a */; };
-		BDE515381AA50F76002773F3 /* 02willgetcake.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE514EE1AA50F76002773F3 /* 02willgetcake.m4a */; };
-		BDE515391AA50F76002773F3 /* 02youllnevergetthereintime.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE514EF1AA50F76002773F3 /* 02youllnevergetthereintime.m4a */; };
-		BDE5153A1AA50F76002773F3 /* 03bomb.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE514F01AA50F76002773F3 /* 03bomb.m4a */; };
-		BDE5153B1AA50F76002773F3 /* 03cardisred.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE514F11AA50F76002773F3 /* 03cardisred.m4a */; };
-		BDE5153C1AA50F76002773F3 /* 03cutredwireorgreen.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE514F21AA50F76002773F3 /* 03cutredwireorgreen.m4a */; };
-		BDE5153D1AA50F76002773F3 /* 03door.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE514F31AA50F76002773F3 /* 03door.m4a */; };
-		BDE5153E1AA50F76002773F3 /* 03hostage.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE514F41AA50F76002773F3 /* 03hostage.m4a */; };
-		BDE5153F1AA50F76002773F3 /* 03isaidblue.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE514F51AA50F76002773F3 /* 03isaidblue.m4a */; };
-		BDE515401AA50F76002773F3 /* 03itsyellow.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE514F61AA50F76002773F3 /* 03itsyellow.m4a */; };
-		BDE515411AA50F76002773F3 /* 03noitsgreen.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE514F71AA50F76002773F3 /* 03noitsgreen.m4a */; };
-		BDE515421AA50F76002773F3 /* 03noitsgreen2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE514F81AA50F76002773F3 /* 03noitsgreen2.m4a */; };
-		BDE515431AA50F76002773F3 /* 03noyoufoolitsblue.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE514F91AA50F76002773F3 /* 03noyoufoolitsblue.m4a */; };
-		BDE515441AA50F76002773F3 /* 03reallythatsyourclue.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE514FA1AA50F76002773F3 /* 03reallythatsyourclue.m4a */; };
-		BDE515451AA50F76002773F3 /* 03rednoblue.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE514FB1AA50F76002773F3 /* 03rednoblue.m4a */; };
-		BDE515461AA50F76002773F3 /* 03timesupjustkidding.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE514FC1AA50F76002773F3 /* 03timesupjustkidding.m4a */; };
-		BDE515471AA50F76002773F3 /* 03trickingyou.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE514FD1AA50F76002773F3 /* 03trickingyou.m4a */; };
-		BDE515481AA50F76002773F3 /* 11starting1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE514FE1AA50F76002773F3 /* 11starting1.m4a */; };
-		BDE515491AA50F76002773F3 /* 11starting2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE514FF1AA50F76002773F3 /* 11starting2.m4a */; };
-		BDE5154A1AA50F76002773F3 /* 11starting3.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE515001AA50F76002773F3 /* 11starting3.m4a */; };
-		BDE5154B1AA50F76002773F3 /* 21nicework.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE515011AA50F76002773F3 /* 21nicework.m4a */; };
-		BDE5154C1AA50F76002773F3 /* 21onedown.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE515021AA50F76002773F3 /* 21onedown.m4a */; };
-		BDE5154D1AA50F76002773F3 /* 21pieceacake.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE515031AA50F76002773F3 /* 21pieceacake.m4a */; };
-		BDE5154E1AA50F76002773F3 /* 21pieceofcake.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE515041AA50F76002773F3 /* 21pieceofcake.m4a */; };
-		BDE5154F1AA50F76002773F3 /* 21woohoo.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE515051AA50F76002773F3 /* 21woohoo.m4a */; };
-		BDE515501AA50F76002773F3 /* 21woohoo2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE515061AA50F76002773F3 /* 21woohoo2.m4a */; };
-		BDE515511AA50F76002773F3 /* 22thatwaseasy.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE515071AA50F76002773F3 /* 22thatwaseasy.m4a */; };
-		BDE515521AA50F76002773F3 /* 22vitaltestingapparatus.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE515081AA50F76002773F3 /* 22vitaltestingapparatus.m4a */; };
-		BDE515531AA50F76002773F3 /* 31anotherbuildingsaved.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE515091AA50F76002773F3 /* 31anotherbuildingsaved.m4a */; };
-		BDE515541AA50F76002773F3 /* 31anothersaved.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE5150A1AA50F76002773F3 /* 31anothersaved.m4a */; };
-		BDE515551AA50F76002773F3 /* 31congratsonestepcloser.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE5150B1AA50F76002773F3 /* 31congratsonestepcloser.m4a */; };
-		BDE515561AA50F76002773F3 /* 31congratswereonestepclosertoburn.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE5150C1AA50F76002773F3 /* 31congratswereonestepclosertoburn.m4a */; };
-		BDE515571AA50F76002773F3 /* 31cursesfoiledagain.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE5150D1AA50F76002773F3 /* 31cursesfoiledagain.m4a */; };
-		BDE515581AA50F76002773F3 /* 31mayhavestopped.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE5150E1AA50F76002773F3 /* 31mayhavestopped.m4a */; };
-		BDE515591AA50F76002773F3 /* 32niceworkkid.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE5150F1AA50F76002773F3 /* 32niceworkkid.m4a */; };
-		BDE5155A1AA50F76002773F3 /* 41sorrychief.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE515101AA50F76002773F3 /* 41sorrychief.m4a */; };
-		BDE5155B1AA50F76002773F3 /* 41wuhoha.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE515111AA50F76002773F3 /* 41wuhoha.m4a */; };
-		BDE5155C1AA50F76002773F3 /* 41yes.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE515121AA50F76002773F3 /* 41yes.m4a */; };
-		BDE5155D1AA50F76002773F3 /* 42feeltheburn.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE515131AA50F76002773F3 /* 42feeltheburn.m4a */; };
-		BDE5155E1AA50F76002773F3 /* 42feeltheburn2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE515141AA50F76002773F3 /* 42feeltheburn2.m4a */; };
-		BDE5155F1AA50F76002773F3 /* 42wahwah.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE515151AA50F76002773F3 /* 42wahwah.m4a */; };
-		BDE515601AA50F76002773F3 /* 51holditrightthere.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE515161AA50F76002773F3 /* 51holditrightthere.m4a */; };
-		BDE515611AA50F76002773F3 /* 51wheregoing.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE515171AA50F76002773F3 /* 51wheregoing.m4a */; };
-		BDE515621AA50F76002773F3 /* 61dontkeepuswaiting.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE515181AA50F76002773F3 /* 61dontkeepuswaiting.m4a */; };
-		BDE515631AA50F76002773F3 /* 61elderlysnail.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE515191AA50F76002773F3 /* 61elderlysnail.m4a */; };
-		BDE515641AA50F76002773F3 /* 61getbacktoit.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE5151A1AA50F76002773F3 /* 61getbacktoit.m4a */; };
-		BDE515651AA50F76002773F3 /* 61huh.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE5151B1AA50F76002773F3 /* 61huh.m4a */; };
-		BDE515661AA50F76002773F3 /* 61moveyoufool.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE5151C1AA50F76002773F3 /* 61moveyoufool.m4a */; };
-		BDE515671AA50F76002773F3 /* 61oldlady.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE5151D1AA50F76002773F3 /* 61oldlady.m4a */; };
-		BDE515681AA50F76002773F3 /* 61tmgappreciates.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE5151E1AA50F76002773F3 /* 61tmgappreciates.m4a */; };
-		BDE515691AA50F76002773F3 /* 61whygetgame.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE5151F1AA50F76002773F3 /* 61whygetgame.m4a */; };
-		BDE515831AA5997D002773F3 /* 22kaboom.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDE515821AA5997C002773F3 /* 22kaboom.m4a */; };
 		BDF8E55F18163AC300AD654B /* countdown.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BDF8E55E18163AC300AD654B /* countdown.m4a */; };
 		BDFAE8E0183FDEA100F0C2B8 /* HelpVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFAE8DF183FDEA100F0C2B8 /* HelpVC.m */; };
 		BDFAE8EF1846879700F0C2B8 /* help1.png in Resources */ = {isa = PBXBuildFile; fileRef = BDFAE8E11846879700F0C2B8 /* help1.png */; };
@@ -432,6 +465,114 @@
 		BD7E41D41797989A00FBB8D1 /* SettingsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsVC.m; sourceTree = "<group>"; };
 		BD7E41D61797994000FBB8D1 /* AboutVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutVC.h; sourceTree = "<group>"; };
 		BD7E41D71797994100FBB8D1 /* AboutVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutVC.m; sourceTree = "<group>"; };
+		BDADA7831BB3813700E369F5 /* 01FEMALE_04_YouLikeLoudNoises.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 01FEMALE_04_YouLikeLoudNoises.m4a; sourceTree = "<group>"; };
+		BDADA7841BB3813700E369F5 /* 01FEMALE_07_InsuranceUpToDate.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 01FEMALE_07_InsuranceUpToDate.m4a; sourceTree = "<group>"; };
+		BDADA7851BB3813700E369F5 /* 01MALE_31_OurPlanIsPerfect.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 01MALE_31_OurPlanIsPerfect.m4a; sourceTree = "<group>"; };
+		BDADA7861BB3813700E369F5 /* 01MALE_33_YouveAlreadyLost.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 01MALE_33_YouveAlreadyLost.m4a; sourceTree = "<group>"; };
+		BDADA7871BB3813700E369F5 /* 01MALE_34_GetBurned_A.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 01MALE_34_GetBurned_A.m4a; sourceTree = "<group>"; };
+		BDADA7881BB3813700E369F5 /* 01MALE_35_GetBurned_B.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 01MALE_35_GetBurned_B.m4a; sourceTree = "<group>"; };
+		BDADA7891BB3813700E369F5 /* 01MALE_39_IsThisYourFirstTime_A.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 01MALE_39_IsThisYourFirstTime_A.m4a; sourceTree = "<group>"; };
+		BDADA78A1BB3813700E369F5 /* 01MALE_40_IsThisYourFirstTime_B.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 01MALE_40_IsThisYourFirstTime_B.m4a; sourceTree = "<group>"; };
+		BDADA78B1BB3813700E369F5 /* 01MALE_41_ArentVeryGood.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 01MALE_41_ArentVeryGood.m4a; sourceTree = "<group>"; };
+		BDADA78C1BB3813700E369F5 /* 01MALE_42_Inevitable.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 01MALE_42_Inevitable.m4a; sourceTree = "<group>"; };
+		BDADA78D1BB3813700E369F5 /* 01SARGE_03_MadeItThroughWorse.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 01SARGE_03_MadeItThroughWorse.m4a; sourceTree = "<group>"; };
+		BDADA78E1BB3813700E369F5 /* 01SARGE_08_BestSquadEverTrained.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 01SARGE_08_BestSquadEverTrained.m4a; sourceTree = "<group>"; };
+		BDADA78F1BB3813700E369F5 /* 01SARGE_12_KeepAtItTeam.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 01SARGE_12_KeepAtItTeam.m4a; sourceTree = "<group>"; };
+		BDADA7901BB3813700E369F5 /* 01SARGE_13_GettingWarmer.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 01SARGE_13_GettingWarmer.m4a; sourceTree = "<group>"; };
+		BDADA7911BB3813700E369F5 /* 02FEMALE_02_HotInHere.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 02FEMALE_02_HotInHere.m4a; sourceTree = "<group>"; };
+		BDADA7921BB3813700E369F5 /* 02FEMALE_03_FuseIsShort.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 02FEMALE_03_FuseIsShort.m4a; sourceTree = "<group>"; };
+		BDADA7931BB3813700E369F5 /* 02FEMALE_04_YouLikeLoudNoises.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 02FEMALE_04_YouLikeLoudNoises.m4a; sourceTree = "<group>"; };
+		BDADA7941BB3813700E369F5 /* 02MALE_06_BOOMjustkidding.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 02MALE_06_BOOMjustkidding.m4a; sourceTree = "<group>"; };
+		BDADA7951BB3813700E369F5 /* 02MALE_19_ItsCute_A.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 02MALE_19_ItsCute_A.m4a; sourceTree = "<group>"; };
+		BDADA7961BB3813700E369F5 /* 02MALE_20_ItsCute_B.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 02MALE_20_ItsCute_B.m4a; sourceTree = "<group>"; };
+		BDADA7971BB3813700E369F5 /* 02MALE_21_ItsCute_C.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 02MALE_21_ItsCute_C.m4a; sourceTree = "<group>"; };
+		BDADA7981BB3813700E369F5 /* 02MALE_22_ItsCute_D.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 02MALE_22_ItsCute_D.m4a; sourceTree = "<group>"; };
+		BDADA7991BB3813700E369F5 /* 02MALE_23_ItsCute_E.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 02MALE_23_ItsCute_E.m4a; sourceTree = "<group>"; };
+		BDADA79A1BB3813700E369F5 /* 02MALE_38_YoureRunningOutofTime.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 02MALE_38_YoureRunningOutofTime.m4a; sourceTree = "<group>"; };
+		BDADA79B1BB3813700E369F5 /* 02SARGE_14_BadFeelingAboutThis.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 02SARGE_14_BadFeelingAboutThis.m4a; sourceTree = "<group>"; };
+		BDADA79C1BB3813700E369F5 /* 03FEMALE_01_CuttheWhiteWire.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 03FEMALE_01_CuttheWhiteWire.m4a; sourceTree = "<group>"; };
+		BDADA79D1BB3813700E369F5 /* 03FEMALE_05_TurnRightMoveTwo.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 03FEMALE_05_TurnRightMoveTwo.m4a; sourceTree = "<group>"; };
+		BDADA79E1BB3813700E369F5 /* 03FEMALE_06_Numbers.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 03FEMALE_06_Numbers.m4a; sourceTree = "<group>"; };
+		BDADA79F1BB3813700E369F5 /* 03FEMALE_08_TwentyQuestions.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 03FEMALE_08_TwentyQuestions.m4a; sourceTree = "<group>"; };
+		BDADA7A01BB3813700E369F5 /* 03MALE_32_RememberTheRedWires.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 03MALE_32_RememberTheRedWires.m4a; sourceTree = "<group>"; };
+		BDADA7A11BB3813700E369F5 /* 03MALE_36_RedWireorBlue.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 03MALE_36_RedWireorBlue.m4a; sourceTree = "<group>"; };
+		BDADA7A21BB3813700E369F5 /* 03MALE_37_54321.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 03MALE_37_54321.m4a; sourceTree = "<group>"; };
+		BDADA7A31BB3813700E369F5 /* 11SARGE_02_YouCanDoThis.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 11SARGE_02_YouCanDoThis.m4a; sourceTree = "<group>"; };
+		BDADA7A41BB3813700E369F5 /* 11SARGE_04_YoullDoFine.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 11SARGE_04_YoullDoFine.m4a; sourceTree = "<group>"; };
+		BDADA7A51BB3813700E369F5 /* 11SARGE_07_WereAllCountingOnYou.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 11SARGE_07_WereAllCountingOnYou.m4a; sourceTree = "<group>"; };
+		BDADA7A61BB3813700E369F5 /* 11SARGE_15_BestSquadInTheRoom.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 11SARGE_15_BestSquadInTheRoom.m4a; sourceTree = "<group>"; };
+		BDADA7A71BB3813700E369F5 /* 21FEMALE_09_JokesOnYou.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 21FEMALE_09_JokesOnYou.m4a; sourceTree = "<group>"; };
+		BDADA7A81BB3813700E369F5 /* 21MALE_01_TooEasy_A.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 21MALE_01_TooEasy_A.m4a; sourceTree = "<group>"; };
+		BDADA7A91BB3813700E369F5 /* 21MALE_02_TooEasy_B.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 21MALE_02_TooEasy_B.m4a; sourceTree = "<group>"; };
+		BDADA7AA1BB3813700E369F5 /* 21MALE_03_TooEasy_C.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 21MALE_03_TooEasy_C.m4a; sourceTree = "<group>"; };
+		BDADA7AB1BB3813700E369F5 /* 21MALE_24_BombWasMyFavorite_A.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 21MALE_24_BombWasMyFavorite_A.m4a; sourceTree = "<group>"; };
+		BDADA7AC1BB3813700E369F5 /* 21MALE_25_BombWasMyFavorite_B.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 21MALE_25_BombWasMyFavorite_B.m4a; sourceTree = "<group>"; };
+		BDADA7AD1BB3813700E369F5 /* 21MALE_26_BombWasMyFavorite_C.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 21MALE_26_BombWasMyFavorite_C.m4a; sourceTree = "<group>"; };
+		BDADA7AE1BB3813700E369F5 /* 21MALE_43_WastedTimeOnDecoy.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 21MALE_43_WastedTimeOnDecoy.m4a; sourceTree = "<group>"; };
+		BDADA7AF1BB3813700E369F5 /* 21MALE_44_NextBombInTime_A.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 21MALE_44_NextBombInTime_A.m4a; sourceTree = "<group>"; };
+		BDADA7B01BB3813700E369F5 /* 21MALE_45_NextBombInTime_B.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 21MALE_45_NextBombInTime_B.m4a; sourceTree = "<group>"; };
+		BDADA7B11BB3813700E369F5 /* 21MALE_46_NextBombInTime_C.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 21MALE_46_NextBombInTime_C.m4a; sourceTree = "<group>"; };
+		BDADA7B21BB3813700E369F5 /* 21MALE_47_IGaveYouThatOne.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 21MALE_47_IGaveYouThatOne.m4a; sourceTree = "<group>"; };
+		BDADA7B31BB3813700E369F5 /* 21MALE_48_AlwaysMoreBombs_A.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 21MALE_48_AlwaysMoreBombs_A.m4a; sourceTree = "<group>"; };
+		BDADA7B41BB3813700E369F5 /* 21MALE_49_AlwaysMoreBombs_B.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 21MALE_49_AlwaysMoreBombs_B.m4a; sourceTree = "<group>"; };
+		BDADA7B51BB3813700E369F5 /* 21SARGE_01_YouGuysAreBest.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 21SARGE_01_YouGuysAreBest.m4a; sourceTree = "<group>"; };
+		BDADA7B61BB3813700E369F5 /* 21SARGE_06_StayCalm.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 21SARGE_06_StayCalm.m4a; sourceTree = "<group>"; };
+		BDADA7B71BB3813700E369F5 /* 21SARGE_11_AlmostThere.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 21SARGE_11_AlmostThere.m4a; sourceTree = "<group>"; };
+		BDADA7B81BB3813700E369F5 /* 21SARGE_16_BD_GoodWork_MightMakeItOut.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 21SARGE_16_BD_GoodWork_MightMakeItOut.m4a; sourceTree = "<group>"; };
+		BDADA7B91BB3813700E369F5 /* 21SARGE_17_BD_ThatWasCuttingItClose.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 21SARGE_17_BD_ThatWasCuttingItClose.m4a; sourceTree = "<group>"; };
+		BDADA7BA1BB3813700E369F5 /* 21SARGE_19_BD_CantBelieveYouGotOne.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 21SARGE_19_BD_CantBelieveYouGotOne.m4a; sourceTree = "<group>"; };
+		BDADA7BB1BB3813700E369F5 /* 21SARGE_20_BD_DontGetCocky.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 21SARGE_20_BD_DontGetCocky.m4a; sourceTree = "<group>"; };
+		BDADA7BC1BB3813700E369F5 /* 21SARGE_21_BD_HaventCompletelyFailed.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 21SARGE_21_BD_HaventCompletelyFailed.m4a; sourceTree = "<group>"; };
+		BDADA7BD1BB3813700E369F5 /* 21SARGE_22_BD_PrincessInAnotherCastle.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 21SARGE_22_BD_PrincessInAnotherCastle.m4a; sourceTree = "<group>"; };
+		BDADA7BE1BB3813700E369F5 /* 22MALE_04_EarthShattering_A.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 22MALE_04_EarthShattering_A.m4a; sourceTree = "<group>"; };
+		BDADA7BF1BB3813700E369F5 /* 22MALE_05_EarthShattering_B.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 22MALE_05_EarthShattering_B.m4a; sourceTree = "<group>"; };
+		BDADA7C01BB3813700E369F5 /* 31FEMALE_10_CursesFoiledAgain.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 31FEMALE_10_CursesFoiledAgain.m4a; sourceTree = "<group>"; };
+		BDADA7C11BB3813700E369F5 /* 31FEMALE_11_PlantedMore.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 31FEMALE_11_PlantedMore.m4a; sourceTree = "<group>"; };
+		BDADA7C21BB3813700E369F5 /* 31MALE_07_Acme_A.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 31MALE_07_Acme_A.m4a; sourceTree = "<group>"; };
+		BDADA7C31BB3813700E369F5 /* 31MALE_08_Acme_B.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 31MALE_08_Acme_B.m4a; sourceTree = "<group>"; };
+		BDADA7C41BB3813700E369F5 /* 31MALE_27_ThisAintOver_A.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 31MALE_27_ThisAintOver_A.m4a; sourceTree = "<group>"; };
+		BDADA7C51BB3813700E369F5 /* 31MALE_28_ThisAintOver_B.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 31MALE_28_ThisAintOver_B.m4a; sourceTree = "<group>"; };
+		BDADA7C61BB3813700E369F5 /* 31MALE_29_ThisAintOver_C.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 31MALE_29_ThisAintOver_C.m4a; sourceTree = "<group>"; };
+		BDADA7C71BB3813700E369F5 /* 31MALE_30_ThisAintOver_D.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 31MALE_30_ThisAintOver_D.m4a; sourceTree = "<group>"; };
+		BDADA7C81BB3813700E369F5 /* 31MALE_50_NeverStopBURN_A.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 31MALE_50_NeverStopBURN_A.m4a; sourceTree = "<group>"; };
+		BDADA7C91BB3813700E369F5 /* 31MALE_51_NeverStopBURN_B.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 31MALE_51_NeverStopBURN_B.m4a; sourceTree = "<group>"; };
+		BDADA7CA1BB3813700E369F5 /* 31MALE_52_DisabledOurBombs.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 31MALE_52_DisabledOurBombs.m4a; sourceTree = "<group>"; };
+		BDADA7CB1BB3813700E369F5 /* 31MALE_53_ILetYouWin.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 31MALE_53_ILetYouWin.m4a; sourceTree = "<group>"; };
+		BDADA7CC1BB3813700E369F5 /* 31MALE_54_IWontPlayNice.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 31MALE_54_IWontPlayNice.m4a; sourceTree = "<group>"; };
+		BDADA7CD1BB3813700E369F5 /* 31MALE_55_IllGetYou.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 31MALE_55_IllGetYou.m4a; sourceTree = "<group>"; };
+		BDADA7CE1BB3813700E369F5 /* 31SARGE_05_WouldntHaveSentYou.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 31SARGE_05_WouldntHaveSentYou.m4a; sourceTree = "<group>"; };
+		BDADA7CF1BB3813700E369F5 /* 31SARGE_09_DontLetItGoToYourHead.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 31SARGE_09_DontLetItGoToYourHead.m4a; sourceTree = "<group>"; };
+		BDADA7D01BB3813700E369F5 /* 31SARGE_18_BD_INeverDoubtedYou.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 31SARGE_18_BD_INeverDoubtedYou.m4a; sourceTree = "<group>"; };
+		BDADA7D11BB3813700E369F5 /* 31SARGE_23_MC_SurprisedYoureAlive.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 31SARGE_23_MC_SurprisedYoureAlive.m4a; sourceTree = "<group>"; };
+		BDADA7D21BB3813700E369F5 /* 31SARGE_24_MC_WhenAPlanComesTogether.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 31SARGE_24_MC_WhenAPlanComesTogether.m4a; sourceTree = "<group>"; };
+		BDADA7D31BB3813700E369F5 /* 31SARGE_25_MC_IceCreamForEveryone.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 31SARGE_25_MC_IceCreamForEveryone.m4a; sourceTree = "<group>"; };
+		BDADA7D41BB3813700E369F5 /* 31SARGE_26_MC_ThatsAllOfThem.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 31SARGE_26_MC_ThatsAllOfThem.m4a; sourceTree = "<group>"; };
+		BDADA7D51BB3813700E369F5 /* 31SARGE_27_MC_YouDidItAndInRecordTime.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 31SARGE_27_MC_YouDidItAndInRecordTime.m4a; sourceTree = "<group>"; };
+		BDADA7D61BB3813700E369F5 /* 31SARGE_28_MC_LooksLikeTheGoodGuysWin.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 31SARGE_28_MC_LooksLikeTheGoodGuysWin.m4a; sourceTree = "<group>"; };
+		BDADA7D71BB3813700E369F5 /* 31SARGE_29_MC_OutstandingWork.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 31SARGE_29_MC_OutstandingWork.m4a; sourceTree = "<group>"; };
+		BDADA7D81BB3813700E369F5 /* 41FEMALE_12_BombVoyage_A.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 41FEMALE_12_BombVoyage_A.m4a; sourceTree = "<group>"; };
+		BDADA7D91BB3813700E369F5 /* 41FEMALE_13_BombVoyage_B.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 41FEMALE_13_BombVoyage_B.m4a; sourceTree = "<group>"; };
+		BDADA7DA1BB3813700E369F5 /* 41FEMALE_14_Blast.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 41FEMALE_14_Blast.m4a; sourceTree = "<group>"; };
+		BDADA7DB1BB3813700E369F5 /* 41FEMALE_15_GreatJobofMessingUp.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 41FEMALE_15_GreatJobofMessingUp.m4a; sourceTree = "<group>"; };
+		BDADA7DC1BB3813700E369F5 /* 41FEMALE_16_DontFeelBad_A.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 41FEMALE_16_DontFeelBad_A.m4a; sourceTree = "<group>"; };
+		BDADA7DD1BB3813700E369F5 /* 41FEMALE_16_DontFeelBad_B.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 41FEMALE_16_DontFeelBad_B.m4a; sourceTree = "<group>"; };
+		BDADA7DE1BB3813700E369F5 /* 41MALE_13_Dy-No-Mite_A.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "41MALE_13_Dy-No-Mite_A.m4a"; sourceTree = "<group>"; };
+		BDADA7DF1BB3813700E369F5 /* 41MALE_14_Dy-No-Mite_B.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "41MALE_14_Dy-No-Mite_B.m4a"; sourceTree = "<group>"; };
+		BDADA7E01BB3813700E369F5 /* 41MALE_15_Dy-No-Mite_C.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "41MALE_15_Dy-No-Mite_C.m4a"; sourceTree = "<group>"; };
+		BDADA7E11BB3813700E369F5 /* 41MALE_16_KnockKnock_A.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 41MALE_16_KnockKnock_A.m4a; sourceTree = "<group>"; };
+		BDADA7E21BB3813700E369F5 /* 41MALE_17_KnockKnock_B.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 41MALE_17_KnockKnock_B.m4a; sourceTree = "<group>"; };
+		BDADA7E31BB3813700E369F5 /* 41MALE_18_KnockKnock_C.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 41MALE_18_KnockKnock_C.m4a; sourceTree = "<group>"; };
+		BDADA7E41BB3813700E369F5 /* 41MALE_56_JustTheBeginning.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 41MALE_56_JustTheBeginning.m4a; sourceTree = "<group>"; };
+		BDADA7E51BB3813700E369F5 /* 41MALE_57_TooEasy.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 41MALE_57_TooEasy.m4a; sourceTree = "<group>"; };
+		BDADA7E61BB3813700E369F5 /* 41SARGE_30_FM_WeKnewThisWouldHappen.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 41SARGE_30_FM_WeKnewThisWouldHappen.m4a; sourceTree = "<group>"; };
+		BDADA7E71BB3813700E369F5 /* 41SARGE_31_FM_YourBestWasntEnough.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 41SARGE_31_FM_YourBestWasntEnough.m4a; sourceTree = "<group>"; };
+		BDADA7E81BB3813700E369F5 /* 41SARGE_32_FM_YouHaveFailed.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 41SARGE_32_FM_YouHaveFailed.m4a; sourceTree = "<group>"; };
+		BDADA7E91BB3813700E369F5 /* 42SARGE_33_FM_WhatDoYouWantAParade.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 42SARGE_33_FM_WhatDoYouWantAParade.m4a; sourceTree = "<group>"; };
+		BDADA7EA1BB3813700E369F5 /* 51SARGE_10_StayOnTarget.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 51SARGE_10_StayOnTarget.m4a; sourceTree = "<group>"; };
+		BDADA7EB1BB3813700E369F5 /* 61MALE_09_TickTickTick_A.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 61MALE_09_TickTickTick_A.m4a; sourceTree = "<group>"; };
+		BDADA7EC1BB3813700E369F5 /* 61MALE_10_TickTickTick_B.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 61MALE_10_TickTickTick_B.m4a; sourceTree = "<group>"; };
+		BDADA7ED1BB3813800E369F5 /* 61MALE_11_TickTickTick_C.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 61MALE_11_TickTickTick_C.m4a; sourceTree = "<group>"; };
+		BDADA7EE1BB3813800E369F5 /* 61MALE_12_TickTickTick_D.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 61MALE_12_TickTickTick_D.m4a; sourceTree = "<group>"; };
 		BDC884D41BA54E0E00689832 /* Icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60.png"; sourceTree = "<group>"; };
 		BDC884D51BA54E0E00689832 /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
 		BDC884D61BA54E0E00689832 /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@3x.png"; sourceTree = "<group>"; };
@@ -455,81 +596,6 @@
 		BDC884E81BA54E0E00689832 /* launch320@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launch320@2x.png"; sourceTree = "<group>"; };
 		BDC884EA1BA54E0E00689832 /* launch768x1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch768x1024.png; sourceTree = "<group>"; };
 		BDC884EB1BA54E0E00689832 /* launch1536x2048.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch1536x2048.png; sourceTree = "<group>"; };
-		BDE514D61AA50F76002773F3 /* 01canyourepeatthat.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 01canyourepeatthat.m4a; sourceTree = "<group>"; };
-		BDE514D71AA50F76002773F3 /* 01doinggreat.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 01doinggreat.m4a; sourceTree = "<group>"; };
-		BDE514D81AA50F76002773F3 /* 01escape.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 01escape.m4a; sourceTree = "<group>"; };
-		BDE514D91AA50F76002773F3 /* 01gogetbombs.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 01gogetbombs.m4a; sourceTree = "<group>"; };
-		BDE514DA1AA50F76002773F3 /* 01gogogo.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 01gogogo.m4a; sourceTree = "<group>"; };
-		BDE514DB1AA50F76002773F3 /* 01help.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 01help.m4a; sourceTree = "<group>"; };
-		BDE514DC1AA50F76002773F3 /* 01helphelp.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 01helphelp.m4a; sourceTree = "<group>"; };
-		BDE514DD1AA50F76002773F3 /* 01helpmommy.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 01helpmommy.m4a; sourceTree = "<group>"; };
-		BDE514DE1AA50F76002773F3 /* 01ohitsabomb.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 01ohitsabomb.m4a; sourceTree = "<group>"; };
-		BDE514DF1AA50F76002773F3 /* 01waitbackup.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 01waitbackup.m4a; sourceTree = "<group>"; };
-		BDE514E01AA50F76002773F3 /* 01whereareyoumommy.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 01whereareyoumommy.m4a; sourceTree = "<group>"; };
-		BDE514E11AA50F76002773F3 /* 02bam.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 02bam.m4a; sourceTree = "<group>"; };
-		BDE514E21AA50F76002773F3 /* 02checkbatteries.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 02checkbatteries.m4a; sourceTree = "<group>"; };
-		BDE514E31AA50F76002773F3 /* 02hitthedeck.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 02hitthedeck.m4a; sourceTree = "<group>"; };
-		BDE514E41AA50F76002773F3 /* 02hurry.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 02hurry.m4a; sourceTree = "<group>"; };
-		BDE514E51AA50F76002773F3 /* 02isthatthebest.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 02isthatthebest.m4a; sourceTree = "<group>"; };
-		BDE514E61AA50F76002773F3 /* 02nevergetthereintime.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 02nevergetthereintime.m4a; sourceTree = "<group>"; };
-		BDE514E71AA50F76002773F3 /* 02onemoreword.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 02onemoreword.m4a; sourceTree = "<group>"; };
-		BDE514E81AA50F76002773F3 /* 02scream.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 02scream.m4a; sourceTree = "<group>"; };
-		BDE514E91AA50F76002773F3 /* 02shouldevenlisten.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 02shouldevenlisten.m4a; sourceTree = "<group>"; };
-		BDE514EA1AA50F76002773F3 /* 02slam.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 02slam.m4a; sourceTree = "<group>"; };
-		BDE514EB1AA50F76002773F3 /* 02thatsthewrongdoor.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 02thatsthewrongdoor.m4a; sourceTree = "<group>"; };
-		BDE514EC1AA50F76002773F3 /* 02timerunningout.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 02timerunningout.m4a; sourceTree = "<group>"; };
-		BDE514ED1AA50F76002773F3 /* 02usedtoworkhere.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 02usedtoworkhere.m4a; sourceTree = "<group>"; };
-		BDE514EE1AA50F76002773F3 /* 02willgetcake.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 02willgetcake.m4a; sourceTree = "<group>"; };
-		BDE514EF1AA50F76002773F3 /* 02youllnevergetthereintime.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 02youllnevergetthereintime.m4a; sourceTree = "<group>"; };
-		BDE514F01AA50F76002773F3 /* 03bomb.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 03bomb.m4a; sourceTree = "<group>"; };
-		BDE514F11AA50F76002773F3 /* 03cardisred.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 03cardisred.m4a; sourceTree = "<group>"; };
-		BDE514F21AA50F76002773F3 /* 03cutredwireorgreen.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 03cutredwireorgreen.m4a; sourceTree = "<group>"; };
-		BDE514F31AA50F76002773F3 /* 03door.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 03door.m4a; sourceTree = "<group>"; };
-		BDE514F41AA50F76002773F3 /* 03hostage.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 03hostage.m4a; sourceTree = "<group>"; };
-		BDE514F51AA50F76002773F3 /* 03isaidblue.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 03isaidblue.m4a; sourceTree = "<group>"; };
-		BDE514F61AA50F76002773F3 /* 03itsyellow.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 03itsyellow.m4a; sourceTree = "<group>"; };
-		BDE514F71AA50F76002773F3 /* 03noitsgreen.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 03noitsgreen.m4a; sourceTree = "<group>"; };
-		BDE514F81AA50F76002773F3 /* 03noitsgreen2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 03noitsgreen2.m4a; sourceTree = "<group>"; };
-		BDE514F91AA50F76002773F3 /* 03noyoufoolitsblue.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 03noyoufoolitsblue.m4a; sourceTree = "<group>"; };
-		BDE514FA1AA50F76002773F3 /* 03reallythatsyourclue.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 03reallythatsyourclue.m4a; sourceTree = "<group>"; };
-		BDE514FB1AA50F76002773F3 /* 03rednoblue.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 03rednoblue.m4a; sourceTree = "<group>"; };
-		BDE514FC1AA50F76002773F3 /* 03timesupjustkidding.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 03timesupjustkidding.m4a; sourceTree = "<group>"; };
-		BDE514FD1AA50F76002773F3 /* 03trickingyou.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 03trickingyou.m4a; sourceTree = "<group>"; };
-		BDE514FE1AA50F76002773F3 /* 11starting1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 11starting1.m4a; sourceTree = "<group>"; };
-		BDE514FF1AA50F76002773F3 /* 11starting2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 11starting2.m4a; sourceTree = "<group>"; };
-		BDE515001AA50F76002773F3 /* 11starting3.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 11starting3.m4a; sourceTree = "<group>"; };
-		BDE515011AA50F76002773F3 /* 21nicework.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 21nicework.m4a; sourceTree = "<group>"; };
-		BDE515021AA50F76002773F3 /* 21onedown.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 21onedown.m4a; sourceTree = "<group>"; };
-		BDE515031AA50F76002773F3 /* 21pieceacake.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 21pieceacake.m4a; sourceTree = "<group>"; };
-		BDE515041AA50F76002773F3 /* 21pieceofcake.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 21pieceofcake.m4a; sourceTree = "<group>"; };
-		BDE515051AA50F76002773F3 /* 21woohoo.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 21woohoo.m4a; sourceTree = "<group>"; };
-		BDE515061AA50F76002773F3 /* 21woohoo2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 21woohoo2.m4a; sourceTree = "<group>"; };
-		BDE515071AA50F76002773F3 /* 22thatwaseasy.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 22thatwaseasy.m4a; sourceTree = "<group>"; };
-		BDE515081AA50F76002773F3 /* 22vitaltestingapparatus.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 22vitaltestingapparatus.m4a; sourceTree = "<group>"; };
-		BDE515091AA50F76002773F3 /* 31anotherbuildingsaved.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 31anotherbuildingsaved.m4a; sourceTree = "<group>"; };
-		BDE5150A1AA50F76002773F3 /* 31anothersaved.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 31anothersaved.m4a; sourceTree = "<group>"; };
-		BDE5150B1AA50F76002773F3 /* 31congratsonestepcloser.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 31congratsonestepcloser.m4a; sourceTree = "<group>"; };
-		BDE5150C1AA50F76002773F3 /* 31congratswereonestepclosertoburn.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 31congratswereonestepclosertoburn.m4a; sourceTree = "<group>"; };
-		BDE5150D1AA50F76002773F3 /* 31cursesfoiledagain.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 31cursesfoiledagain.m4a; sourceTree = "<group>"; };
-		BDE5150E1AA50F76002773F3 /* 31mayhavestopped.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 31mayhavestopped.m4a; sourceTree = "<group>"; };
-		BDE5150F1AA50F76002773F3 /* 32niceworkkid.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 32niceworkkid.m4a; sourceTree = "<group>"; };
-		BDE515101AA50F76002773F3 /* 41sorrychief.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 41sorrychief.m4a; sourceTree = "<group>"; };
-		BDE515111AA50F76002773F3 /* 41wuhoha.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 41wuhoha.m4a; sourceTree = "<group>"; };
-		BDE515121AA50F76002773F3 /* 41yes.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 41yes.m4a; sourceTree = "<group>"; };
-		BDE515131AA50F76002773F3 /* 42feeltheburn.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 42feeltheburn.m4a; sourceTree = "<group>"; };
-		BDE515141AA50F76002773F3 /* 42feeltheburn2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 42feeltheburn2.m4a; sourceTree = "<group>"; };
-		BDE515151AA50F76002773F3 /* 42wahwah.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 42wahwah.m4a; sourceTree = "<group>"; };
-		BDE515161AA50F76002773F3 /* 51holditrightthere.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 51holditrightthere.m4a; sourceTree = "<group>"; };
-		BDE515171AA50F76002773F3 /* 51wheregoing.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 51wheregoing.m4a; sourceTree = "<group>"; };
-		BDE515181AA50F76002773F3 /* 61dontkeepuswaiting.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 61dontkeepuswaiting.m4a; sourceTree = "<group>"; };
-		BDE515191AA50F76002773F3 /* 61elderlysnail.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 61elderlysnail.m4a; sourceTree = "<group>"; };
-		BDE5151A1AA50F76002773F3 /* 61getbacktoit.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 61getbacktoit.m4a; sourceTree = "<group>"; };
-		BDE5151B1AA50F76002773F3 /* 61huh.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 61huh.m4a; sourceTree = "<group>"; };
-		BDE5151C1AA50F76002773F3 /* 61moveyoufool.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 61moveyoufool.m4a; sourceTree = "<group>"; };
-		BDE5151D1AA50F76002773F3 /* 61oldlady.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 61oldlady.m4a; sourceTree = "<group>"; };
-		BDE5151E1AA50F76002773F3 /* 61tmgappreciates.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 61tmgappreciates.m4a; sourceTree = "<group>"; };
-		BDE5151F1AA50F76002773F3 /* 61whygetgame.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 61whygetgame.m4a; sourceTree = "<group>"; };
-		BDE515821AA5997C002773F3 /* 22kaboom.m4a */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 22kaboom.m4a; sourceTree = "<group>"; };
 		BDF8E55E18163AC300AD654B /* countdown.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = countdown.m4a; sourceTree = "<group>"; };
 		BDFAE8DE183FDEA000F0C2B8 /* HelpVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpVC.h; sourceTree = "<group>"; };
 		BDFAE8DF183FDEA100F0C2B8 /* HelpVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpVC.m; sourceTree = "<group>"; };
@@ -578,81 +644,114 @@
 		BD1DD5D91A9EE7B70056EB3E /* Clips */ = {
 			isa = PBXGroup;
 			children = (
-				BDE514D61AA50F76002773F3 /* 01canyourepeatthat.m4a */,
-				BDE514D71AA50F76002773F3 /* 01doinggreat.m4a */,
-				BDE514D81AA50F76002773F3 /* 01escape.m4a */,
-				BDE514D91AA50F76002773F3 /* 01gogetbombs.m4a */,
-				BDE514DA1AA50F76002773F3 /* 01gogogo.m4a */,
-				BDE514DB1AA50F76002773F3 /* 01help.m4a */,
-				BDE514DC1AA50F76002773F3 /* 01helphelp.m4a */,
-				BDE514DD1AA50F76002773F3 /* 01helpmommy.m4a */,
-				BDE514DE1AA50F76002773F3 /* 01ohitsabomb.m4a */,
-				BDE514DF1AA50F76002773F3 /* 01waitbackup.m4a */,
-				BDE514E01AA50F76002773F3 /* 01whereareyoumommy.m4a */,
-				BDE514E11AA50F76002773F3 /* 02bam.m4a */,
-				BDE514E21AA50F76002773F3 /* 02checkbatteries.m4a */,
-				BDE514E31AA50F76002773F3 /* 02hitthedeck.m4a */,
-				BDE514E41AA50F76002773F3 /* 02hurry.m4a */,
-				BDE514E51AA50F76002773F3 /* 02isthatthebest.m4a */,
-				BDE514E61AA50F76002773F3 /* 02nevergetthereintime.m4a */,
-				BDE514E71AA50F76002773F3 /* 02onemoreword.m4a */,
-				BDE514E81AA50F76002773F3 /* 02scream.m4a */,
-				BDE514E91AA50F76002773F3 /* 02shouldevenlisten.m4a */,
-				BDE514EA1AA50F76002773F3 /* 02slam.m4a */,
-				BDE514EB1AA50F76002773F3 /* 02thatsthewrongdoor.m4a */,
-				BDE514EC1AA50F76002773F3 /* 02timerunningout.m4a */,
-				BDE514ED1AA50F76002773F3 /* 02usedtoworkhere.m4a */,
-				BDE514EE1AA50F76002773F3 /* 02willgetcake.m4a */,
-				BDE514EF1AA50F76002773F3 /* 02youllnevergetthereintime.m4a */,
-				BDE514F01AA50F76002773F3 /* 03bomb.m4a */,
-				BDE514F11AA50F76002773F3 /* 03cardisred.m4a */,
-				BDE514F21AA50F76002773F3 /* 03cutredwireorgreen.m4a */,
-				BDE514F31AA50F76002773F3 /* 03door.m4a */,
-				BDE514F41AA50F76002773F3 /* 03hostage.m4a */,
-				BDE514F51AA50F76002773F3 /* 03isaidblue.m4a */,
-				BDE514F61AA50F76002773F3 /* 03itsyellow.m4a */,
-				BDE514F71AA50F76002773F3 /* 03noitsgreen.m4a */,
-				BDE514F81AA50F76002773F3 /* 03noitsgreen2.m4a */,
-				BDE514F91AA50F76002773F3 /* 03noyoufoolitsblue.m4a */,
-				BDE514FA1AA50F76002773F3 /* 03reallythatsyourclue.m4a */,
-				BDE514FB1AA50F76002773F3 /* 03rednoblue.m4a */,
-				BDE514FC1AA50F76002773F3 /* 03timesupjustkidding.m4a */,
-				BDE514FD1AA50F76002773F3 /* 03trickingyou.m4a */,
-				BDE514FE1AA50F76002773F3 /* 11starting1.m4a */,
-				BDE514FF1AA50F76002773F3 /* 11starting2.m4a */,
-				BDE515001AA50F76002773F3 /* 11starting3.m4a */,
-				BDE515011AA50F76002773F3 /* 21nicework.m4a */,
-				BDE515021AA50F76002773F3 /* 21onedown.m4a */,
-				BDE515031AA50F76002773F3 /* 21pieceacake.m4a */,
-				BDE515041AA50F76002773F3 /* 21pieceofcake.m4a */,
-				BDE515051AA50F76002773F3 /* 21woohoo.m4a */,
-				BDE515061AA50F76002773F3 /* 21woohoo2.m4a */,
-				BDE515821AA5997C002773F3 /* 22kaboom.m4a */,
-				BDE515071AA50F76002773F3 /* 22thatwaseasy.m4a */,
-				BDE515081AA50F76002773F3 /* 22vitaltestingapparatus.m4a */,
-				BDE515091AA50F76002773F3 /* 31anotherbuildingsaved.m4a */,
-				BDE5150A1AA50F76002773F3 /* 31anothersaved.m4a */,
-				BDE5150B1AA50F76002773F3 /* 31congratsonestepcloser.m4a */,
-				BDE5150C1AA50F76002773F3 /* 31congratswereonestepclosertoburn.m4a */,
-				BDE5150D1AA50F76002773F3 /* 31cursesfoiledagain.m4a */,
-				BDE5150E1AA50F76002773F3 /* 31mayhavestopped.m4a */,
-				BDE5150F1AA50F76002773F3 /* 32niceworkkid.m4a */,
-				BDE515101AA50F76002773F3 /* 41sorrychief.m4a */,
-				BDE515111AA50F76002773F3 /* 41wuhoha.m4a */,
-				BDE515121AA50F76002773F3 /* 41yes.m4a */,
-				BDE515131AA50F76002773F3 /* 42feeltheburn.m4a */,
-				BDE515141AA50F76002773F3 /* 42feeltheburn2.m4a */,
-				BDE515151AA50F76002773F3 /* 42wahwah.m4a */,
-				BDE515161AA50F76002773F3 /* 51holditrightthere.m4a */,
-				BDE515171AA50F76002773F3 /* 51wheregoing.m4a */,
-				BDE515181AA50F76002773F3 /* 61dontkeepuswaiting.m4a */,
-				BDE515191AA50F76002773F3 /* 61elderlysnail.m4a */,
-				BDE5151A1AA50F76002773F3 /* 61getbacktoit.m4a */,
-				BDE5151B1AA50F76002773F3 /* 61huh.m4a */,
-				BDE5151C1AA50F76002773F3 /* 61moveyoufool.m4a */,
-				BDE5151D1AA50F76002773F3 /* 61oldlady.m4a */,
-				BDE5151E1AA50F76002773F3 /* 61tmgappreciates.m4a */,
-				BDE5151F1AA50F76002773F3 /* 61whygetgame.m4a */,
+				BDADA7831BB3813700E369F5 /* 01FEMALE_04_YouLikeLoudNoises.m4a */,
+				BDADA7841BB3813700E369F5 /* 01FEMALE_07_InsuranceUpToDate.m4a */,
+				BDADA7851BB3813700E369F5 /* 01MALE_31_OurPlanIsPerfect.m4a */,
+				BDADA7861BB3813700E369F5 /* 01MALE_33_YouveAlreadyLost.m4a */,
+				BDADA7871BB3813700E369F5 /* 01MALE_34_GetBurned_A.m4a */,
+				BDADA7881BB3813700E369F5 /* 01MALE_35_GetBurned_B.m4a */,
+				BDADA7891BB3813700E369F5 /* 01MALE_39_IsThisYourFirstTime_A.m4a */,
+				BDADA78A1BB3813700E369F5 /* 01MALE_40_IsThisYourFirstTime_B.m4a */,
+				BDADA78B1BB3813700E369F5 /* 01MALE_41_ArentVeryGood.m4a */,
+				BDADA78C1BB3813700E369F5 /* 01MALE_42_Inevitable.m4a */,
+				BDADA78D1BB3813700E369F5 /* 01SARGE_03_MadeItThroughWorse.m4a */,
+				BDADA78E1BB3813700E369F5 /* 01SARGE_08_BestSquadEverTrained.m4a */,
+				BDADA78F1BB3813700E369F5 /* 01SARGE_12_KeepAtItTeam.m4a */,
+				BDADA7901BB3813700E369F5 /* 01SARGE_13_GettingWarmer.m4a */,
+				BDADA7911BB3813700E369F5 /* 02FEMALE_02_HotInHere.m4a */,
+				BDADA7921BB3813700E369F5 /* 02FEMALE_03_FuseIsShort.m4a */,
+				BDADA7931BB3813700E369F5 /* 02FEMALE_04_YouLikeLoudNoises.m4a */,
+				BDADA7941BB3813700E369F5 /* 02MALE_06_BOOMjustkidding.m4a */,
+				BDADA7951BB3813700E369F5 /* 02MALE_19_ItsCute_A.m4a */,
+				BDADA7961BB3813700E369F5 /* 02MALE_20_ItsCute_B.m4a */,
+				BDADA7971BB3813700E369F5 /* 02MALE_21_ItsCute_C.m4a */,
+				BDADA7981BB3813700E369F5 /* 02MALE_22_ItsCute_D.m4a */,
+				BDADA7991BB3813700E369F5 /* 02MALE_23_ItsCute_E.m4a */,
+				BDADA79A1BB3813700E369F5 /* 02MALE_38_YoureRunningOutofTime.m4a */,
+				BDADA79B1BB3813700E369F5 /* 02SARGE_14_BadFeelingAboutThis.m4a */,
+				BDADA79C1BB3813700E369F5 /* 03FEMALE_01_CuttheWhiteWire.m4a */,
+				BDADA79D1BB3813700E369F5 /* 03FEMALE_05_TurnRightMoveTwo.m4a */,
+				BDADA79E1BB3813700E369F5 /* 03FEMALE_06_Numbers.m4a */,
+				BDADA79F1BB3813700E369F5 /* 03FEMALE_08_TwentyQuestions.m4a */,
+				BDADA7A01BB3813700E369F5 /* 03MALE_32_RememberTheRedWires.m4a */,
+				BDADA7A11BB3813700E369F5 /* 03MALE_36_RedWireorBlue.m4a */,
+				BDADA7A21BB3813700E369F5 /* 03MALE_37_54321.m4a */,
+				BDADA7A31BB3813700E369F5 /* 11SARGE_02_YouCanDoThis.m4a */,
+				BDADA7A41BB3813700E369F5 /* 11SARGE_04_YoullDoFine.m4a */,
+				BDADA7A51BB3813700E369F5 /* 11SARGE_07_WereAllCountingOnYou.m4a */,
+				BDADA7A61BB3813700E369F5 /* 11SARGE_15_BestSquadInTheRoom.m4a */,
+				BDADA7A71BB3813700E369F5 /* 21FEMALE_09_JokesOnYou.m4a */,
+				BDADA7A81BB3813700E369F5 /* 21MALE_01_TooEasy_A.m4a */,
+				BDADA7A91BB3813700E369F5 /* 21MALE_02_TooEasy_B.m4a */,
+				BDADA7AA1BB3813700E369F5 /* 21MALE_03_TooEasy_C.m4a */,
+				BDADA7AB1BB3813700E369F5 /* 21MALE_24_BombWasMyFavorite_A.m4a */,
+				BDADA7AC1BB3813700E369F5 /* 21MALE_25_BombWasMyFavorite_B.m4a */,
+				BDADA7AD1BB3813700E369F5 /* 21MALE_26_BombWasMyFavorite_C.m4a */,
+				BDADA7AE1BB3813700E369F5 /* 21MALE_43_WastedTimeOnDecoy.m4a */,
+				BDADA7AF1BB3813700E369F5 /* 21MALE_44_NextBombInTime_A.m4a */,
+				BDADA7B01BB3813700E369F5 /* 21MALE_45_NextBombInTime_B.m4a */,
+				BDADA7B11BB3813700E369F5 /* 21MALE_46_NextBombInTime_C.m4a */,
+				BDADA7B21BB3813700E369F5 /* 21MALE_47_IGaveYouThatOne.m4a */,
+				BDADA7B31BB3813700E369F5 /* 21MALE_48_AlwaysMoreBombs_A.m4a */,
+				BDADA7B41BB3813700E369F5 /* 21MALE_49_AlwaysMoreBombs_B.m4a */,
+				BDADA7B51BB3813700E369F5 /* 21SARGE_01_YouGuysAreBest.m4a */,
+				BDADA7B61BB3813700E369F5 /* 21SARGE_06_StayCalm.m4a */,
+				BDADA7B71BB3813700E369F5 /* 21SARGE_11_AlmostThere.m4a */,
+				BDADA7B81BB3813700E369F5 /* 21SARGE_16_BD_GoodWork_MightMakeItOut.m4a */,
+				BDADA7B91BB3813700E369F5 /* 21SARGE_17_BD_ThatWasCuttingItClose.m4a */,
+				BDADA7BA1BB3813700E369F5 /* 21SARGE_19_BD_CantBelieveYouGotOne.m4a */,
+				BDADA7BB1BB3813700E369F5 /* 21SARGE_20_BD_DontGetCocky.m4a */,
+				BDADA7BC1BB3813700E369F5 /* 21SARGE_21_BD_HaventCompletelyFailed.m4a */,
+				BDADA7BD1BB3813700E369F5 /* 21SARGE_22_BD_PrincessInAnotherCastle.m4a */,
+				BDADA7BE1BB3813700E369F5 /* 22MALE_04_EarthShattering_A.m4a */,
+				BDADA7BF1BB3813700E369F5 /* 22MALE_05_EarthShattering_B.m4a */,
+				BDADA7C01BB3813700E369F5 /* 31FEMALE_10_CursesFoiledAgain.m4a */,
+				BDADA7C11BB3813700E369F5 /* 31FEMALE_11_PlantedMore.m4a */,
+				BDADA7C21BB3813700E369F5 /* 31MALE_07_Acme_A.m4a */,
+				BDADA7C31BB3813700E369F5 /* 31MALE_08_Acme_B.m4a */,
+				BDADA7C41BB3813700E369F5 /* 31MALE_27_ThisAintOver_A.m4a */,
+				BDADA7C51BB3813700E369F5 /* 31MALE_28_ThisAintOver_B.m4a */,
+				BDADA7C61BB3813700E369F5 /* 31MALE_29_ThisAintOver_C.m4a */,
+				BDADA7C71BB3813700E369F5 /* 31MALE_30_ThisAintOver_D.m4a */,
+				BDADA7C81BB3813700E369F5 /* 31MALE_50_NeverStopBURN_A.m4a */,
+				BDADA7C91BB3813700E369F5 /* 31MALE_51_NeverStopBURN_B.m4a */,
+				BDADA7CA1BB3813700E369F5 /* 31MALE_52_DisabledOurBombs.m4a */,
+				BDADA7CB1BB3813700E369F5 /* 31MALE_53_ILetYouWin.m4a */,
+				BDADA7CC1BB3813700E369F5 /* 31MALE_54_IWontPlayNice.m4a */,
+				BDADA7CD1BB3813700E369F5 /* 31MALE_55_IllGetYou.m4a */,
+				BDADA7CE1BB3813700E369F5 /* 31SARGE_05_WouldntHaveSentYou.m4a */,
+				BDADA7CF1BB3813700E369F5 /* 31SARGE_09_DontLetItGoToYourHead.m4a */,
+				BDADA7D01BB3813700E369F5 /* 31SARGE_18_BD_INeverDoubtedYou.m4a */,
+				BDADA7D11BB3813700E369F5 /* 31SARGE_23_MC_SurprisedYoureAlive.m4a */,
+				BDADA7D21BB3813700E369F5 /* 31SARGE_24_MC_WhenAPlanComesTogether.m4a */,
+				BDADA7D31BB3813700E369F5 /* 31SARGE_25_MC_IceCreamForEveryone.m4a */,
+				BDADA7D41BB3813700E369F5 /* 31SARGE_26_MC_ThatsAllOfThem.m4a */,
+				BDADA7D51BB3813700E369F5 /* 31SARGE_27_MC_YouDidItAndInRecordTime.m4a */,
+				BDADA7D61BB3813700E369F5 /* 31SARGE_28_MC_LooksLikeTheGoodGuysWin.m4a */,
+				BDADA7D71BB3813700E369F5 /* 31SARGE_29_MC_OutstandingWork.m4a */,
+				BDADA7D81BB3813700E369F5 /* 41FEMALE_12_BombVoyage_A.m4a */,
+				BDADA7D91BB3813700E369F5 /* 41FEMALE_13_BombVoyage_B.m4a */,
+				BDADA7DA1BB3813700E369F5 /* 41FEMALE_14_Blast.m4a */,
+				BDADA7DB1BB3813700E369F5 /* 41FEMALE_15_GreatJobofMessingUp.m4a */,
+				BDADA7DC1BB3813700E369F5 /* 41FEMALE_16_DontFeelBad_A.m4a */,
+				BDADA7DD1BB3813700E369F5 /* 41FEMALE_16_DontFeelBad_B.m4a */,
+				BDADA7DE1BB3813700E369F5 /* 41MALE_13_Dy-No-Mite_A.m4a */,
+				BDADA7DF1BB3813700E369F5 /* 41MALE_14_Dy-No-Mite_B.m4a */,
+				BDADA7E01BB3813700E369F5 /* 41MALE_15_Dy-No-Mite_C.m4a */,
+				BDADA7E11BB3813700E369F5 /* 41MALE_16_KnockKnock_A.m4a */,
+				BDADA7E21BB3813700E369F5 /* 41MALE_17_KnockKnock_B.m4a */,
+				BDADA7E31BB3813700E369F5 /* 41MALE_18_KnockKnock_C.m4a */,
+				BDADA7E41BB3813700E369F5 /* 41MALE_56_JustTheBeginning.m4a */,
+				BDADA7E51BB3813700E369F5 /* 41MALE_57_TooEasy.m4a */,
+				BDADA7E61BB3813700E369F5 /* 41SARGE_30_FM_WeKnewThisWouldHappen.m4a */,
+				BDADA7E71BB3813700E369F5 /* 41SARGE_31_FM_YourBestWasntEnough.m4a */,
+				BDADA7E81BB3813700E369F5 /* 41SARGE_32_FM_YouHaveFailed.m4a */,
+				BDADA7E91BB3813700E369F5 /* 42SARGE_33_FM_WhatDoYouWantAParade.m4a */,
+				BDADA7EA1BB3813700E369F5 /* 51SARGE_10_StayOnTarget.m4a */,
+				BDADA7EB1BB3813700E369F5 /* 61MALE_09_TickTickTick_A.m4a */,
+				BDADA7EC1BB3813700E369F5 /* 61MALE_10_TickTickTick_B.m4a */,
+				BDADA7ED1BB3813800E369F5 /* 61MALE_11_TickTickTick_C.m4a */,
+				BDADA7EE1BB3813800E369F5 /* 61MALE_12_TickTickTick_D.m4a */,
 			);
 			name = Clips;
 			sourceTree = "<group>";
@@ -993,132 +1092,162 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD7E416B17972D7300FBB8D1 /* InfoPlist.strings in Resources */,
-				BDE515671AA50F76002773F3 /* 61oldlady.m4a in Resources */,
 				BDC884EE1BA54E0E00689832 /* Icon-60@3x.png in Resources */,
+				BDADA83C1BB3813800E369F5 /* 31SARGE_18_BD_INeverDoubtedYou.m4a in Resources */,
 				BD7E417717972D7300FBB8D1 /* Default-568h@2x.png in Resources */,
-				BDE515311AA50F76002773F3 /* 02onemoreword.m4a in Resources */,
+				BDADA8331BB3813800E369F5 /* 31MALE_30_ThisAintOver_D.m4a in Resources */,
+				BDADA84A1BB3813800E369F5 /* 41MALE_13_Dy-No-Mite_A.m4a in Resources */,
 				BD640B481BA919A600E3C2CE /* scen3@2x.png in Resources */,
+				BDADA8521BB3813800E369F5 /* 41SARGE_30_FM_WeKnewThisWouldHappen.m4a in Resources */,
 				BD640B511BA919A600E3C2CE /* scen8.png in Resources */,
-				BDE5155C1AA50F76002773F3 /* 41yes.m4a in Resources */,
 				BD7E417A17972D7300FBB8D1 /* MainStoryboard_iPhone.storyboard in Resources */,
 				BD640B441BA919A600E3C2CE /* scen1@2x.png in Resources */,
+				BDADA8481BB3813800E369F5 /* 41FEMALE_16_DontFeelBad_A.m4a in Resources */,
 				BD640B0C1BA8CC3300E3C2CE /* bigscena.png in Resources */,
+				BDADA84E1BB3813800E369F5 /* 41MALE_17_KnockKnock_B.m4a in Resources */,
+				BDADA84C1BB3813800E369F5 /* 41MALE_15_Dy-No-Mite_C.m4a in Resources */,
+				BDADA8121BB3813800E369F5 /* 11SARGE_15_BestSquadInTheRoom.m4a in Resources */,
 				BD7E417D17972D7300FBB8D1 /* MainStoryboard_iPad.storyboard in Resources */,
 				BD7E41A91797319600FBB8D1 /* BombSquadLogo.png in Resources */,
 				BD28F35E19BA9FF9009C83DF /* death.m4a in Resources */,
 				BD7E41AA1797319600FBB8D1 /* BombSquadLogo@2x.png in Resources */,
+				BDADA8321BB3813800E369F5 /* 31MALE_29_ThisAintOver_C.m4a in Resources */,
 				BD7E41BE1797906F00FBB8D1 /* amission.m4a in Resources */,
+				BDADA8061BB3813800E369F5 /* 02MALE_38_YoureRunningOutofTime.m4a in Resources */,
+				BDADA7F61BB3813800E369F5 /* 01MALE_40_IsThisYourFirstTime_B.m4a in Resources */,
+				BDADA7FC1BB3813800E369F5 /* 01SARGE_13_GettingWarmer.m4a in Resources */,
+				BDADA8471BB3813800E369F5 /* 41FEMALE_15_GreatJobofMessingUp.m4a in Resources */,
+				BDADA8501BB3813800E369F5 /* 41MALE_56_JustTheBeginning.m4a in Resources */,
 				BDC884F51BA54E0E00689832 /* Icon-Small-40@3x.png in Resources */,
+				BDADA80C1BB3813800E369F5 /* 03MALE_32_RememberTheRedWires.m4a in Resources */,
+				BDADA7F31BB3813800E369F5 /* 01MALE_34_GetBurned_A.m4a in Resources */,
 				BD7E41BF1797906F00FBB8D1 /* bigbomb.m4a in Resources */,
+				BDADA7F81BB3813800E369F5 /* 01MALE_42_Inevitable.m4a in Resources */,
 				BDFAE9001846947400F0C2B8 /* right.png in Resources */,
-				BDE5152D1AA50F76002773F3 /* 02hitthedeck.m4a in Resources */,
-				BDE515601AA50F76002773F3 /* 51holditrightthere.m4a in Resources */,
-				BDE515241AA50F76002773F3 /* 01gogogo.m4a in Resources */,
 				BD7E41C01797906F00FBB8D1 /* heartbeat.m4a in Resources */,
-				BDE5155F1AA50F76002773F3 /* 42wahwah.m4a in Resources */,
+				BDADA8381BB3813800E369F5 /* 31MALE_54_IWontPlayNice.m4a in Resources */,
+				BDADA8371BB3813800E369F5 /* 31MALE_53_ILetYouWin.m4a in Resources */,
+				BDADA7FD1BB3813800E369F5 /* 02FEMALE_02_HotInHere.m4a in Resources */,
+				BDADA8001BB3813800E369F5 /* 02MALE_06_BOOMjustkidding.m4a in Resources */,
 				BDC885021BA54E0E00689832 /* launch768x1024.png in Resources */,
 				BDC884EC1BA54E0E00689832 /* Icon-60.png in Resources */,
-				BDE515301AA50F76002773F3 /* 02nevergetthereintime.m4a in Resources */,
-				BDE515421AA50F76002773F3 /* 03noitsgreen2.m4a in Resources */,
 				BD7E41C11797906F00FBB8D1 /* hiddenagenda.m4a in Resources */,
+				BDADA84B1BB3813800E369F5 /* 41MALE_14_Dy-No-Mite_B.m4a in Resources */,
 				BD7E41C21797906F00FBB8D1 /* hitman.m4a in Resources */,
 				BD640B261BA9143C00E3C2CE /* bigscenb.png in Resources */,
+				BDADA8031BB3813800E369F5 /* 02MALE_21_ItsCute_C.m4a in Resources */,
 				BD28F36619BAA9F3009C83DF /* bomb1H@2x.png in Resources */,
 				BD640B5A1BA919A600E3C2CE /* scen12@2x.png in Resources */,
+				BDADA8421BB3813800E369F5 /* 31SARGE_28_MC_LooksLikeTheGoodGuysWin.m4a in Resources */,
+				BDADA82A1BB3813800E369F5 /* 22MALE_04_EarthShattering_A.m4a in Resources */,
+				BDADA8291BB3813800E369F5 /* 21SARGE_22_BD_PrincessInAnotherCastle.m4a in Resources */,
 				BDFAE8F81846879700F0C2B8 /* help10.png in Resources */,
-				BDE515321AA50F76002773F3 /* 02scream.m4a in Resources */,
+				BDADA8071BB3813800E369F5 /* 02SARGE_14_BadFeelingAboutThis.m4a in Resources */,
+				BDADA8171BB3813800E369F5 /* 21MALE_24_BombWasMyFavorite_A.m4a in Resources */,
 				BDFAE8F21846879700F0C2B8 /* help4.png in Resources */,
-				BDE515831AA5997D002773F3 /* 22kaboom.m4a in Resources */,
+				BDADA7F21BB3813800E369F5 /* 01MALE_33_YouveAlreadyLost.m4a in Resources */,
+				BDADA8261BB3813800E369F5 /* 21SARGE_19_BD_CantBelieveYouGotOne.m4a in Resources */,
 				BDC884FC1BA54E0E00689832 /* Icon@2x.png in Resources */,
-				BDE5154C1AA50F76002773F3 /* 21onedown.m4a in Resources */,
 				BD640B4F1BA919A600E3C2CE /* scen7.png in Resources */,
+				BDADA82F1BB3813800E369F5 /* 31MALE_08_Acme_B.m4a in Resources */,
+				BDADA8011BB3813800E369F5 /* 02MALE_19_ItsCute_A.m4a in Resources */,
 				BD7E41C31797906F00FBB8D1 /* impendingboom.m4a in Resources */,
-				BDE515641AA50F76002773F3 /* 61getbacktoit.m4a in Resources */,
-				BDE515521AA50F76002773F3 /* 22vitaltestingapparatus.m4a in Resources */,
+				BDADA8161BB3813800E369F5 /* 21MALE_03_TooEasy_C.m4a in Resources */,
 				BD640B501BA919A600E3C2CE /* scen7@2x.png in Resources */,
-				BDE515631AA50F76002773F3 /* 61elderlysnail.m4a in Resources */,
+				BDADA8141BB3813800E369F5 /* 21MALE_01_TooEasy_A.m4a in Resources */,
 				BD28F36519BAA9F3009C83DF /* bomb1H.png in Resources */,
 				BDC884FD1BA54E0E00689832 /* iTunesArtwork in Resources */,
+				BDADA8391BB3813800E369F5 /* 31MALE_55_IllGetYou.m4a in Resources */,
+				BDADA82B1BB3813800E369F5 /* 22MALE_05_EarthShattering_B.m4a in Resources */,
 				BD7E41C41797906F00FBB8D1 /* mechanical.m4a in Resources */,
 				BD640B0A1BA770CA00E3C2CE /* BSLogo@2x.png in Resources */,
+				BDADA7F11BB3813800E369F5 /* 01MALE_31_OurPlanIsPerfect.m4a in Resources */,
 				BD7E41C51797906F00FBB8D1 /* smallbomb.m4a in Resources */,
+				BDADA7FE1BB3813800E369F5 /* 02FEMALE_03_FuseIsShort.m4a in Resources */,
 				BD640B091BA770CA00E3C2CE /* BSLogo.png in Resources */,
-				BDE5155A1AA50F76002773F3 /* 41sorrychief.m4a in Resources */,
+				BDADA8191BB3813800E369F5 /* 21MALE_26_BombWasMyFavorite_C.m4a in Resources */,
 				BD7E41C61797906F00FBB8D1 /* spygroove.m4a in Resources */,
-				BDE515661AA50F76002773F3 /* 61moveyoufool.m4a in Resources */,
 				BD640B1D1BA9143C00E3C2CE /* bigscen4.png in Resources */,
-				BDE515541AA50F76002773F3 /* 31anothersaved.m4a in Resources */,
-				BDE5153F1AA50F76002773F3 /* 03isaidblue.m4a in Resources */,
+				BDADA85A1BB3813800E369F5 /* 61MALE_12_TickTickTick_D.m4a in Resources */,
+				BDADA81A1BB3813800E369F5 /* 21MALE_43_WastedTimeOnDecoy.m4a in Resources */,
+				BDADA8551BB3813800E369F5 /* 42SARGE_33_FM_WhatDoYouWantAParade.m4a in Resources */,
 				BD640B201BA9143C00E3C2CE /* bigscen7.png in Resources */,
-				BDE515351AA50F76002773F3 /* 02thatsthewrongdoor.m4a in Resources */,
-				BDE5154F1AA50F76002773F3 /* 21woohoo.m4a in Resources */,
+				BDADA81B1BB3813800E369F5 /* 21MALE_44_NextBombInTime_A.m4a in Resources */,
 				BD7E41C71797906F00FBB8D1 /* tickingclock.m4a in Resources */,
 				BDFAE8F11846879700F0C2B8 /* help3.png in Resources */,
 				BD640B581BA919A600E3C2CE /* scen11@2x.png in Resources */,
 				BD3752081ACE0BFD0083063A /* bsicon152.png in Resources */,
-				BDE5153B1AA50F76002773F3 /* 03cardisred.m4a in Resources */,
+				BDADA82D1BB3813800E369F5 /* 31FEMALE_11_PlantedMore.m4a in Resources */,
 				BD640B1E1BA9143C00E3C2CE /* bigscen5.png in Resources */,
-				BDE5153E1AA50F76002773F3 /* 03hostage.m4a in Resources */,
-				BDE515281AA50F76002773F3 /* 01ohitsabomb.m4a in Resources */,
 				BDC884F41BA54E0E00689832 /* Icon-Small-40@2x.png in Resources */,
 				BD3752021ACE08650083063A /* Images.xcassets in Resources */,
+				BDADA7FF1BB3813800E369F5 /* 02FEMALE_04_YouLikeLoudNoises.m4a in Resources */,
 				BDFAE8FF1846947400F0C2B8 /* left.png in Resources */,
-				BDE5155E1AA50F76002773F3 /* 42feeltheburn2.m4a in Resources */,
-				BDE515391AA50F76002773F3 /* 02youllnevergetthereintime.m4a in Resources */,
 				BDC884EF1BA54E0E00689832 /* Icon-72.png in Resources */,
+				BDADA8251BB3813800E369F5 /* 21SARGE_17_BD_ThatWasCuttingItClose.m4a in Resources */,
+				BDADA7F41BB3813800E369F5 /* 01MALE_35_GetBurned_B.m4a in Resources */,
 				BD640B551BA919A600E3C2CE /* scen10.png in Resources */,
+				BDADA8271BB3813800E369F5 /* 21SARGE_20_BD_DontGetCocky.m4a in Resources */,
 				BDFAE8F61846879700F0C2B8 /* help8.png in Resources */,
+				BDADA7F71BB3813800E369F5 /* 01MALE_41_ArentVeryGood.m4a in Resources */,
 				BDFAE8EF1846879700F0C2B8 /* help1.png in Resources */,
 				BD28F36919BAA9F3009C83DF /* bomb3H.png in Resources */,
-				BDE515651AA50F76002773F3 /* 61huh.m4a in Resources */,
+				BDADA81E1BB3813800E369F5 /* 21MALE_47_IGaveYouThatOne.m4a in Resources */,
 				BDC884F01BA54E0E00689832 /* Icon-72@2x.png in Resources */,
-				BDE5154E1AA50F76002773F3 /* 21pieceofcake.m4a in Resources */,
-				BDE515211AA50F76002773F3 /* 01doinggreat.m4a in Resources */,
+				BDADA8411BB3813800E369F5 /* 31SARGE_27_MC_YouDidItAndInRecordTime.m4a in Resources */,
 				BD0F616C1798976D00953661 /* bomb1A.png in Resources */,
-				BDE515471AA50F76002773F3 /* 03trickingyou.m4a in Resources */,
 				BD0F616D1798976D00953661 /* bomb1A@2x.png in Resources */,
 				BDC884F11BA54E0E00689832 /* Icon-76.png in Resources */,
+				BDADA8021BB3813800E369F5 /* 02MALE_20_ItsCute_B.m4a in Resources */,
 				BD640B251BA9143C00E3C2CE /* bigscen12.png in Resources */,
-				BDE515531AA50F76002773F3 /* 31anotherbuildingsaved.m4a in Resources */,
 				BD3752071ACE0BFD0083063A /* bsicon120.png in Resources */,
-				BDE515511AA50F76002773F3 /* 22thatwaseasy.m4a in Resources */,
 				BDC884FE1BA54E0E00689832 /* iTunesArtwork@2x in Resources */,
 				BDFAE8F01846879700F0C2B8 /* help2.png in Resources */,
+				BDADA8361BB3813800E369F5 /* 31MALE_52_DisabledOurBombs.m4a in Resources */,
 				BDFAE8FC1846879700F0C2B8 /* help14.png in Resources */,
-				BDE515431AA50F76002773F3 /* 03noyoufoolitsblue.m4a in Resources */,
 				BD640B5B1BA919A600E3C2CE /* scena.png in Resources */,
 				BD640B571BA919A600E3C2CE /* scen11.png in Resources */,
 				BD640B1C1BA9143C00E3C2CE /* bigscen3.png in Resources */,
+				BDADA83D1BB3813800E369F5 /* 31SARGE_23_MC_SurprisedYoureAlive.m4a in Resources */,
+				BDADA8591BB3813800E369F5 /* 61MALE_11_TickTickTick_C.m4a in Resources */,
+				BDADA7FA1BB3813800E369F5 /* 01SARGE_08_BestSquadEverTrained.m4a in Resources */,
+				BDADA82E1BB3813800E369F5 /* 31MALE_07_Acme_A.m4a in Resources */,
+				BDADA8101BB3813800E369F5 /* 11SARGE_04_YoullDoFine.m4a in Resources */,
 				BD0F616E1798976D00953661 /* bomb1B.png in Resources */,
 				BD640B4A1BA919A600E3C2CE /* scen4@2x.png in Resources */,
-				BDE515341AA50F76002773F3 /* 02slam.m4a in Resources */,
-				BDE515571AA50F76002773F3 /* 31cursesfoiledagain.m4a in Resources */,
+				BDADA8181BB3813800E369F5 /* 21MALE_25_BombWasMyFavorite_B.m4a in Resources */,
+				BDADA84D1BB3813800E369F5 /* 41MALE_16_KnockKnock_A.m4a in Resources */,
+				BDADA80F1BB3813800E369F5 /* 11SARGE_02_YouCanDoThis.m4a in Resources */,
 				BD0F616F1798976D00953661 /* bomb1B@2x.png in Resources */,
 				BD3752061ACE0BFD0083063A /* bsicon76.png in Resources */,
 				BD640B1B1BA9143C00E3C2CE /* bigscen2.png in Resources */,
-				BDE515221AA50F76002773F3 /* 01escape.m4a in Resources */,
 				BD0F61701798976D00953661 /* bomb1C.png in Resources */,
-				BDE515261AA50F76002773F3 /* 01helphelp.m4a in Resources */,
 				BDFAE8FA1846879700F0C2B8 /* help12.png in Resources */,
 				BD640B461BA919A600E3C2CE /* scen2@2x.png in Resources */,
+				BDADA8041BB3813800E369F5 /* 02MALE_22_ItsCute_D.m4a in Resources */,
 				BD0F61711798976D00953661 /* bomb1C@2x.png in Resources */,
-				BDE515201AA50F76002773F3 /* 01canyourepeatthat.m4a in Resources */,
-				BDE5153A1AA50F76002773F3 /* 03bomb.m4a in Resources */,
-				BDE5155D1AA50F76002773F3 /* 42feeltheburn.m4a in Resources */,
 				BD640B521BA919A600E3C2CE /* scen8@2x.png in Resources */,
+				BDADA8581BB3813800E369F5 /* 61MALE_10_TickTickTick_B.m4a in Resources */,
+				BDADA8221BB3813800E369F5 /* 21SARGE_06_StayCalm.m4a in Resources */,
 				BD0F61721798976D00953661 /* bomb2A.png in Resources */,
 				BDC884FF1BA54E0E00689832 /* launch320.png in Resources */,
-				BDE515621AA50F76002773F3 /* 61dontkeepuswaiting.m4a in Resources */,
+				BDADA8401BB3813800E369F5 /* 31SARGE_26_MC_ThatsAllOfThem.m4a in Resources */,
+				BDADA8571BB3813800E369F5 /* 61MALE_09_TickTickTick_A.m4a in Resources */,
 				BDC884FB1BA54E0E00689832 /* Icon.png in Resources */,
-				BDE515451AA50F76002773F3 /* 03rednoblue.m4a in Resources */,
 				BD640B431BA919A600E3C2CE /* scen1.png in Resources */,
 				BD640B221BA9143C00E3C2CE /* bigscen9.png in Resources */,
+				BDADA83F1BB3813800E369F5 /* 31SARGE_25_MC_IceCreamForEveryone.m4a in Resources */,
 				BD0F61731798976D00953661 /* bomb2A@2x.png in Resources */,
 				BD640B061BA764BF00E3C2CE /* launch640x1136.png in Resources */,
+				BDADA8281BB3813800E369F5 /* 21SARGE_21_BD_HaventCompletelyFailed.m4a in Resources */,
 				BD640B5C1BA919A600E3C2CE /* scena@2x.png in Resources */,
+				BDADA83B1BB3813800E369F5 /* 31SARGE_09_DontLetItGoToYourHead.m4a in Resources */,
 				BDC884F21BA54E0E00689832 /* Icon-76@2x.png in Resources */,
 				BD640B4C1BA919A600E3C2CE /* scen5@2x.png in Resources */,
 				BD640B591BA919A600E3C2CE /* scen12.png in Resources */,
+				BDADA80B1BB3813800E369F5 /* 03FEMALE_08_TwentyQuestions.m4a in Resources */,
+				BDADA8451BB3813800E369F5 /* 41FEMALE_13_BombVoyage_B.m4a in Resources */,
+				BDADA8091BB3813800E369F5 /* 03FEMALE_05_TurnRightMoveTwo.m4a in Resources */,
 				BDC885031BA54E0E00689832 /* launch1536x2048.png in Resources */,
 				BD0F61741798976D00953661 /* bomb2B.png in Resources */,
 				BDFAE8F51846879700F0C2B8 /* help7.png in Resources */,
@@ -1126,93 +1255,96 @@
 				BD0F61751798976D00953661 /* bomb2B@2x.png in Resources */,
 				BD640B4D1BA919A600E3C2CE /* scen6.png in Resources */,
 				BDFAE8F91846879700F0C2B8 /* help11.png in Resources */,
+				BDADA8461BB3813800E369F5 /* 41FEMALE_14_Blast.m4a in Resources */,
 				BD640B471BA919A600E3C2CE /* scen3.png in Resources */,
 				BD640B491BA919A600E3C2CE /* scen4.png in Resources */,
 				BDC884F61BA54E0E00689832 /* Icon-Small-50.png in Resources */,
 				BD0F61761798976D00953661 /* bomb2C.png in Resources */,
 				BDC884F31BA54E0E00689832 /* Icon-Small-40.png in Resources */,
+				BDADA80D1BB3813800E369F5 /* 03MALE_36_RedWireorBlue.m4a in Resources */,
+				BDADA8051BB3813800E369F5 /* 02MALE_23_ItsCute_E.m4a in Resources */,
 				BD28F36719BAA9F3009C83DF /* bomb2H.png in Resources */,
 				BDFAE8F31846879700F0C2B8 /* help5.png in Resources */,
+				BDADA84F1BB3813800E369F5 /* 41MALE_18_KnockKnock_C.m4a in Resources */,
+				BDADA8541BB3813800E369F5 /* 41SARGE_32_FM_YouHaveFailed.m4a in Resources */,
 				BD0F61771798976D00953661 /* bomb2C@2x.png in Resources */,
 				BD640B4B1BA919A600E3C2CE /* scen5.png in Resources */,
 				BD640B5D1BA919A600E3C2CE /* scenb.png in Resources */,
 				BD0F61781798976D00953661 /* bomb3A.png in Resources */,
+				BDADA8081BB3813800E369F5 /* 03FEMALE_01_CuttheWhiteWire.m4a in Resources */,
+				BDADA7F51BB3813800E369F5 /* 01MALE_39_IsThisYourFirstTime_A.m4a in Resources */,
+				BDADA8531BB3813800E369F5 /* 41SARGE_31_FM_YourBestWasntEnough.m4a in Resources */,
 				BD640B1A1BA9143C00E3C2CE /* bigscen1.png in Resources */,
 				BD640B451BA919A600E3C2CE /* scen2.png in Resources */,
-				BDE515361AA50F76002773F3 /* 02timerunningout.m4a in Resources */,
-				BDE515291AA50F76002773F3 /* 01waitbackup.m4a in Resources */,
 				BDC884F71BA54E0E00689832 /* Icon-Small-50@2x.png in Resources */,
-				BDE5154D1AA50F76002773F3 /* 21pieceacake.m4a in Resources */,
-				BDE5153C1AA50F76002773F3 /* 03cutredwireorgreen.m4a in Resources */,
 				BD640B231BA9143C00E3C2CE /* bigscen10.png in Resources */,
-				BDE5152A1AA50F76002773F3 /* 01whereareyoumommy.m4a in Resources */,
+				BDADA7EF1BB3813800E369F5 /* 01FEMALE_04_YouLikeLoudNoises.m4a in Resources */,
 				BD640B021BA7579900E3C2CE /* bstile.png in Resources */,
 				BD640B531BA919A600E3C2CE /* scen9.png in Resources */,
-				BDE5154A1AA50F76002773F3 /* 11starting3.m4a in Resources */,
 				BD0F61791798976D00953661 /* bomb3A@2x.png in Resources */,
+				BDADA8131BB3813800E369F5 /* 21FEMALE_09_JokesOnYou.m4a in Resources */,
 				BD0F617A1798976D00953661 /* bomb3B.png in Resources */,
-				BDE515271AA50F76002773F3 /* 01helpmommy.m4a in Resources */,
-				BDE515611AA50F76002773F3 /* 51wheregoing.m4a in Resources */,
-				BDE5152E1AA50F76002773F3 /* 02hurry.m4a in Resources */,
 				BD28F36819BAA9F3009C83DF /* bomb2H@2x.png in Resources */,
-				BDE515591AA50F76002773F3 /* 32niceworkkid.m4a in Resources */,
 				BD640B5E1BA919A600E3C2CE /* scenb@2x.png in Resources */,
-				BDE515381AA50F76002773F3 /* 02willgetcake.m4a in Resources */,
+				BDADA8301BB3813800E369F5 /* 31MALE_27_ThisAintOver_A.m4a in Resources */,
+				BDADA81C1BB3813800E369F5 /* 21MALE_45_NextBombInTime_B.m4a in Resources */,
 				BDC884F81BA54E0E00689832 /* Icon-Small.png in Resources */,
-				BDE515481AA50F76002773F3 /* 11starting1.m4a in Resources */,
+				BDADA81D1BB3813800E369F5 /* 21MALE_46_NextBombInTime_C.m4a in Resources */,
+				BDADA8111BB3813800E369F5 /* 11SARGE_07_WereAllCountingOnYou.m4a in Resources */,
+				BDADA8241BB3813800E369F5 /* 21SARGE_16_BD_GoodWork_MightMakeItOut.m4a in Resources */,
+				BDADA8511BB3813800E369F5 /* 41MALE_57_TooEasy.m4a in Resources */,
 				BDF8E55F18163AC300AD654B /* countdown.m4a in Resources */,
+				BDADA7FB1BB3813800E369F5 /* 01SARGE_12_KeepAtItTeam.m4a in Resources */,
 				BD0F617B1798976D00953661 /* bomb3B@2x.png in Resources */,
 				BD640B1F1BA9143C00E3C2CE /* bigscen6.png in Resources */,
+				BDADA80E1BB3813800E369F5 /* 03MALE_37_54321.m4a in Resources */,
+				BDADA8351BB3813800E369F5 /* 31MALE_51_NeverStopBURN_B.m4a in Resources */,
 				BDFAE8FB1846879700F0C2B8 /* help13.png in Resources */,
-				BDE515551AA50F76002773F3 /* 31congratsonestepcloser.m4a in Resources */,
-				BDE515501AA50F76002773F3 /* 21woohoo2.m4a in Resources */,
 				BDC884ED1BA54E0E00689832 /* Icon-60@2x.png in Resources */,
-				BDE5152B1AA50F76002773F3 /* 02bam.m4a in Resources */,
-				BDE515561AA50F76002773F3 /* 31congratswereonestepclosertoburn.m4a in Resources */,
-				BDE515681AA50F76002773F3 /* 61tmgappreciates.m4a in Resources */,
 				BDC884F91BA54E0E00689832 /* Icon-Small@2x.png in Resources */,
 				BD0F617C1798976D00953661 /* bomb3C.png in Resources */,
-				BDE515491AA50F76002773F3 /* 11starting2.m4a in Resources */,
 				BD0F617D1798976D00953661 /* bomb3C@2x.png in Resources */,
 				BDFAE8F71846879700F0C2B8 /* help9.png in Resources */,
-				BDE515691AA50F76002773F3 /* 61whygetgame.m4a in Resources */,
+				BDADA8311BB3813800E369F5 /* 31MALE_28_ThisAintOver_B.m4a in Resources */,
 				BD640B561BA919A600E3C2CE /* scen10@2x.png in Resources */,
+				BDADA7F01BB3813800E369F5 /* 01FEMALE_07_InsuranceUpToDate.m4a in Resources */,
 				BD640B541BA919A600E3C2CE /* scen9@2x.png in Resources */,
-				BDE5153D1AA50F76002773F3 /* 03door.m4a in Resources */,
-				BDE515331AA50F76002773F3 /* 02shouldevenlisten.m4a in Resources */,
-				BDE515461AA50F76002773F3 /* 03timesupjustkidding.m4a in Resources */,
 				BD0F61921799D7E700953661 /* home.png in Resources */,
+				BDADA8151BB3813800E369F5 /* 21MALE_02_TooEasy_B.m4a in Resources */,
+				BDADA8491BB3813800E369F5 /* 41FEMALE_16_DontFeelBad_B.m4a in Resources */,
 				BD0F61931799D7E700953661 /* home@2x.png in Resources */,
 				BD0F61941799D7E700953661 /* pause.png in Resources */,
-				BDE5152F1AA50F76002773F3 /* 02isthatthebest.m4a in Resources */,
-				BDE515371AA50F76002773F3 /* 02usedtoworkhere.m4a in Resources */,
 				BD0F61951799D7E700953661 /* pause@2x.png in Resources */,
 				BD0F61961799D7E700953661 /* start.png in Resources */,
 				BD0F61971799D7E700953661 /* start@2x.png in Resources */,
-				BDE515441AA50F76002773F3 /* 03reallythatsyourclue.m4a in Resources */,
 				BD0F619C179A517E00953661 /* greencheck.png in Resources */,
-				BDE515581AA50F76002773F3 /* 31mayhavestopped.m4a in Resources */,
+				BDADA8561BB3813800E369F5 /* 51SARGE_10_StayOnTarget.m4a in Resources */,
+				BDADA8431BB3813800E369F5 /* 31SARGE_29_MC_OutstandingWork.m4a in Resources */,
 				BD0F619D179A517E00953661 /* greencheck@2x.png in Resources */,
-				BDE515251AA50F76002773F3 /* 01help.m4a in Resources */,
 				BD28F36A19BAA9F3009C83DF /* bomb3H@2x.png in Resources */,
 				BD0F619E179A517E00953661 /* redex.png in Resources */,
+				BDADA83A1BB3813800E369F5 /* 31SARGE_05_WouldntHaveSentYou.m4a in Resources */,
+				BDADA8441BB3813800E369F5 /* 41FEMALE_12_BombVoyage_A.m4a in Resources */,
+				BDADA82C1BB3813800E369F5 /* 31FEMALE_10_CursesFoiledAgain.m4a in Resources */,
 				BD0F619F179A517E00953661 /* redex@2x.png in Resources */,
-				BDE5154B1AA50F76002773F3 /* 21nicework.m4a in Resources */,
+				BDADA8231BB3813800E369F5 /* 21SARGE_11_AlmostThere.m4a in Resources */,
+				BDADA8211BB3813800E369F5 /* 21SARGE_01_YouGuysAreBest.m4a in Resources */,
+				BDADA81F1BB3813800E369F5 /* 21MALE_48_AlwaysMoreBombs_A.m4a in Resources */,
 				BD0F61AC179CD7F000953661 /* notselected.png in Resources */,
 				BD0F61AD179CD7F000953661 /* notselected@2x.png in Resources */,
+				BDADA83E1BB3813800E369F5 /* 31SARGE_24_MC_WhenAPlanComesTogether.m4a in Resources */,
 				BD0F61AE179CD7F000953661 /* selected.png in Resources */,
-				BDE5155B1AA50F76002773F3 /* 41wuhoha.m4a in Resources */,
+				BDADA8341BB3813800E369F5 /* 31MALE_50_NeverStopBURN_A.m4a in Resources */,
 				BD640B211BA9143C00E3C2CE /* bigscen8.png in Resources */,
 				BD640B041BA75EED00E3C2CE /* bsnavbar.png in Resources */,
 				BD0F61AF179CD7F000953661 /* selected@2x.png in Resources */,
-				BDE515411AA50F76002773F3 /* 03noitsgreen.m4a in Resources */,
-				BDE5152C1AA50F76002773F3 /* 02checkbatteries.m4a in Resources */,
+				BDADA7F91BB3813800E369F5 /* 01SARGE_03_MadeItThroughWorse.m4a in Resources */,
 				BD62FF1A17A1B68A005EBEAA /* Default~ipad.png in Resources */,
 				BDFAE8F41846879700F0C2B8 /* help6.png in Resources */,
-				BDE515231AA50F76002773F3 /* 01gogetbombs.m4a in Resources */,
+				BDADA80A1BB3813800E369F5 /* 03FEMALE_06_Numbers.m4a in Resources */,
 				BD640B4E1BA919A600E3C2CE /* scen6@2x.png in Resources */,
+				BDADA8201BB3813800E369F5 /* 21MALE_49_AlwaysMoreBombs_B.m4a in Resources */,
 				BD640B241BA9143C00E3C2CE /* bigscen11.png in Resources */,
-				BDE515401AA50F76002773F3 /* 03itsyellow.m4a in Resources */,
 				BDC884FA1BA54E0E00689832 /* Icon-Small@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

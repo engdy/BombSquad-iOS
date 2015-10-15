@@ -99,9 +99,9 @@
     if (burnLevel == LIGHT_BURN) {
         interval = arc4random_uniform((unsigned int)50) + 10;
     } else if (burnLevel == MED_BURN) {
-        interval = arc4random_uniform((unsigned int)25) + 5;
+        interval = arc4random_uniform((unsigned int)25) + 10;
     } else if (burnLevel == HEAVY_BURN) {
-        interval = arc4random_uniform((unsigned int)10) + 2;
+        interval = arc4random_uniform((unsigned int)10) + 10;
     }
     return interval;
 }

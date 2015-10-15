@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="ci9-YR-F3m">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="ci9-YR-F3m">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
         <!--Main-->
@@ -145,7 +145,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.30980392156862746" green="0.50588235294117645" blue="0.74117647058823533" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.33725490200000002" green="0.3294117647" blue="0.31372549020000001" alpha="1" colorSpace="deviceRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="KYd-s7-01x"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -447,6 +447,7 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="6Or-9a-xFM" userLabel="switchSoundtrack">
                                 <rect key="frame" x="255" y="71" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="1" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="toggleSoundtrack:" destination="dlF-hB-STL" eventType="valueChanged" id="Ii0-Wu-tFA"/>
                                 </connections>
@@ -454,6 +455,7 @@
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="rME-i8-1P8" userLabel="sliderSoundtrack">
                                 <rect key="frame" x="131" y="72" width="118" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="minimumTrackTintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="updateMusicVolume:" destination="dlF-hB-STL" eventType="valueChanged" id="pg6-Xp-d5k"/>
                                 </connections>
@@ -468,6 +470,7 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="LHy-Ep-DUe" userLabel="switchVisualAlert">
                                 <rect key="frame" x="255" y="148" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="toggleVisual:" destination="dlF-hB-STL" eventType="valueChanged" id="p02-na-Hqb"/>
                                 </connections>
@@ -482,6 +485,7 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="Z6a-yf-PNX" userLabel="switchAudioAlert">
                                 <rect key="frame" x="255" y="187" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="toggleAudio:" destination="dlF-hB-STL" eventType="valueChanged" id="Ev0-B2-Nej"/>
                                 </connections>
@@ -496,6 +500,7 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="LXx-5x-7Cl" userLabel="switchBombSounds">
                                 <rect key="frame" x="255" y="226" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="toggleBombs:" destination="dlF-hB-STL" eventType="valueChanged" id="Qd3-MC-TZB"/>
                                 </connections>
@@ -510,6 +515,7 @@
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="aJm-0j-wQQ" userLabel="sliderBombSound">
                                 <rect key="frame" x="188" y="265" width="118" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="minimumTrackTintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="updateBombVolume:" destination="dlF-hB-STL" eventType="valueChanged" id="CQt-pA-ygc"/>
                                 </connections>
@@ -524,6 +530,7 @@
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="3" id="b5T-AZ-RiD" userLabel="sliderBURNLevel">
                                 <rect key="frame" x="188" y="303" width="118" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="minimumTrackTintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="updateBURNLevel:" destination="dlF-hB-STL" eventType="valueChanged" id="RNN-BG-ZXy"/>
                                 </connections>
@@ -658,6 +665,7 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="oAT-Jt-q0y" userLabel="switchFatalBomb">
                                 <rect key="frame" x="255" y="308" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game ending bomb" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bFr-gK-28k">
                                 <rect key="frame" x="25" y="313" width="222" height="21"/>
@@ -725,6 +733,7 @@
                             <pickerView contentMode="scaleToFill" id="ohn-ry-FAY">
                                 <rect key="frame" x="0.0" y="49" width="320" height="216"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="foh-Tg-Lwq" id="Lmt-ix-oGj"/>
                                     <outlet property="delegate" destination="foh-Tg-Lwq" id="Jkp-sY-bmH"/>
@@ -746,7 +755,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Campaign Setup" id="ebt-gl-q0W">
                         <barButtonItem key="rightBarButtonItem" title="Start!" id="NwU-8n-OYk">
@@ -795,7 +804,7 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="K7K-QJ-jZr"/>
         <segue reference="GwT-Xk-Vsh"/>
-        <segue reference="XRv-0w-SH6"/>
     </inferredMetricsTieBreakers>
 </document>
