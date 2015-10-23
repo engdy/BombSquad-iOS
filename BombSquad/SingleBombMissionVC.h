@@ -21,6 +21,6 @@
 
 - (IBAction)done:(id)sender;
 - (IBAction)playPause:(id)sender;
-- (IBAction)handleDoubleTap:(UITapGestureRecognizer *)sender;
+- (IBAction)handleSingleTap:(UITapGestureRecognizer *)sender;
 
 @end

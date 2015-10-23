@@ -215,7 +215,7 @@
     if (_isPlayingCountdown) {
         _isPlayingCountdown = NO;
         [_countdownPlayer stop];
-        _countdownPlayer = nil;
+        //	_countdownPlayer = nil;
     }
 }
 

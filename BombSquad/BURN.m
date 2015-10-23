@@ -15,7 +15,7 @@
 
 @implementation BURN
 
-@synthesize burnLevel = burnLevel, clips = clips, runningPlayer = runningPlayer, startPlayer = startPlayer, defusedPlayer = defusedPlayer, wonPlayer = wonPlayer, lostPlayer = lostPlayer, pausePlayer = pausePlayer, waitingPlayer = waitingPlayer, selectPlayer = selectPlayer, currentPlayers = currentPlayers, timer = timer;
+@synthesize burnLevel = burnLevel, clips = clips, runningPlayer = runningPlayer, startPlayer = startPlayer, defusedPlayer = defusedPlayer, wonPlayer = wonPlayer, lostPlayer = lostPlayer, pausePlayer = pausePlayer, waitingPlayer = waitingPlayer, selectPlayer = selectPlayer, currentPlayers = currentPlayers, timer = timer, lastPlayed = lastPlayed;
 
 - (BURN *)init {
     NSLog(@"BURN::init");
@@ -31,6 +31,7 @@
     currentPlayers = [[NSMutableArray alloc] init];
     NSArray *files = [[NSBundle mainBundle] URLsForResourcesWithExtension:@"m4a" subdirectory:@""];
     clips = [[NSMutableArray alloc] init];
+    lastPlayed = [[NSMutableArray alloc] initWithObjects:@-1, @-1, @-1, @-1, @-1, @-1, @-1, @-1, nil];
     for (BURNType type = BURN_RUNNING; type <= BURN_SELECT; ++type) {
         [clips addObject:[[NSArray alloc] initWithObjects:[[NSMutableArray alloc] init], [[NSMutableArray alloc] init], [[NSMutableArray alloc] init], [[NSMutableArray alloc] init], nil]];
     }
@@ -78,10 +79,15 @@
     if (level >= HEAVY_BURN) {
         [choices addObjectsFromArray:clips[type][HEAVY_BURN]];
     }
-    if (choices.count == 0) {
+    NSInteger clipcount = choices.count;
+    if (clipcount == 0) {
         return nil;
     }
-    NSInteger choice = arc4random_uniform((unsigned int)choices.count);
+    NSInteger choice;
+    do {
+        choice = arc4random_uniform((unsigned int)clipcount);
+    } while (choice == [lastPlayed[type] integerValue] && clipcount > 1);
+    lastPlayed[type] = [NSNumber numberWithInteger:choice];
     NSURL *url = [choices objectAtIndex:choice];
     NSError *error = nil;
     AVAudioPlayer *player = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&error];

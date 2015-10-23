@@ -26,6 +26,7 @@ typedef enum {BURN_RUNNING, BURN_STARTING, BURN_DEFUSED, BURN_WON, BURN_LOST, BU
 @property (nonatomic, retain) AVAudioPlayer *selectPlayer;
 @property (nonatomic, retain) NSMutableArray *currentPlayers;
 @property (nonatomic, retain) NSTimer *timer;
+@property (nonatomic, retain) NSMutableArray *lastPlayed;
 
 - (BURN *)init;
 - (void)setBURNlevel:(int)level;

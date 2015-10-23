@@ -145,7 +145,7 @@
     [self checkbuttons];
 }
 
-- (IBAction)handleDoubleTap:(UITapGestureRecognizer *)sender {
+- (IBAction)handleSingleTap:(UITapGestureRecognizer *)sender {
     [self.delegate runningMissionDone:self];
 }
 
@@ -214,7 +214,7 @@
     return YES;
 }
 
-- (NSUInteger)supportedInterfaceOrientations {
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
     return UIInterfaceOrientationMaskLandscape;
 }
 

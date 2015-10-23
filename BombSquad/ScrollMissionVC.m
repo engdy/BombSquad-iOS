@@ -54,7 +54,7 @@
     return YES;
 }
 
-- (NSUInteger)supportedInterfaceOrientations {
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
     NSUInteger supportedOrientations = UIInterfaceOrientationMaskLandscape;
     return supportedOrientations;
 }
